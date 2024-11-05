@@ -11097,11 +11097,12 @@ p {
   background-image: linear-gradient(rgba(9, 15, 22, 0.5), rgba(9, 15, 22, 0.5)), url("../assets/myImg/fondo1GameJam2022.jpg");
   background-size: cover;
   background-position: bottom;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: black;
   padding: 5rem 0;
   text-align: center;
   position: relative;
+  min-height: 50vh;
 }
 
 /**************/
