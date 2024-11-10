@@ -11094,6 +11094,7 @@ p {
 /* Header banner image */
 /***********************/
 /* Sets a fixed background only within the header section */
+/* Header Banner */
 .header-banner {
   position: relative;
   padding: 20px 0; /* Add padding to give spacing around the text */
@@ -11112,9 +11113,9 @@ p {
   url("../assets/myImg/MrErazersRevenge/fondo1.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Parallax effect on desktop */
   z-index: -1;
-  /* Make sure the background div covers the content */
+  /* Ensure the background div covers the content */
 }
 
 /* Responsive font size for the header text */
@@ -11144,6 +11145,11 @@ p {
 
   .header-banner {
     padding: 40px 0; /* Increase padding if needed for more space */
+  }
+
+  /* Disable parallax effect on mobile */
+  .header-banner-bg {
+    background-attachment: scroll; /* Change to scroll on mobile */
   }
 }
 
