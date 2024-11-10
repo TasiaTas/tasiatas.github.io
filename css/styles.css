@@ -11110,7 +11110,6 @@ p {
   background: linear-gradient(rgba(9, 15, 22, 0.5), rgba(9, 15, 22, 0.5)), url("../assets/myImg/fondo1GameJam2022.jpg") no-repeat center center/cover fixed;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   z-index: -1;
   /* Make sure the background div covers the content */
 }
@@ -11142,6 +11141,11 @@ p {
 
   .header-banner {
     padding: 40px 0; /* Increase padding if needed for more space */
+  }
+
+  /* Override background-attachment to improve mobile compatibility */
+  .header-banner-bg {
+    background-attachment: scroll; /* Change from fixed to scroll on mobile */
   }
 }
 
