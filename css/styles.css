@@ -11096,7 +11096,7 @@ p {
 /* Sets a fixed background only within the header section */
 .header-banner {
   position: relative;
-  height: 300px; /* Adjust the height as desired */
+  padding: 20px 0; /* Add padding to give spacing around the text */
   overflow: hidden;
   color: #ffffff;
 }
@@ -11114,12 +11114,37 @@ p {
   background-position: center;
   background-attachment: fixed;
   z-index: -1;
+  /* Make sure the background div covers the content */
 }
 
-/* Ensures body is black and does not affect the header */
-body {
-  background-color: #171717;
-  padding-bottom: 2000px; /* For scroll testing */
+/* Responsive font size for the header text */
+.site-heading {
+  text-align: center;
+}
+
+.site-heading-upper {
+  display: block;
+  font-size: 1.5rem; /* Adjust as needed */
+  margin-bottom: 0.5rem;
+}
+
+.site-heading-lower {
+  font-size: 2.5rem; /* Adjust as needed */
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+  .site-heading-upper {
+    font-size: 1.2rem; /* Scale down for smaller screens */
+  }
+
+  .site-heading-lower {
+    font-size: 2rem; /* Scale down for smaller screens */
+  }
+
+  .header-banner {
+    padding: 40px 0; /* Increase padding if needed for more space */
+  }
 }
 
 /**************/
