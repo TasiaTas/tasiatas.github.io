@@ -11091,10 +11091,10 @@ p {
 }
 
 /***********************/
-/* Header banner image #171717*/
+/* Header banner image */
 /***********************/
 body {
-  background-color: #171717; /* Black background */
+  background-color: #171717;
   margin: 0; /* Prevent any default body margin */
 }
 
@@ -11102,22 +11102,19 @@ body {
 .header-banner {
   position: relative;
   text-align: center;
-  color: white; /* Change the text color if needed */
   padding: 5rem 0;
   min-height: 50vh; /* Ensure the header has a good height */
   overflow: hidden; /* Prevent the header content from spilling */
-  background-image: linear-gradient(rgba(9, 15, 22, 0.5), rgba(9, 15, 22, 0.5)), url("/assets/myImg/fondo1GameJam2022.jpg"); /* Use absolute path to ensure image loads */
+  background-image: linear-gradient(rgba(9, 15, 22, 0.5), rgba(9, 15, 22, 0.5)), url("../assets/myImg/fondo1GameJam2022.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Keep background fixed for desktop */
+  background-attachment: fixed; /*image stays fixed while scrolling */
   z-index: 0; /* Set a lower z-index so the content is on top */
 }
 
-/* Optional: Adjust for smaller screens (disable fixed background for mobile) */
 @media (max-width: 767px) {
   .header-banner {
     background-attachment: scroll; /* Disable fixed background for mobile */
-    background-position: center center; /* Ensure image is centered on mobile */
   }
 }
 
