@@ -28,7 +28,9 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index-es.html">Inicio</a></li>
@@ -36,9 +38,23 @@
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="3DProj-es.html">Proyectos 3D</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="games-es.html">Juegos</a></li>
 
-                        <!-- Language switcher -->
+                        <!-- Language switcher with flag icons -->
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link text-uppercase" href="index.html" style="background-color: white; color: black; padding: 8px 16px; border-radius: 5px;">Inglés</a>
+                            <!-- Spanish Flag Icon -->
+                            <a class="nav-link text-uppercase" href="index.html">
+                                <img src="assets/myImg/LanguageIcons/EnglishIcon.svg" alt="Spanish" style="width: 40px; height: auto;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-lg-4">
+                            <!-- English Flag Icon -->
+                            <a class="nav-link text-uppercase" href="index-es.html">
+                                <img src="assets/myImg/LanguageIcons/SpanishIcon.svg" alt="English" style="width: 40px; height: auto;">
+                            </a>
+                        </li>
+
+                        <!-- Contact Me link -->
+                        <li class="nav-item px-lg-4">
+                            <a class="nav-link text-uppercase" href="#footer" style="background-color: white; color: black; padding: 8px 16px; border-radius: 5px;">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -246,6 +262,14 @@
                 <p class="m-0 small">Copyright &copy; Anastasia Ihnatsenka Shakhova 2024. Todos los derechos reservados.</p>
             </div>
         </footer>
+
+        <script>
+            // Smooth scroll to footer
+            document.querySelector('.nav-link[href="#footer"]').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });
+            });
+        </script>
 
 
         <!-- Bootstrap core JS-->

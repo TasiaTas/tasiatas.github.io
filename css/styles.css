@@ -10928,7 +10928,7 @@ p {
     color: rgba(255, 255, 255, 0.4);
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #e6a756;
+    color: rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -11317,4 +11317,70 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/*IMAGE SELECTOR CAROUSSEL*/
+
+.thumbnail-container {
+  position: relative;
+  overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+/* Darken the image on hover */
+.preview-img {
+  transition: 0.3s ease;
+}
+
+/* Apply darken effect and show the text when hovered */
+.thumbnail-container:hover .preview-img {
+  filter: brightness(0.3); /* Darkens the image */
+}
+
+/* Name text styling */
+.thumbnail-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  z-index: 1; /* Ensure the text is above the image */
+  user-select: none; /* Deactivates the writer cursor over text specifically */
+  pointer-events: none; /* Disables the interaction of text so it doesn't lag */
+}
+
+/* Show name text on hover */
+.thumbnail-container:hover .thumbnail-name {
+  opacity: 1;
+}
+
+/* Ensure the text stays visible when the corresponding carousel item is active */
+.carousel-item.active .thumbnail-container .thumbnail-name {
+  opacity: 1 !important; /* Force the text to remain visible */
+}
+
+/* Optional: If you don't want the image to darken again when the carousel item is active */
+.carousel-item.active .thumbnail-container:hover .preview-img {
+  filter: none; /* Prevent darkening effect for active items */
+}
+
+/*NAVBAR ICONS*/
+
+/* Darken SVG icons on hover */
+.navbar .nav-link img {
+  transition: filter 0.3s ease;
+}
+
+.navbar .nav-link img:hover {
+  filter: brightness(0.5); /* Darkens the SVG icon */
+}
+
+/* Darken Contact button on hover */
+.navbar .nav-item .nav-link:hover {
+  background-color: black !important; /* Darken background */
+  color: grey !important; /* Keep text color black */
 }
