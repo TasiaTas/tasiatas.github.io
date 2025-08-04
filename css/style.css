@@ -1,4 +1,96 @@
-/*MAIN PAGE STRUCTURE*/
+/*************************************************************/
+/*MAIN PAGE STRUCTURE*****************************************/
+/*************************************************************/
 body {
     background-color: #fffdf7;
+}
+
+/*************************************************************/
+/*LOGO HEADER STUFF*******************************************/
+/*************************************************************/
+.logo-header{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+
+/*************************************************************/
+/*NAVBAR******************************************************/
+/*************************************************************/
+.navbar{
+    display: block;
+    text-align: center;
+}
+
+.navbar a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 14px 14px;
+    font-family: Quicksand, sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navbar a.active span{
+    border-bottom: black solid 1px;
+    padding-bottom: 4px; /*space between words and line*/
+}
+
+/*************************************************************/
+/*CATEGORY SELECTION******************************************/
+/*************************************************************/
+.category-selection{
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+/*Hide the browser's default checkbox*/
+.category-selection input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/*Custom checkbox*/
+.custom-checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+}
+
+/*Text style*/
+.category-selection label{
+    font-family: Quicksand, sans-serif;
+    padding-inline: 10px;
+    font-size: 0.9em;
+}
+
+/***********************************************************************************************************************/
+/*RESPONSIVENESS (DEVICE SIZE ADJUSTMENT)*********************/
+/*************************************************************/
+/*Tablets and below*/
+@media (max-width: 768px) {
+    .logo{
+        width: 100px;
+    }
+}
+
+/*Phones*/
+@media (max-width: 480px) {
+    .logo{
+        width: 80px;
+    }
 }
