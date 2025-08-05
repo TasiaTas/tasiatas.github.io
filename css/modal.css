@@ -1,0 +1,124 @@
+/*************************************************************/
+/*MODAL STYLE*************************************************/
+/*************************************************************/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-content{
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    user-select: none;
+}
+
+#modal-txt-container{
+    padding: 10px;
+    background-image: linear-gradient(rgba(255, 254, 254, 0.7),rgba(255, 254, 254, 0));
+}
+
+/*************************************************************/
+/*MODAL CLOSE BUTTON******************************************/
+/*************************************************************/
+.close-button{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    z-index: 1;
+    background: none;
+    border: none;
+}
+
+.close-button:hover {
+    color: lightgray;
+}
+
+/*************************************************************/
+/*MODAL ARROWS SWIPE******************************************/
+/*************************************************************/
+.modal-nav{
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+}
+
+.left-nav {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.right-nav {
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.modal-nav img {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.modal-nav img:hover {
+    opacity: 0.7;
+}
+
+/*************************************************************/
+/*MODAL COLUMNS***********************************************/
+/*************************************************************/
+.two-column{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5px;
+}
+
+/*************************************************************/
+/*IMAGE SETTINGS**********************************************/
+/*************************************************************/
+#modalImg{
+    width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    display: block;
+}
+
+/*************************************************************/
+/*TEXT SETTINGS***********************************************/
+/*************************************************************/
+#modalTitle{
+    font-family: Comfortaa;
+}
+
+#modalText{
+    font-family: Quicksand;
+}
+
+/***********************************************************************************************************************/
+/*RESPONSIVENESS (DEVICE SIZE ADJUSTMENT)*********************/
+/*************************************************************/
+
+/*Phones*/
+@media (max-width: 480px) {
+    .two-column{
+        grid-template-columns: 1fr;
+    }
+}

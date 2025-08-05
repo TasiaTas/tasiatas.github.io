@@ -2,7 +2,7 @@
 //VARIABLES//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const checkboxes = document.querySelectorAll('.filter-checkbox');
-const artItems = document.querySelectorAll('.artItem');
+const artItems = document.querySelectorAll('.artItem-div');
 var numImgGoofy = 0;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -17,7 +17,8 @@ checkboxes.forEach(checkbox => {
         .map(c => c.value);
 
         artItems.forEach(artItem => {
-            const category = artItem.dataset.category;
+            const img = artItem.querySelector('img');
+            const category = img.dataset.category;
 
             if(activeFilters.includes(category)) {
                 displayImageHide();

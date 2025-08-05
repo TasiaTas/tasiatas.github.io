@@ -35,9 +35,12 @@
     <!--CSS LINKS-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/modal.css">
 
     <!--JAVASCRIPT LINKS-->
     <script src="javascript/art_selector.js" defer></script>
+    <script src="javascript/conceptArtArray.js" defer></script>
+    <script src="javascript/modal.js" defer></script>
 </head>
 
 <!---------------------------------------------------------------------------------------------------------------------->
@@ -48,7 +51,9 @@
     <!--LOGO HEADER----------------------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------------------>
     <header class="logo-header">
-        <img src="assets/logo-icon-PLACEHOLDER.jpg" alt="logo" class="logo">
+        <a href="index.html">
+            <img src="assets/logo-icon-PLACEHOLDER.jpg" alt="logo" class="logo">
+        </a>
     </header>
 
     <!------------------------------------------------------------------------------------------------------------------>
@@ -79,29 +84,59 @@
 
         <!--IMAGES-->
         <div class="artItem-div">
-            <img src="assets/imgPlaceholder/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp" class="artItem" data-category="character">
+            <img src="assets/imgPlaceholder/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp" data-category="character" data-index="0">
         </div>
 
         <div class="artItem-div">
-            <img src="assets/imgPlaceholder/images.jpeg" class="artItem" data-category="environment">
+            <img src="assets/imgPlaceholder/images.jpeg" data-category="environment" data-index="1">
         </div>
 
         <div class="artItem-div">
-            <img src="assets/imgPlaceholder/images%20(1).jpeg" class="artItem" data-category="environment">
+            <img src="assets/imgPlaceholder/images%20(1).jpeg" data-category="environment" data-index="2">
         </div>
 
         <div class="artItem-div">
-            <img src="assets/imgPlaceholder/kv_environment.webp" class="artItem" data-category="character">
+            <img src="assets/imgPlaceholder/kv_environment.webp" data-category="character" data-index="3">
         </div>
 
         <div class="artItem-div">
-            <img src="assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg" class="artItem" data-category="environment">
+            <img src="assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg" data-category="environment" data-index="4">
         </div>
     </div>
 
     <!--FUN IMAGE FOR WHEN NO IMAGES FOR DISPLAY SELECTED, CONTROL IN art_selector.js-->
     <div id="okayDontChoose" style="display: none;">
         <img src="assets/imgPlaceholder/61--Vsm0jcL._UF1000,1000_QL80_.jpg">
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!--REUSABLE MODAL-------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------>
+    <div class="modal" id="artModal">
+        <!--Close modal button-->
+        <span class="close-button">&times;</span>
+
+        <!--Navigation area between pseudo-modals-->
+        <div class="modal-nav left-nav">
+            <img src="assets/arrow_left.svg" alt="Previous">
+        </div>
+        <div class="modal-nav right-nav">
+            <img src="assets/arrow_right.svg" alt="Next">
+        </div>
+
+        <!--Content-->
+        <div class="modal-content">
+            <!--Dynamic content-->
+            <div class='two-column'>
+                <!--Left col-->
+                <img id="modalImg" src="" alt="Art">
+                <!--Right col-->
+                <div id="modal-txt-container">
+                    <h2 id="modalTitle">TITLE</h2>
+                    <p id="modalText">Artwork text</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
