@@ -3,9 +3,10 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const checkboxes = document.querySelectorAll('.filter-checkbox');
 const artItems = document.querySelectorAll('.artItem');
+var numImgGoofy = 0;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//FUNCTION///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//MAIN///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //checkboxes function
@@ -16,13 +17,41 @@ checkboxes.forEach(checkbox => {
         .map(c => c.value);
 
         artItems.forEach(artItem => {
-            const category = item.dataset.category;
+            const category = artItem.dataset.category;
 
-            if(activeFilters.length === 0 || activeFilters.includes(category)) {
-                item.style.display = "inline-block";
+            if(activeFilters.includes(category)) {
+                displayImageHide();
+                artItem.style.display = "inline-block";
             }else{
-                item.style.display = "none";
+                artItem.style.display = "none";
+
+                //only let 1 goofy image be created when none displayed
+                if(activeFilters.length === 0) {
+                    if(numImgGoofy < 1) {
+                        displayImage();
+                    }
+                }
             }
         })
     })
 })
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//FUNCTIONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//function to display image when user chooses none
+function displayImage(){
+    var imgContainer = document.getElementById("okayDontChoose");
+
+    imgContainer.style.display = "block";
+    numImgGoofy++;
+}
+
+//function to hide the displayed image when user chooses art again
+function displayImageHide(){
+    var imgContainer = document.getElementById("okayDontChoose");
+
+    imgContainer.style.display = "none";
+    numImgGoofy = 0;
+}

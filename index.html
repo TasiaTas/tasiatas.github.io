@@ -34,9 +34,10 @@
 
     <!--CSS LINKS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkbox.css">
 
     <!--JAVASCRIPT LINKS-->
-    <link rel="javascript" href="javascript/art_selector.js">
+    <script src="javascript/art_selector.js" defer></script>
 </head>
 
 <!---------------------------------------------------------------------------------------------------------------------->
@@ -61,9 +62,46 @@
         <a href="html_ENG/about.html">About</a>
     </nav>
 
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!--ART TYPE SELECTOR----------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------>
     <div class="category-selection">
-        <label>Character design<input type="checkbox" class="filter-checkbox" value="character" checked="checked"><span class="custom-checkbox"></span></label>
-        <label>Environment design<input type="checkbox" class="filter-checkbox" value="environment"></label>
+        <input type="checkbox" id="character" class="filter-checkbox" value="character" checked="checked">
+        <label for="character">Character design</label>
+        <input type="checkbox" id="environment" class="filter-checkbox" value="environment" checked="checked">
+        <label for="environment">Environment design</label>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!--ART IMAGES------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------------------>
+    <div class="gallery">
+
+        <!--IMAGES-->
+        <div class="artItem-div">
+            <img src="assets/imgPlaceholder/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp" class="artItem" data-category="character">
+        </div>
+
+        <div class="artItem-div">
+            <img src="assets/imgPlaceholder/images.jpeg" class="artItem" data-category="environment">
+        </div>
+
+        <div class="artItem-div">
+            <img src="assets/imgPlaceholder/images%20(1).jpeg" class="artItem" data-category="environment">
+        </div>
+
+        <div class="artItem-div">
+            <img src="assets/imgPlaceholder/kv_environment.webp" class="artItem" data-category="character">
+        </div>
+
+        <div class="artItem-div">
+            <img src="assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg" class="artItem" data-category="environment">
+        </div>
+    </div>
+
+    <!--FUN IMAGE FOR WHEN NO IMAGES FOR DISPLAY SELECTED, CONTROL IN art_selector.js-->
+    <div id="okayDontChoose" style="display: none;">
+        <img src="assets/imgPlaceholder/61--Vsm0jcL._UF1000,1000_QL80_.jpg">
     </div>
 
 </body>

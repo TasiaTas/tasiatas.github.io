@@ -45,37 +45,58 @@ body {
 /*************************************************************/
 /*CATEGORY SELECTION******************************************/
 /*************************************************************/
+/*For checkbox controls, go to checkbox.css*/
+
+/*Container controls*/
 .category-selection{
-    position: relative;
-    display: block;
     text-align: center;
-    padding: 50px 50px;
-}
-
-/*Hide the browser's default checkbox*/
-.category-selection input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-/*Custom checkbox*/
-.custom-checkbox{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: black;
+    margin-top: 50px;
 }
 
 /*Text style*/
 .category-selection label{
     font-family: Quicksand, sans-serif;
-    padding-inline: 10px;
     font-size: 0.9em;
+    user-select: none;
+}
+
+/*************************************************************/
+/*ART GALLLERY************************************************/
+/*************************************************************/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 0 4vw;
+    box-sizing: border-box;
+}
+
+.artItem-div{
+    max-width: 300px;
+    max-height: 500px; /*CHECK THIS CAUSE WTH***************************************************************************************************/
+    overflow: hidden;
+    position: relative;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.artItem-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*Goofy image style*/
+#okayDontChoose{
+    display: block;
+    text-align: center;
+}
+
+#okayDontChoose img{
+    width: 300px;
+    height: 500px;
 }
 
 /***********************************************************************************************************************/

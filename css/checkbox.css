@@ -1,0 +1,74 @@
+/*************************************************************/
+/*ART TYPE SELECTORS PERSONALIZED*****************************/
+/*************************************************************/
+
+/*hide box*/
+[type="checkbox"] {
+    opacity: 0;
+}
+
+/*prep material*/
+[type="checkbox"] + label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 30px;
+    color: black;
+    line-height: 20px;
+}
+
+/*create new box*/
+[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    outline: 2px black solid;
+    border-radius: 50%;
+    background: #fff;
+}
+
+/*new checked box*/
+[type="checkbox"]:checked + label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    outline: 2px #0da814 solid;
+    background: #fff;
+}
+
+/*new checked box symbol*/
+[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../assets/tick-icon.png");
+    background-size: contain;
+    /*for animation transition*/
+    transform: scale(1.5);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/*new checked box symbol for animation transition*/
+[type="checkbox"]:not(checked) + label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../assets/tick-icon.png");
+    background-size: contain;
+    /*for animation*/
+    transform: scale(0);
+    opacity: 0;
+}
