@@ -36,11 +36,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/checkbox.css">
     <link rel="stylesheet" href="css/modal.css">
-
+    <link rel="stylesheet" href="css/hamburger-icon.css">
     <!--JAVASCRIPT LINKS-->
     <script src="javascript/art_selector.js" defer></script>
     <script src="javascript/conceptArtArray.js" defer></script>
     <script src="javascript/modal.js" defer></script>
+    <script src="javascript/hamburger-icon-anim.js" defer></script>
 </head>
 
 <!---------------------------------------------------------------------------------------------------------------------->
@@ -51,6 +52,14 @@
     <!--LOGO HEADER----------------------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------------------>
     <header class="logo-header">
+        <!--Mobile nav icon-->
+        <button class="hamburger-icon" aria-label="toggle menu" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!--Logo-->
         <a href="index.html">
             <img src="assets/logo-icon-PLACEHOLDER.jpg" alt="logo" class="logo">
         </a>
@@ -118,10 +127,10 @@
 
         <!--Navigation area between pseudo-modals-->
         <div class="modal-nav left-nav">
-            <img src="assets/arrow_left.svg" alt="Previous">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="black"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
         </div>
         <div class="modal-nav right-nav">
-            <img src="assets/arrow_right.svg" alt="Next">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="black"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
         </div>
 
         <!--Content-->
@@ -137,6 +146,15 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!--MOBILE NAVBAR MODAL--------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------>
+    <div id="NAVBAR-modal">
+
+        <!--Content-->
+        <!--Social media icons-->
     </div>
 
 </body>

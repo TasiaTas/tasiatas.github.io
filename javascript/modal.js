@@ -7,10 +7,9 @@ let modalImg = document.getElementById("modalImg");
 const modalTitle = document.getElementById("modalTitle");
 const modalText = document.getElementById("modalText");
 var span = document.getElementsByClassName("close-button")[0];
-//var leftSwipe = document.getElementsByClassName("modal-nav left-nav");
-//var rightSwipe = document.getElementsByClassName("modal-nav right-nav");
 
 var artIndex = 0;
+var screenWidth = window.innerWidth;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //MAIN///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -31,22 +30,24 @@ document.querySelectorAll(".artItem-div img").forEach((img,index) => {
 //FUNCTIONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//check where the user is clicking on the screen
-modal.addEventListener("click", function (event) {
-    const clickX = event.clientX;
-    const clickY = event.clientY;
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
+//mobile modal swipe blocked, only check for bigger screens
+if(screenWidth > 430){
+    //check where the user is clicking on the screen
+    modal.addEventListener("click", function (event) {
+        const clickX = event.clientX;
+        const clickY = event.clientY;
+        const screenHeight = window.innerHeight;
 
-    //left side click (top of the screen has none to be able to close the damn modal)
-    if(clickY <= screenHeight/4){
-        return;
-    }else if(clickX <= screenWidth/2){
-        leftSwipe();
-    }else{
-        rightSwipe();
-    }
-})
+        //left side click (top of the screen has none to be able to close the damn modal)
+        if(clickY <= screenHeight/4){
+            return;
+        }else if(clickX <= screenWidth/2){
+            leftSwipe();
+        }else{
+            rightSwipe();
+        }
+    })
+}
 
 //change to content of image on the left
 function leftSwipe() {
@@ -113,7 +114,7 @@ function changeModalContent(){
         modalImg = video;
     }
 
-    //make the modal visible
+    //make the modal visible and hide the background scroll
     modal.style.display = "flex";
     document.body.style.overflow = "hidden";
 }

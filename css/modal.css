@@ -36,9 +36,10 @@
     font-weight: bold;
     color: #333;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
     background: none;
     border: none;
+    user-select: none;
 }
 
 .close-button:hover {
@@ -53,33 +54,44 @@
     top: 0;
     width: 50%;
     height: 100%;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: default;
     color: black;
+    pointer-events: auto;
 }
 
+.modal-nav svg {
+    width: 30px;
+    height: 30px;
+    stroke: black;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.modal-nav svg:hover {
+    opacity: 0.2;
+}
+
+/*Left side*/
 .left-nav {
+    left: 0;
     justify-content: flex-start;
     padding-left: 20px;
 }
 
+.left-nav svg {
+    transform: rotateY(180deg);
+}
+
+/*Right side*/
 .right-nav {
+    right: 0;
     justify-content: flex-end;
     padding-right: 20px;
-}
-
-.modal-nav img {
-    width: 40px;
-    height: 40px;
-    opacity: 1;
-    transition: opacity 0.2s ease;
-}
-
-.modal-nav img:hover {
-    opacity: 0.7;
 }
 
 /*************************************************************/
@@ -117,8 +129,58 @@
 /*************************************************************/
 
 /*Phones*/
-@media (max-width: 480px) {
+@media (max-width: 430px) {
     .two-column{
         grid-template-columns: 1fr;
+    }
+
+    /*new close button position*/
+    .close-button{
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #333;
+        z-index: 2;
+        background: none;
+        border: none;
+    }
+
+    /*let them scroll to see content in modal*/
+    .modal-content::-webkit-scrollbar{
+        width: 3px;
+    }
+
+    .modal-content::-webkit-scrollbar-thumb{
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    .modal-content{
+        max-height: 90vh;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #modalImg{
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        object-fit: contain;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*block moving between pseudo-modals on mobile, so hide arrows and the DAMN MODAL-NAV OR IT WONT REACT TO TOUCH*/
+    .modal-nav{
+        display: none;
+        pointer-events: none;
+    }
+    .modal-nav svg{
+        visibility: hidden;
     }
 }

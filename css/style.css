@@ -9,8 +9,12 @@ body {
 /*LOGO HEADER STUFF*******************************************/
 /*************************************************************/
 .logo-header{
-    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
+    user-select: none;
 }
 
 .logo{
@@ -18,13 +22,13 @@ body {
     height: auto;
 }
 
-
 /*************************************************************/
 /*NAVBAR******************************************************/
 /*************************************************************/
 .navbar{
     display: block;
     text-align: center;
+    user-select: none;
 }
 
 .navbar a{
@@ -52,13 +56,13 @@ body {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 70px;
+    user-select: none;
 }
 
 /*Text style*/
 .category-selection label{
     font-family: Quicksand, sans-serif;
     font-size: 0.9em;
-    user-select: none;
 }
 
 /*************************************************************/
@@ -71,6 +75,7 @@ body {
     padding: 0 4vw;
     box-sizing: border-box;
     justify-content: center;
+    user-select: none;
 }
 
 .artItem-div {
@@ -115,5 +120,9 @@ body {
 @media (max-width: 480px) {
     .logo{
         width: 80px;
+    }
+
+    .navbar{
+        display: none;
     }
 }
