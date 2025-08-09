@@ -58,24 +58,6 @@ function handleSwipe(){
     }
 }
 
-/*if(screenWidth > 430){
-    //check where the user is clicking on the screen
-    modal.addEventListener("click", function (event) {
-        const clickX = event.clientX;
-        const clickY = event.clientY;
-        const screenHeight = window.innerHeight;
-
-        //left side click (top of the screen has none to be able to close the damn modal)
-        if(clickY <= screenHeight/4){
-            return;
-        }else if(clickX <= screenWidth/2){
-            leftSwipe();
-        }else{
-            rightSwipe();
-        }
-    })
-}*/
-
 //change to content of image on the left
 function leftSwipe() {
 

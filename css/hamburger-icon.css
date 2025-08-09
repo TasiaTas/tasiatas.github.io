@@ -15,6 +15,8 @@
     border: none;
     padding: 5px;
     z-index: 2;
+    /*tell browser it will change with translate so it can optimize and the blurriness disappears*/
+    will-change: transform;
 }
 
 .hamburger-icon span {
