@@ -2,6 +2,7 @@
 //VARIABLES//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const hamburger = document.querySelector(".hamburger-icon");
+const navbarModal = document.getElementById("NAVBAR-modal");
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -9,4 +10,20 @@ const hamburger = document.querySelector(".hamburger-icon");
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("active");
+
+    //check if hidden modal to activate or not
+    if(navbarModal.classList.contains("active")) {
+        navbarModal.style.opacity = 0;
+        //let the fade out happen slowly but control it responsively to toggle modal back up if user clicks quickly
+        navbarModal.addEventListener("transitionend", function handler() {
+            navbarModal.classList.remove("active");
+            navbarModal.style.opacity = "";
+            document.body.style.overflow = "auto";
+            navbarModal.removeEventListener("transitionend", handler);
+        })
+    }else {
+        navbarModal.classList.add("active");
+        navbarModal.style.opacity = "";
+        document.body.style.overflow = "hidden";
+    }
 })

@@ -1,0 +1,63 @@
+/*************************************************************/
+/*MODAL STYLE*************************************************/
+/*************************************************************/
+#NAVBAR-modal{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    visibility: hidden;
+}
+
+#NAVBAR-modal.active{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/*************************************************************/
+/*CONTENT UPWARD ANIMATION************************************/
+/*************************************************************/
+#navbar-content-wrapper{
+    transform: translateY(20%);
+    transition: transform 0.5s ease;
+}
+#NAVBAR-modal.active #navbar-content-wrapper{
+    transform: translateY(0);
+}
+
+/*************************************************************/
+/*NAVBAR NAVIGATION STUFF*************************************/
+/*************************************************************/
+#navbar-content{
+    display: block;
+    text-align: center;
+    user-select: none;
+}
+
+#navbar-content ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#navbar-content li a{
+    display: block;
+    color: black;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-family: Quicksand, sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}

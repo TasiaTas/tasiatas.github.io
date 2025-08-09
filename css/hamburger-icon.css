@@ -14,6 +14,7 @@
     background: none;
     border: none;
     padding: 5px;
+    z-index: 2;
 }
 
 .hamburger-icon span {
@@ -47,8 +48,10 @@
 /*RESPONSIVENESS (DEVICE SIZE ADJUSTMENT)*********************/
 /*************************************************************/
 /*Phones*/
-@media (max-width: 480px) {
+@media (max-width: 430px) {
     .hamburger-icon{
         display: flex;
+        -webkit-tap-highlight-color: transparent; /*Remove iOS & Android blue flash of content*/
+        outline: none; /*Remove keyboard/mouse blue flash of content*/
     }
 }

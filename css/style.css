@@ -1,4 +1,17 @@
 /*************************************************************/
+/*IMPORTANT DATA ON LEVELS Z-POSITION*************************/
+/*************************************************************/
+/*z-index in page: 0*/
+
+/*z-index in modal-art: 3*/
+/*z-index of X for closing modal-art: 5*/
+/*z-index of arrows to swipe left/right in modal: 4*/
+
+/*z-index in NAVBAR-modal: 1*/
+/*z-index of hamburger mobile: 2*/
+/*z-index for logo image on mobile for NAVBAR-modal: 2*/
+
+/*************************************************************/
 /*MAIN PAGE STRUCTURE*****************************************/
 /*************************************************************/
 body {
@@ -15,6 +28,7 @@ body {
     align-items: center;
     margin-top: 30px;
     user-select: none;
+    z-index: 2;
 }
 
 .logo{
@@ -117,9 +131,12 @@ body {
 }
 
 /*Phones*/
-@media (max-width: 480px) {
+@media (max-width: 430px) {
     .logo{
         width: 80px;
+        /*So the logo image doesnt blur*/
+        image-rendering: crisp-edges;
+        transform: translateZ(0);
     }
 
     .navbar{
