@@ -5,6 +5,7 @@ const hamburger = document.querySelector(".hamburger-icon");
 const navbarModal = document.getElementById("NAVBAR-modal");
 const navbarModalWrapper = document.getElementById("navbar-content-wrapper");
 const navbarIconWrapper = document.getElementById("navbar-icons-wrapper");
+const desktopQuery990 = window.matchMedia("(min-width: 991px)")
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,14 +44,14 @@ hamburger.addEventListener("click", function() {
 //function to see if we change from mobile to computer and the navbar-modal was activated (need to collapse it)
 function handleVisibility(e){
     if(e.matches && navbarModal.classList.contains("active")){
+        hamburger.classList.remove("active");
         navbarModal.classList.remove("active");
         document.body.style.overflow = "auto";
     }
 }
 
 //Run the handleVisibility once when loading page first time
-handleVisibility(desktopQuery);
+handleVisibility(desktopQuery990);
 
 //Add listener to check when we change between devices to know if we have to collapse quickly the navbar modal
-//desktopQuery const variable is in modal.js
-desktopQuery.addEventListener("change", handleVisibility);
+desktopQuery990.addEventListener("change", handleVisibility);

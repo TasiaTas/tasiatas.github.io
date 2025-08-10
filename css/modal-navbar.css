@@ -61,6 +61,9 @@
     font-family: Quicksand, sans-serif;
     font-weight: bold;
     font-size: 1.8em;
+    /*disable the blue ugly highlight color when tapped*/
+    -webkit-tap-highlight-color: transparent; /* iOS & Android */
+    outline: none;
 }
 
 /*************************************************************/

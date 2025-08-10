@@ -16,6 +16,8 @@
 /*************************************************************/
 body {
     background-color: #fffdf7;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /*************************************************************/
@@ -37,6 +39,18 @@ body {
 }
 
 /*************************************************************/
+/*SOCIAL MEDIA ICONS HEADER+++********************************/
+/*************************************************************/
+.icons-header{
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+/*************************************************************/
 /*NAVBAR******************************************************/
 /*************************************************************/
 .navbar{
@@ -53,6 +67,10 @@ body {
     font-family: Quicksand, sans-serif;
     font-weight: bold;
     font-size: 1.1em;
+}
+
+.navbar a:hover{
+    opacity: 0.7;
 }
 
 .navbar a.active span{
@@ -84,7 +102,7 @@ body {
 /*************************************************************/
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding: 0 4vw;
     box-sizing: border-box;
@@ -93,7 +111,7 @@ body {
 }
 
 .artItem-div {
-    aspect-ratio: 3.5 / 5;
+    aspect-ratio: 5.5 / 8;
     overflow: hidden;
     position: relative;
 }
@@ -120,13 +138,97 @@ body {
     height: 500px;
 }
 
+/*************************************************************/
+/*FOOTER******************************************************/
+/*************************************************************/
+.line{
+    border-bottom: 2px solid saddlebrown;
+    display: block;
+    padding-top: 50px;
+    width: 200vw;
+    position: relative;
+    left: -50vw;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between; /*pushes one div to flex-start and the other to flex-end*/
+    align-items: center;
+    padding: 5rem;
+}
+
+.copyright{
+    text-align: right;
+    font-family: Quicksand, sans-serif;
+    font-size: 0.8em;
+    padding-left: 0.5rem;
+}
+
+/*************************************************************/
+/*SOCIAL MEDIA ICONS REUSABLE*********************************/
+/*************************************************************/
+.icons a{
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.icons a svg{
+    padding-inline: 10px;
+    padding-top: 10px;
+    width: 27px;
+    height: 27px;
+}
+
+.icons a svg:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.icons a:nth-child(3) svg{
+    transform: scale(130%);
+}
+
 /***********************************************************************************************************************/
 /*RESPONSIVENESS (DEVICE SIZE ADJUSTMENT)*********************/
 /*************************************************************/
-/*Tablets and below*/
-@media (max-width: 768px) {
-    .logo{
-        width: 100px;
+
+/*icons in screens between 430 and 990*/
+@media (max-width: 990px) {
+    .body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar{
+        display: none;
+        pointer-events: none;
+        visibility: hidden;
+
+    }
+
+    .icons-header{
+        display: none;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
+
+/*Intermediate size*/
+@media (max-width: 490px) {
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .icons{
+        display: flex;
+        align-items: center;
+    }
+
+    .copyright{
+        text-align: center;
     }
 }
 
@@ -139,7 +241,4 @@ body {
         transform: translateZ(0);
     }
 
-    .navbar{
-        display: none;
-    }
 }
