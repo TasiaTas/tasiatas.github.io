@@ -1,18 +1,19 @@
-//array of objects for swaping
-const artworks =[
+//array of objects for swapping in Concept Art section
+const artworksConcept =[
     {
-        title: "Hand holding tree",
+        title: "Hugging tree",
         type: "image",
-        src: "../assets/imgPlaceholder/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp",
+        src: "assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha."
+            "Fuck everyone muahahahahahahaha.",
+            "aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaa aaaaaa  aaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa"
         ]
     },
     {
-        title: "Wet forest",
+        title: "People in forest",
         type: "image",
-        src: "assets/imgPlaceholder/images.jpeg",
+        src: "assets/imgPlaceholder/kv_environment.webp",
         paragraphs:[
             "First image description to see if it works.",
             "Fuck everyone muahahahahahahaha."
@@ -28,22 +29,26 @@ const artworks =[
         ]
     },
     {
-        title: "People in forest",
+        title: "Wet forest",
         type: "image",
-        src: "assets/imgPlaceholder/kv_environment.webp",
+        src: "assets/imgPlaceholder/images.jpeg",
         paragraphs:[
             "First image description to see if it works.",
             "Fuck everyone muahahahahahahaha."
         ]
     },
     {
-        title: "Hugging tree",
+        title: "Hand holding tree",
         type: "image",
-        src: "assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg",
+        src: "../assets/imgPlaceholder/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha.",
-            "aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaa aaaaaa  aaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa"
+            "Fuck everyone muahahahahahahaha."
         ]
     },
-]
+    //ADD NEW IMAGES AT THE END
+];
+
+//Make this array visible globally by referencing it inside artworksAccess so we can reuse the same js code (modal.js) independent to the html we're at
+window.artworksAccess = window.artworksAccess || {}; //Check if artworksAccess is created to use it and, if not, create it empty
+window.artworksAccess.artworksConcept = artworksConcept; //subscribe this array to artworksAccess
