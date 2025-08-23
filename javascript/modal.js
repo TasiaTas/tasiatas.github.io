@@ -98,6 +98,13 @@ span.onclick = function () {
     modal.style.display = "none";
     document.body.style.overflow = "";
     document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.body.style.width = "";
+
+    //restore scroll pos
+    window.scrollTo(0,scrollPos);
 }
 
 //function to update modal content
@@ -131,10 +138,16 @@ function changeModalContent(){
         modalImg = video;
     }
 
+    //save pos scrolling
+    scrollPos = window.scrollY || document.documentElement.scrollTop || 0;
+
     //make the modal visible and hide the background scroll
     modal.style.display = "flex";
     document.body.style.overflow = "hidden";
     document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollPos}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
 }
 
 //Run the updateSwipe once when loading page first time
