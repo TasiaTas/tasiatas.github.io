@@ -6,7 +6,7 @@ const artworksUI =[
         src: "../assets/imgPlaceholder/SvUZne7ysWkUNQU65UWdcJ.jpg",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha.",
+            "Hello everyone muahahahahahahaha.",
             "aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaa aaaaaa  aaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa"
         ]
     },
@@ -16,7 +16,7 @@ const artworksUI =[
         src: "../assets/imgPlaceholder/bigstock-193965259.jpg",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha."
+            "Hello everyone muahahahahahahaha."
         ]
     },
     {
@@ -25,7 +25,7 @@ const artworksUI =[
         src: "../assets/imgPlaceholder/images.jpg",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha."
+            "Hello everyone muahahahahahahaha."
         ]
     },
     {
@@ -34,7 +34,7 @@ const artworksUI =[
         src: "../assets/imgPlaceholder/9j76svsMfJ2SAoj8FsFyuk.jpg",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha."
+            "Hello everyone muahahahahahahaha."
         ]
     },
     //ADD NEW IMAGES AT THE END

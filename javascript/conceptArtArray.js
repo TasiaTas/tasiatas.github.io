@@ -6,7 +6,7 @@ const artworksConcept =[
         src: "assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha.",
+            "Hello everyone muahahahahahahaha.",
             "aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaa aaaaaa  aaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa"
         ]
     },
@@ -16,7 +16,7 @@ const artworksConcept =[
         src: "assets/imgPlaceholder/kv_environment.webp",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha."
+            "Hello everyone muahahahahahahaha."
         ]
     },
     {
@@ -25,7 +25,7 @@ const artworksConcept =[
         src: "assets/imgPlaceholder/images%20(1).jpeg",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha."
+            "Hello everyone muahahahahahahaha."
         ]
     },
     {
@@ -34,7 +34,7 @@ const artworksConcept =[
         src: "assets/imgPlaceholder/images.jpeg",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha."
+            "Hello everyone muahahahahahahaha."
         ]
     },
     {
@@ -43,7 +43,7 @@ const artworksConcept =[
         src: "../assets/imgPlaceholder/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp",
         paragraphs:[
             "First image description to see if it works.",
-            "Fuck everyone muahahahahahahaha."
+            "Hello everyone muahahahahahahaha."
         ]
     },
     //ADD NEW IMAGES AT THE END

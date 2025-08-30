@@ -127,6 +127,30 @@ html, body {
     cursor: zoom-in;
 }
 
+/*Sticky note to indicate project it belongs to*/
+.artItem-div::after{
+    content: attr(data-note);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 6px 10px;
+    height: 40px;
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.1));
+    color: #fff;
+    font-family: Quicksand, sans-serif;
+    font-size: 1.3em;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform .25s ease, opacity .25s ease;
+    pointer-events: none;
+}
+
+.artItem-div:hover::after{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /*Goofy image style*/
 #okayDontChoose{
     display: block;
@@ -225,6 +249,11 @@ html, body {
     .copyright{
         text-align: center;
     }
+
+    .artItem-div::after{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /*Phones*/
@@ -235,6 +264,11 @@ html, body {
         /*So the logo image doesnt blur*/
         image-rendering: crisp-edges;
         transform: translateZ(0);
+    }
+
+    .artItem-div::after{
+        opacity: 1;
+        transform: translateY(0);
     }
 
 }
