@@ -161,10 +161,44 @@ html, body {
     position: relative;
 }
 
+/*Image space control*/
 #okayDontChoose{
     display: block;
     width: 300px;
     height: 500px;
+    pointer-events: auto;
+}
+
+/*SPEECH BUBBLES*/
+.speech{
+    visibility: hidden;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    cursor: pointer;
+}
+
+.speechBub{
+    position: absolute;
+    max-width: 200px;
+    padding: 10px;
+    background: #fff;
+    border: 2px solid black;
+    font-family: Comfortaa, sans-serif;
+    font-size: 0.9em;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+#leftBub {
+    border-radius: 10px 10px 0 10px;
+    top: 13%;
+    left: -110px;
+}
+
+#rightBub {
+    border-radius: 10px 10px 10px 0;
+    top: 5%;
+    right: -60px;
 }
 
 /*LEG*/
@@ -174,6 +208,7 @@ html, body {
     position: absolute;
     overflow: hidden;
     user-select: none;
+    cursor: pointer;
 }
 
 #leg img{
@@ -185,25 +220,11 @@ html, body {
     image-rendering: pixelated;
 }
 
-/*#leg-anim{
-    animation: moveSpritesheet 1s steps(10);
-}*/
-
-/*ANIMATION CONTROL FROM: DREW CONLEY*/
-/*@keyframes moveSpritesheet {
-    from {
-        transform: translate3d(0px,0,0)
-    }
-    to {
-        transform: translate3d(-100%,0,0)
-    }
-}*/
-
 /*STATIC BODY*/
  #staticBody img{
      width: 300px;
      height: 500px;
-     pointer-events: auto;
+     cursor: pointer;
  }
 
 /*************************************************************/
@@ -274,6 +295,15 @@ html, body {
         display: none;
         pointer-events: none;
         visibility: hidden;
+    }
+}
+
+/*Text bubbles in screens less than 570px*/
+@media (max-width: 570px) {
+    #rightBub {
+        border-radius: 10px 10px 10px 0;
+        top: -3%;
+        right: -20px;
     }
 }
 

@@ -42,6 +42,8 @@
     <script src="javascript/conceptArtArray.js" defer></script>
     <script src="javascript/art_selector.js" defer></script>
     <script src="javascript/goofyImg_anim_control.js" defer></script>
+    <script src="javascript/textGoofyImgArray.js" defer></script>
+    <script src="javascript/clickable_textBubbles.js" defer></script>
     <script src="javascript/modal.js" defer></script>
     <script src="javascript/hamburger-icon-anim.js" defer></script>
 </head>
@@ -186,10 +188,20 @@
         </div>
     </div>
 
-    <!--FUN IMAGE FOR WHEN NO IMAGES FOR DISPLAY SELECTED, CONTROL IN art_selector.js-->
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!--FUN ANIMATION FOR WHEN NO IMAGES FOR DISPLAY SELECTED, CONTROL IN art_selector.js------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------>
     <div id="goofyWrapper">
+        <!--Img space-->
         <div id="okayDontChoose">
-            <div id="leg"><img id="leg-anim" src="assets/spritesheet/Idle_1.png"></div>
+            <!--Clickable speech bubbles space-->
+            <div class="speech">
+                <div class="speechBub" id="leftBub">Speech bubble 1</div>
+                <div class="speechBub" id="rightBub">Speech bubble 2</div>
+            </div>
+
+            <!--Animation img space-->
+            <div id="leg"><img src="assets/spritesheet/Idle_1.png"></div>
             <div id="eyes"></div>
             <div id="staticBody"> <img src="assets/spritesheet/61--Vsm0jcL._UF1000,1000_QL80_.jpg"></div>
             <div id="steam"></div>
