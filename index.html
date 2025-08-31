@@ -41,6 +41,7 @@
     <!--JAVASCRIPT LINKS-->
     <script src="javascript/conceptArtArray.js" defer></script>
     <script src="javascript/art_selector.js" defer></script>
+    <script src="javascript/goofyImg_anim_control.js" defer></script>
     <script src="javascript/modal.js" defer></script>
     <script src="javascript/hamburger-icon-anim.js" defer></script>
 </head>
@@ -186,8 +187,13 @@
     </div>
 
     <!--FUN IMAGE FOR WHEN NO IMAGES FOR DISPLAY SELECTED, CONTROL IN art_selector.js-->
-    <div id="okayDontChoose" style="display: none;">
-        <img src="assets/imgPlaceholder/61--Vsm0jcL._UF1000,1000_QL80_.jpg">
+    <div id="goofyWrapper">
+        <div id="okayDontChoose">
+            <div id="leg"><img id="leg-anim" src="assets/spritesheet/Idle_1.png"></div>
+            <div id="eyes"></div>
+            <div id="staticBody"> <img src="assets/spritesheet/61--Vsm0jcL._UF1000,1000_QL80_.jpg"></div>
+            <div id="steam"></div>
+        </div>
     </div>
 
     <!------------------------------------------------------------------------------------------------------------------>

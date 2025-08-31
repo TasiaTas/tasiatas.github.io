@@ -4,6 +4,7 @@
 const checkboxes = document.querySelectorAll('.filter-checkbox');
 const artItems = document.querySelectorAll('.artItem-div');
 var numImgGoofy = 0;
+var deactivatedImgGoofy = true;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //MAIN///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -21,7 +22,11 @@ checkboxes.forEach(checkbox => {
             const category = img.dataset.category;
 
             if(activeFilters.includes(category)) {
-                displayImageHide();
+                //se hace la comprobacion rapida para no hacer multiples llamadas innecesarias
+                if(!deactivatedImgGoofy){
+                    displayImageHide();
+                    deactivatedImgGoofy = true;
+                }
                 artItem.style.display = "inline-block";
             }else{
                 artItem.style.display = "none";
@@ -30,6 +35,7 @@ checkboxes.forEach(checkbox => {
                 if(activeFilters.length === 0) {
                     if(numImgGoofy < 1) {
                         displayImage();
+                        deactivatedImgGoofy = false;
                     }
                 }
             }
@@ -43,16 +49,22 @@ checkboxes.forEach(checkbox => {
 
 //function to display image when user chooses none
 function displayImage(){
-    var imgContainer = document.getElementById("okayDontChoose");
+    var imgContainer = document.getElementById("goofyWrapper");
 
-    imgContainer.style.display = "block";
+    imgContainer.style.display = "flex";
     numImgGoofy++;
+
+    //call to the function to set in motion the animations in script goofyImg_anim_control
+    randomLegActivation(true);
 }
 
 //function to hide the displayed image when user chooses art again
 function displayImageHide(){
-    var imgContainer = document.getElementById("okayDontChoose");
+    var imgContainer = document.getElementById("goofyWrapper");
 
     imgContainer.style.display = "none";
     numImgGoofy = 0;
+
+    //call to the function to stop the animations in script goofyImg_anim_control
+    randomLegActivation(false);
 }
