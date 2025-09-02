@@ -2,16 +2,16 @@
 //ARRAYS/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let spriteLegArray=[
-    "assets/spritesheet/idle_1.png",
-    "assets/spritesheet/idle_2.png",
-    "assets/spritesheet/idle_3.png",
-    "assets/spritesheet/idle_4.png",
-    "assets/spritesheet/idle_5.png",
-    "assets/spritesheet/idle_6.png",
-    "assets/spritesheet/idle_7.png",
-    "assets/spritesheet/idle_8.png",
-    "assets/spritesheet/idle_9.png",
-    "assets/spritesheet/idle_10.png",
+    "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1756808802/Idle_1_wuwh5v.png",
+    "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1756808802/Idle_2_izteab.png",
+    "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1756808802/Idle_3_t56fyj.png",
+    "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1756808802/Idle_4_uifw4h.png",
+    "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1756808802/Idle_5_v2ice0.png",
+    "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1756808801/Idle_6_up3d8w.png",
+    "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1756808801/Idle_7_r3n1yb.png",
+    "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1756808802/Idle_8_rmnbj0.png",
+    "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1756808801/Idle_9_gjarvp.png",
+    "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1756808801/Idle_10_ro1imo.png",
 ];
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -39,8 +39,12 @@
     <link rel="stylesheet" href="../css/hamburger-icon.css">
     <link rel="stylesheet" href="../css/modal-navbar.css">
     <!--JAVASCRIPT LINKS-->
-    <script src="../javascript/art_selector.js" defer></script>
+    <script src="../javascript/righClickDisabled_imgProtection.js" defer></script>
     <script src="../javascript/uiArtArray.js" defer></script>
+    <script src="../javascript/art_selector.js" defer></script>
+    <script src="../javascript/goofyImg_anim_control.js" defer></script>
+    <script src="../javascript/textGoofyImgArray.js" defer></script>
+    <script src="../javascript/clickable_textBubbles.js" defer></script>
     <script src="../javascript/modal.js" defer></script>
     <script src="../javascript/hamburger-icon-anim.js" defer></script>
 </head>
@@ -147,8 +151,12 @@
         <a href="about.html">About</a>
     </nav>
 
-    <div class="category-selection">
-        <!--Visual space between navbar and images-->
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!--ART TYPE SELECTOR----------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------>
+    <div class="category-selection" data-origin="ui">
+        <input type="checkbox" id="character" class="filter-checkbox" value="daring" checked="checked">
+        <label for="character">Do you <span style="font-family: Quicksand, sans-serif; font-weight: bold">dare?</span></label>
     </div>
 
     <!------------------------------------------------------------------------------------------------------------------>
@@ -159,21 +167,41 @@
         <!--IMAGES-->
         <!--ADD NEW IMAGES AT THE BEGINNING SO THEY ARE FRESH / TO DATE-->
         <div class="artItem-div" data-note="Proj Name">
-            <img src="../assets/imgPlaceholder/9j76svsMfJ2SAoj8FsFyuk.jpg" data-name="artworksUI" data-array="artworksUI" data-index="3">
+            <img src="../assets/imgPlaceholder/9j76svsMfJ2SAoj8FsFyuk.jpg" data-name="artworksUI" data-category="daring" data-array="artworksUI" data-index="3">
         </div>
 
         <div class="artItem-div" data-note="Proj Name">
-            <img src="../assets/imgPlaceholder/images.jpg" data-name="artworksUI" data-array="artworksUI" data-index="2">
+            <img src="../assets/imgPlaceholder/images.jpg" data-name="artworksUI" data-category="daring" data-array="artworksUI" data-index="2">
         </div>
 
         <div class="artItem-div" data-note="Proj Name">
-            <img src="../assets/imgPlaceholder/bigstock-193965259.jpg" data-name="artworksUI" data-array="artworksUI" data-index="1">
+            <img src="../assets/imgPlaceholder/bigstock-193965259.jpg" data-name="artworksUI" data-category="daring" data-array="artworksUI" data-index="1">
         </div>
 
         <div class="artItem-div" data-note="Proj Name">
-            <img src="../assets/imgPlaceholder/SvUZne7ysWkUNQU65UWdcJ.jpg" data-name="artworksUI" data-array="artworksUI" data-index="0">
+            <img src="../assets/imgPlaceholder/SvUZne7ysWkUNQU65UWdcJ.jpg" data-name="artworksUI" data-category="daring" data-array="artworksUI" data-index="0">
         </div>
 
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!--FUN ANIMATION FOR WHEN NO IMAGES FOR DISPLAY SELECTED, CONTROL IN art_selector.js------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------>
+    <div id="goofyWrapper">
+        <!--Img space-->
+        <div id="okayDontChoose">
+            <!--Clickable speech bubbles space-->
+            <div class="speech">
+                <div class="speechBub" id="leftBub">Speech bubble 1</div>
+                <div class="speechBub" id="rightBub">Speech bubble 2</div>
+            </div>
+
+            <!--Animation img space-->
+            <div id="leg"><img src="../assets/spritesheet/Idle_1.png"></div>
+            <div id="eyes"></div>
+            <div id="staticBody"> <img src="../assets/spritesheet/61--Vsm0jcL._UF1000,1000_QL80_.jpg"></div>
+            <div id="steam"></div>
+        </div>
     </div>
 
     <!------------------------------------------------------------------------------------------------------------------>

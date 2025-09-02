@@ -1,10 +1,13 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //VARIABLES//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const checkboxes = document.querySelectorAll('.filter-checkbox');
-const artItems = document.querySelectorAll('.artItem-div');
+const checkboxes = document.querySelectorAll(".filter-checkbox");
+const artItems = document.querySelectorAll(".artItem-div");
 var numImgGoofy = 0;
 var deactivatedImgGoofy = true;
+
+//timer ID
+let timerId = null;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //MAIN///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -22,7 +25,7 @@ checkboxes.forEach(checkbox => {
             const category = img.dataset.category;
 
             if(activeFilters.includes(category)) {
-                //se hace la comprobacion rapida para no hacer multiples llamadas innecesarias
+                //quick check to not make unnecessary calls
                 if(!deactivatedImgGoofy){
                     displayImageHide();
                     deactivatedImgGoofy = true;
@@ -54,8 +57,16 @@ function displayImage(){
     imgContainer.style.display = "flex";
     numImgGoofy++;
 
-    //call to the function to set in motion the animations in script goofyImg_anim_control
+    //call to the function to set in motion the animations in script goofyImg_anim_control.js
     randomLegActivation(true);
+
+    //simulate a click so the character speaks first without the user clicking, script activating: clickable_textBubble.js
+    isBusyFlag = true; //prohibit user click until the first pseudo-click, from the clickable script
+    timerId = setTimeout(() => {
+        nextAnnoyedAt = Date.now() + annoyedCooldown; //once we start, we calculate when the character will be annoyed the first time
+        isBusyFlag = false;
+        clickableObj.click();
+    },500);
 }
 
 //function to hide the displayed image when user chooses art again
@@ -65,6 +76,16 @@ function displayImageHide(){
     imgContainer.style.display = "none";
     numImgGoofy = 0;
 
+    //deactivate this page timer so it can be set again if returned to the goofy section
+    if(timerId){
+        clearTimeout(timerId);
+        timerId = null;
+    }
+
     //call to the function to stop the animations in script goofyImg_anim_control
     randomLegActivation(false);
+    hideAndCleanBubbles();
+
+    //clean the annoyance system
+    nextAnnoyedAt = 0;
 }

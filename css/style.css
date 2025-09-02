@@ -187,6 +187,19 @@ html, body {
     font-family: Comfortaa, sans-serif;
     font-size: 0.9em;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    /*For transition effect controlled in clickable_textBubbles*/
+    opacity: 0;
+    transition: opacity .15s ease;
+}
+
+.speechBub.show{ /*For transition effect controlled in clickable_textBubbles*/
+    opacity: 1;
+    visibility: visible;
+}
+
+.speechBub.hide{ /*For transition effect controlled in clickable_textBubbles*/
+    opacity: 0;
+    visibility: visible;
 }
 
 #leftBub {
@@ -300,10 +313,34 @@ html, body {
 
 /*Text bubbles in screens less than 570px*/
 @media (max-width: 570px) {
+    .speechBub{
+        max-width: 150px;
+    }
+
     #rightBub {
         border-radius: 10px 10px 10px 0;
         top: -3%;
         right: -20px;
+    }
+
+    #leftBub{
+        border-radius: 10px 0 10px 10px;
+        top: 20%;
+        left: -40px;
+    }
+
+    /*Take away the hateful blue color from clicking the image on mobile*/
+    .speech{
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+    }
+    #leg{
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+    }
+    #staticBody img{
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
     }
 }
 
