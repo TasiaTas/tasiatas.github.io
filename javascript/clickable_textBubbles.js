@@ -8,7 +8,8 @@ const userOrigin = document.querySelector(".category-selection"); //to get the s
 
 var messageToDisplay = "";
 var isBusyFlag = false;
-var firstAccess = true;
+var returnAccess = true;
+const firstAccessKey = "characterFirstVisit"; //this uses localStorage for character memory
 
 //annoyance system
 let annoyedLevel = 0;
@@ -45,17 +46,15 @@ clickableObj.addEventListener("click", e => {
     //check if bored message is being displayed before letting user pop new message
     if(flagBoredMessageDisplayedAndClick) return;
 
-    //capture time of each click
-    const now = Date.now();
-
     //call to the idler resetting countdown to stop bored message appearing
-    idleReset(now);
-    console.log("Now: " + now);
-    console.log("nextAnnoyedAt: " + nextAnnoyedAt);
+    idleReset();
 
     //check if already clicked and ignore other clicks until finished
     if(isBusyFlag) return;
     isBusyFlag = true;
+
+    //capture time of each click
+    const now = Date.now();
 
     //first, get the needed message from the corresponding messageArray by checking annoyance levels or normalcy
     if(now >= nextAnnoyedAt) {
@@ -77,8 +76,13 @@ clickableObj.addEventListener("click", e => {
     }
 
     //catch if we're in the first pseudo-click to change that now that we selected the array for the first time
-    if(firstAccess) {
-        firstAccess = false;
+    /*if(firstAccessKey) {
+        firstAccessKey = false;
+    }*/
+
+    //check if we're returning into the goofy section to lock the return flag access
+    if(returnAccess){
+        returnAccess = false;
     }
 
     //check if the message is a 2 part message and needs both bubbles or not
@@ -142,12 +146,21 @@ function hideMessage(chosenBubble, message, wait){
 function chooseMessageArray(){
     var chosenArray = "";
 
-    if(firstAccess){
+    if(!localStorage.getItem(firstAccessKey)){
         //depending on where the user comes from, the first message belongs to a different array
         if(userOrigin.getAttribute("data-origin") === userOriginArray[0]){
             chosenArray = firstTextArrayConceptArt;
         }else if(userOrigin.getAttribute("data-origin") === userOriginArray[1]){
             chosenArray = firstTextArrayDaring;
+        }
+        //save data persistence from first visit (character memory)
+        localStorage.setItem(firstAccessKey, "true");
+    }else if(returnAccess){
+        //depending on where the user comes from, the return message belongs to a different array
+        if(userOrigin.getAttribute("data-origin") === userOriginArray[0]){
+            chosenArray = returnTextArrayConceptArt;
+        }else if(userOrigin.getAttribute("data-origin") === userOriginArray[1]){
+            chosenArray = returnTextArrayDaring;
         }
     }else{
         chosenArray = clickableMessageArrayOfArrays[Math.floor(Math.random() * 2)];
@@ -187,21 +200,19 @@ function messageLogicDisplay(){
 }
 
 //idle function for bored messages reset
-function idleReset(enterTime){
+function idleReset(){
     //first, we clear the timer as the function has been called again (user has clicked/tapped)
     clearTimeout(idleTimerID);
     idleTimerID = null;
-
-    //SHOULD NOT GO HERE BECAUSE EVERY CLICK RESETS THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    nextAnnoyedAt = (Date.now() -  enterTime) + nextAnnoyedAt; //so the next message is not annoyed (makes no sense after not clicking at all)
-
 
     //set new timer for bored message countdown
     idleTimerID = setTimeout(() => {
         randomMessage(boredTextArray);
         flagBoredMessageDisplayedAndClick = true; //to control message bored being displayed well till it disappears
+        nextAnnoyedAt = Date.now() + annoyedCooldown; //move the nextAnnoyed message further in time
+        annoyedLevel = 0; //reset annoyed level
         messageLogicDisplay();
-        idleReset(Date.now());
+        idleReset();
     }, idleCooldown);
 }
 
@@ -235,6 +246,6 @@ function hideAndCleanBubbles(){
         isBusyFlag = false;
     });
 
-    //set the first visit to true again
-    firstAccess = true;
+    //set the return visit to true (first access is not reset because it is only for when you reload page)
+    returnAccess = true;
 }
