@@ -98,7 +98,7 @@ html, body {
 }
 
 /*************************************************************/
-/*ART GALLLERY************************************************/
+/*ART GALLERY*************************************************/
 /*************************************************************/
 .gallery {
     display: grid;
@@ -128,7 +128,7 @@ html, body {
 }
 
 /*Sticky note to indicate project it belongs to*/
-.artItem-div::after{
+.gallery .artItem-div::after{
     content: attr(data-note);
     position: absolute;
     left: 0;
@@ -146,10 +146,46 @@ html, body {
     pointer-events: none;
 }
 
-.artItem-div:hover::after{
+.gallery .artItem-div:hover::after{
     opacity: 1;
     transform: translateY(0);
 } /*On mobile this appears always, go down to mobile section to see*/
+
+/*************************************************************/
+/*GAME GALLERY*************************************************/
+/*************************************************************/
+.galleryGames {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 4vw;
+    box-sizing: border-box;
+    justify-content: center;
+    user-select: none;
+}
+
+.galleryGames .artItem-div{
+    aspect-ratio: 7.5 / 5.5;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background: black;
+}
+
+.galleryGames .artItem-div .vidContainer,
+.galleryGames .artItem-div .vidContainer .cld-video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.galleryGames .artItem-div .vidContainer video {
+    width: 100% !important;  /*freaking override Cloudinary inline styles */
+    height: 100% !important; /*freaking override Cloudinary inline styles */
+    object-fit: cover;
+}
 
 /*************************************************************/
 /*GOOFY IMAGE*************************************************/

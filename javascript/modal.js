@@ -25,6 +25,7 @@ document.querySelectorAll(".artItem-div img").forEach((img) => {
         artIndex = parseInt(img.dataset.index, 10);
         //get the array name we're at depending on the html and, thus, the array we have access to
         const arrayName = img.dataset.name;
+        console.log(arrayName);
         arrayRef = window.artworksAccess[arrayName];
 
         //call function to change content and make it visible

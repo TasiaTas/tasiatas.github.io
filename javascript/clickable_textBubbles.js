@@ -31,7 +31,9 @@ let waitSecBubbleTimeoutID = null;
 //arrays
 const userOriginArray = [
     "conceptArt",
-    "ui"
+    "ui",
+    "3d",
+    "games"
 ];
 
 const clickableMessageArrayOfArrays = [
@@ -148,18 +150,22 @@ function chooseMessageArray(){
 
     if(!localStorage.getItem(firstAccessKey)){
         //depending on where the user comes from, the first message belongs to a different array
-        if(userOrigin.getAttribute("data-origin") === userOriginArray[0]){
+        if(userOrigin.getAttribute("data-origin") === userOriginArray[0] ||
+            userOrigin.getAttribute("data-origin") === userOriginArray[2]){
             chosenArray = firstTextArrayConceptArt;
-        }else if(userOrigin.getAttribute("data-origin") === userOriginArray[1]){
+        }else if(userOrigin.getAttribute("data-origin") === userOriginArray[1] ||
+            userOrigin.getAttribute("data-origin") === userOriginArray[3]){
             chosenArray = firstTextArrayDaring;
         }
         //save data persistence from first visit (character memory)
         localStorage.setItem(firstAccessKey, "true");
     }else if(returnAccess){
         //depending on where the user comes from, the return message belongs to a different array
-        if(userOrigin.getAttribute("data-origin") === userOriginArray[0]){
+        if(userOrigin.getAttribute("data-origin") === userOriginArray[0] ||
+            userOrigin.getAttribute("data-origin") === userOriginArray[2]){
             chosenArray = returnTextArrayConceptArt;
-        }else if(userOrigin.getAttribute("data-origin") === userOriginArray[1]){
+        }else if(userOrigin.getAttribute("data-origin") === userOriginArray[1] ||
+            userOrigin.getAttribute("data-origin") === userOriginArray[3]){
             chosenArray = returnTextArrayDaring;
         }
     }else{
