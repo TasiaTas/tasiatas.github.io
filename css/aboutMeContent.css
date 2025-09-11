@@ -6,13 +6,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6vh 15vw;
+    padding: 6vh 20vw;
     user-select: none;
 }
 
 #topSection{
     display: flex;
-    gap: 80px;
+    gap: 200px;
 }
 
 #textArea{
@@ -260,6 +260,14 @@
 /*RESPONSIVENESS (DEVICE SIZE ADJUSTMENT)*********************/
 /*************************************************************/
 /*responsiveness for the general info before the forms*/
+@media (max-width: 1400px) {
+    #content-aboutMe{
+        padding: 6vh 15vw;
+    }
+    #topSection{
+        gap: 100px;
+    }
+}
 @media (max-width: 900px) {
     #topSection{
         flex-direction: column;
