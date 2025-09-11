@@ -1,0 +1,322 @@
+/*************************************************************/
+/*CONTENT*****************************************************/
+/*************************************************************/
+#content-aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6vh 15vw;
+    user-select: none;
+}
+
+#topSection{
+    display: flex;
+    gap: 80px;
+}
+
+#textArea{
+    font-family: Quicksand, sans-serif;
+    font-size: 1.15em;
+    font-weight: 450;
+}
+
+#imgArea{
+    aspect-ratio: 5.5/6;
+    overflow: hidden;
+    position: relative;
+    min-width: 250px;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3));
+}
+
+#imgArea img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#bottomSection{
+    padding-top: 2vh;
+}
+
+#bottomSection h5{
+    font-family: Comfortaa, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+#bottomSection ul{
+    list-style: none;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+#bottomSection li{
+    padding-top: 1.3vh;
+    font-family: Quicksand, sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/*New bullet points*/
+.circleWrapper{
+    flex-shrink: 0;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border: 1px dotted black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.innerCircle{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circleLine {
+    position: absolute;
+    top: -70%;  /* extend above and below circle */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 230%; /* adjust as needed */
+    background: linear-gradient(to bottom,transparent 0%, black 30%, black 70%, transparent 100%);
+}
+
+/*************************************************************/
+/*EMAIL FORM**************************************************/
+/*************************************************************/
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6vh 15vw;
+}
+
+/*text style*/
+#contactForm label{
+    font-family: Comfortaa, sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+#contactForm p{
+    font-family: Comfortaa, sans-serif;
+    font-size: 0.7em;
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: grey;
+    margin-right: 20px;
+}
+
+#contactForm input, #contactForm textarea{
+    font-family:  Quicksand, sans-serif;
+    font-size: 0.8em;
+    font-weight: 450;
+}
+
+/*element positioning*/
+.row{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-full{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*for required and Name/etc to be on same line*/
+.sameLineTxt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -15px;
+}
+
+/*boxes style*/
+.contactInputTopField{
+    width: 230px;
+    height: 30px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 2px;
+}
+
+.contactInput{
+    width: 500px;
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 2px;
+}
+
+#message{
+    width: 485px;
+    height: 140px;
+    padding-top: 15px;
+    padding-right: 15px;
+    resize: none;
+
+    /*scrollbar size*/
+    scrollbar-width: thin;
+}
+
+/*Button style*/
+#buttonContainer{
+    padding-top: 20px;
+}
+#contactForm button{
+    padding: 15px;
+    font-family: Comfortaa, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    border: 1px solid black;
+    color: black;
+    border-radius: 10px;
+
+    background: linear-gradient(270deg, blanchedalmond, coral);
+
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease;
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent; /*delete the damn blue tint on mobile*/
+}
+
+#contactForm button:hover{
+    background-position: 100% 50%;
+}
+
+#contactForm button:focus{
+    transform: scale(0.9);
+}
+
+#contactForm button:focus:not(:active) {
+    transform: scale(1);
+}
+
+/*Error message*/
+#errorMessage{
+    display: none;
+    align-items: center;
+    background: darkred;
+    gap: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#errorMessage h5{
+    font-family: Comfortaa, sans-serif;
+    font-size: 0.7em;
+    color: white;
+}
+
+#errorMessage img{
+    max-width: 20px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    flex-shrink: 0;
+}
+
+/*Error placeholders*/
+#contactForm input::placeholder,
+#contactForm textarea::placeholder{
+    color: #d12e2e;
+    font-family: Quicksand, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/***********************************************************************************************************************/
+/*RESPONSIVENESS (DEVICE SIZE ADJUSTMENT)*********************/
+/*************************************************************/
+/*responsiveness for the general info before the forms*/
+@media (max-width: 900px) {
+    #topSection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #textArea{
+        order: 2;
+    }
+    #imageArea{
+        order: 1;
+    }
+}
+
+/*responsiveness for the forms*/
+@media (max-width: 785px) {
+    .row{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contactInputTopField{
+        width: 400px;
+    }
+
+    .contactInput{
+        width:400px;
+    }
+
+    #message{
+        width: 385px;
+    }
+}
+
+/*responsiveness for the forms*/
+@media (max-width: 590px) {
+    .row{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contactInputTopField{
+        width: 230px;
+    }
+
+    .contactInput{
+        width:230px;
+    }
+
+    #message{
+        width: 215px;
+    }
+}
+
+/*Phones*/
+@media (max-width: 430px){
+    #bottomSection li::after{
+        transform: translateX(-0.5px); /*snap to pixel for crispiness line in the bullet points*/
+    }
+}
