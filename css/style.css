@@ -91,6 +91,10 @@ html, body {
     user-select: none;
 }
 
+.category-option{
+    display: inline-block;
+}
+
 /*Text style*/
 .category-selection label{
     font-family: Quicksand, sans-serif;
@@ -170,6 +174,11 @@ html, body {
     position: relative;
     border-radius: 10px;
     background: black;
+    cursor: pointer;
+}
+
+.galleryGames .artItem-div .vidContainer{
+    display: none;
 }
 
 .galleryGames .artItem-div .vidContainer,
@@ -179,6 +188,15 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/*hide all video controls (Cloudinary player UI) */
+.cld-video .vjs-control-bar,
+.cld-video .vjs-big-play-button,
+.cld-video .vjs-loading-spinner {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 
 .galleryGames .artItem-div .vidContainer video {
@@ -377,6 +395,13 @@ html, body {
     #staticBody img{
         -webkit-tap-highlight-color: transparent;
         -webkit-touch-callout: none;
+    }
+}
+
+/*category selection control responsiveness*/
+@media (max-width: 520px) {
+    .category-option{
+        margin: 10px 0; /*adds visual spacing between them*/
     }
 }
 

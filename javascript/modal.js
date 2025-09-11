@@ -18,14 +18,13 @@ var scrollPos = 0;
 //MAIN///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//check any image clicked to open modal
-document.querySelectorAll(".artItem-div img").forEach((img) => {
+//check any image/vid clicked to open modal
+document.querySelectorAll(".artItem-div img, .artItem-div div").forEach((img) => {
     img.addEventListener("click", () => {
         //get index of image we're at
         artIndex = parseInt(img.dataset.index, 10);
         //get the array name we're at depending on the html and, thus, the array we have access to
         const arrayName = img.dataset.name;
-        console.log(arrayName);
         arrayRef = window.artworksAccess[arrayName];
 
         //call function to change content and make it visible
@@ -96,6 +95,13 @@ function rightSwipe () {
 
 //press cross in span and close modal
 span.onclick = function () {
+    //check if there was an iframe when closing to unload it
+    const iframe = modal.querySelector("iframe");
+    if(iframe){
+        iframe.src = "";
+    }
+
+    //clean everything
     modal.style.display = "none";
     document.body.style.overflow = "";
     document.body.style.position = "";
@@ -128,15 +134,29 @@ function changeModalContent(){
 
     //set image (or change for video)
     if(accessedArt.type === 'image'){
-        modalImg.src = accessedArt.src;
+        const img = document.createElement("img");
+        img.id = "modalImg";
+        img.src = accessedArt.src;
+        img.style.width = "100%";
+        img.style.maxHeight = "90vh";
+        img.style.objectFit = "contain";
+
+        //replace video with img
+        modalImg.replaceWith(img);
+        modalImg = img;
+
     }else if(accessedArt.type === 'video'){
-        video.src = accessedArt.src;
-        video.controls = true;
-        video.autoplay = true;
+        const iframe = document.createElement("iframe");
+        iframe.src = accessedArt.src.replace("youtu.be/", "www.youtube.com/embed/") + "?autoplay=1&controls=1&rel=0";
+        iframe.width = "100%";
+        iframe.height = "400"; // adjust as needed
+        iframe.allow = "autoplay; encrypted-media";
+        iframe.allowFullscreen = true;
+        iframe.frameBorder = "0";
 
         //replace img with video
-        modalImg.replaceWith(video);
-        modalImg = video;
+        modalImg.replaceWith(iframe);
+        modalImg = iframe;
     }
 
     //save pos scrolling

@@ -13,7 +13,11 @@ videoContainers.forEach(container => {
 
     if(videoEl){
         const player = cloudinary.videoPlayer(videoEl, {
-            cloudName: videoEl.dataset.cldCloudName
+            cloudName: videoEl.dataset.cldCloudName,
+            controls: false,
+            autoplay: "on-scroll",
+            muted: true,
+            loop: true
         });
 
         imgEl.parentElement.addEventListener("mouseenter", () => {
@@ -31,8 +35,3 @@ videoContainers.forEach(container => {
         });
     }
 })
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//FUNCTIONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

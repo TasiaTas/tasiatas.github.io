@@ -4,7 +4,6 @@ const games =[
         title: "Hugging tree",
         type: "image",
         src: "../assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg",
-        srcVideo:"https://youtu.be/ds75GTA6XdU",
         paragraphs:[
             "WE ARE IN GAMEEEEEES",
             "Hello everyone muahahahahahahaha.",
@@ -31,17 +30,8 @@ const games =[
     },
     {
         title: "Wet forest",
-        type: "image",
-        src: "../assets/imgPlaceholder/images.jpeg",
-        paragraphs:[
-            "WE ARE IN GAMEEEEEES",
-            "Hello everyone muahahahahahahaha."
-        ]
-    },
-    {
-        title: "Hand holding tree",
-        type: "image",
-        src: "../assets/imgPlaceholder/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp",
+        type: "video",
+        src: "https://youtu.be/ds75GTA6XdU",
         paragraphs:[
             "WE ARE IN GAMEEEEEES",
             "Hello everyone muahahahahahahaha."
