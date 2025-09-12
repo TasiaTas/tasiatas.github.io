@@ -47,10 +47,21 @@ langBtn.addEventListener('click', () => {
 });
 
 //deactivate hover on mobile for the button so there is no style fighting
-if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-    document.body.classList.add("no-hover")
-}
+updateHoverCapability();
+
+//listen for screen changes
+window.matchMedia("(hover: none)").addEventListener("change", updateHoverCapability);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //FUNCTIONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function updateHoverCapability() {
+    if (window.matchMedia("(hover: none)").matches) {
+        //device doesn't support hover (means we're in mobile and similar)
+        document.body.classList.add("no-hover");
+    } else {
+        //device supports hover so probably desktop and similar
+        document.body.classList.remove("no-hover");
+    }
+}
