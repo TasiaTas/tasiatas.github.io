@@ -28,7 +28,7 @@ let hideBubbleTimeoutID = null;
 let hideSecondaryBubbleTimeoutID = null;
 let waitSecBubbleTimeoutID = null;
 
-//arrays
+//arrays_ENG
 const userOriginArray = [
     "conceptArt",
     "ui",

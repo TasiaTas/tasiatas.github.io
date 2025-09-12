@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <!---------------------------------------------------------------------------------------------------------------------->
 <!--HEAD---------------------------------------------------------------------------------------------------------------->
@@ -32,10 +32,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-    <!--CLOUDINARY LINKS-->
-    <link rel="stylesheet" href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css">
-    <script src="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js"></script>
-
     <!--CSS LINKS-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/checkbox.css">
@@ -45,14 +41,13 @@
 
     <!--JAVASCRIPT LINKS-->
     <script src="../javascript/rightClickDisabled_imgProtection.js" defer></script>
-    <script src="../javascript/arrays_ENG/gameArray.js" defer></script>
+    <script src="../javascript/arrays_ENG/3dArtArray.js" defer></script>
     <script src="../javascript/art_selector.js" defer></script>
     <script src="../javascript/goofyImg_anim_control.js" defer></script>
     <script src="../javascript/arrays_ENG/textGoofyImgArray.js" defer></script>
     <script src="../javascript/clickable_textBubbles.js" defer></script>
     <script src="../javascript/modal.js" defer></script>
     <script src="../javascript/hamburger-icon-anim.js" defer></script>
-    <script src="../javascript/hoverVideoPlayer.js" defer></script>
     <script src="../javascript/languageAccordion.js" defer></script>
 </head>
 
@@ -148,10 +143,10 @@
 
         <!--Language change-->
         <div class="languageChange">
-            <button class="currentLang">ENG</button>
+            <button class="currentLang">РУС</button>
             <ul class="langMenu">
-                <li><a href="../html_ESP/games_ESP.html">Spanish</a></li>
-                <li><a href="../html_RUS/games_RUS.html">Russian</a></li>
+                <li><a href="../html_ENG/3d.html">Английский</a></li>
+                <li><a href="../html_ESP/3d_ESP.html">Испанский</a></li>
             </ul>
         </div>
     </header>
@@ -160,51 +155,52 @@
     <!--NAVIGATION------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------------------>
     <nav class="navbar">
-        <a href="../index.html">Concept art</a>
-        <a href="ui.html">UI</a>
-        <a href="3d.html">3D</a>
-        <a href="games.html" class="active"><span>Games</span></a>
-        <a href="about.html">About</a>
+        <a href="../index_RUS.html">Концепт-арт</a>
+        <a href="ui_RUS.html">Интерфейсы</a>
+        <a href="3d_RUS.html" class="active"><span>3Д</span></a>
+        <a href="games_RUS.html">Игры</a>
+        <a href="about_RUS.html">О себе</a>
     </nav>
 
     <!------------------------------------------------------------------------------------------------------------------>
     <!--ART TYPE SELECTOR----------------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------------------>
-    <div class="category-selection" data-origin="games">
-        <input type="checkbox" id="daring" class="filter-checkbox" value="daring" checked="checked">
-        <label for="daring"><span style="font-family: Quicksand, sans-serif; font-weight: bold">Dare</span> to play?</label>
+    <div class="category-selection" data-origin="3d">
+        <div class="category-option">
+            <input type="checkbox" id="character" class="filter-checkbox" value="character" checked="checked">
+            <label for="character">Персонажи</label>
+        </div>
+        <div class="category-option">
+            <input type="checkbox" id="environmentProps" class="filter-checkbox" value="environment" checked="checked">
+            <label for="environmentProps">Среда и пропсы</label>
+        </div>
+        <div class="category-option">
+            <input type="checkbox" id="animCoding" class="filter-checkbox" value="animation" checked="checked">
+            <label for="animCoding">Риг и анимация</label>
+        </div>
     </div>
 
     <!------------------------------------------------------------------------------------------------------------------>
     <!--ART IMAGES------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------------------>
-    <div class="galleryGames">
+    <div class="gallery">
 
         <!--IMAGES-->
         <!--ADD NEW IMAGES AT THE BEGINNING SO THEY ARE FRESH / TO DATE-->
         <div class="artItem-div" data-note="Proj Name">
-            <img src="../assets/imgPlaceholder/9j76svsMfJ2SAoj8FsFyuk.jpg" data-name="games" data-category="daring" data-index="3">
-            <div class="vidContainer" data-name="games" data-category="daring" data-index="3">
-                <video
-                        class="cld-video"
-                        data-cld-public-id="VideoPromoTheInnerDoors_myxts2"
-                        data-cld-cloud-name="dxzxf0rwv"
-                        muted
-                        preload="auto"
-                ></video>
-            </div>
+            <img src="../assets/imgPlaceholder/9j76svsMfJ2SAoj8FsFyuk.jpg" data-name="artworks3D" data-category="character" data-index="3">
         </div>
 
         <div class="artItem-div" data-note="Proj Name">
-            <img src="../assets/imgPlaceholder/images.jpg" data-name="games" data-category="daring" data-index="2">
+            <img src="../assets/imgPlaceholder/images.jpg" data-name="artworks3D" data-category="environment" data-index="2">
         </div>
 
         <div class="artItem-div" data-note="Proj Name">
-            <img src="../assets/imgPlaceholder/bigstock-193965259.jpg" data-name="games" data-category="daring" data-index="1">
+            <img src="../assets/imgPlaceholder/bigstock-193965259.jpg" data-name="artworks3D" data-category="environment" data-index="1">
         </div>
 
         <div class="artItem-div" data-note="Proj Name">
-            <img src="../assets/imgPlaceholder/SvUZne7ysWkUNQU65UWdcJ.jpg" data-name="games" data-category="daring" data-index="0">
+            <img src="../assets/imgPlaceholder/SvUZne7ysWkUNQU65UWdcJ.jpg" data-name="artworks3D" data-category="animation" data-index="0">
         </div>
 
     </div>
@@ -268,11 +264,11 @@
         <div id="navbar-content-wrapper">
             <div id="navbar-content">
                 <ul>
-                    <li><a href="../index.html">Concept art</a></li>
-                    <li><a href="ui.html" class="active"><span>UI</span></a></li>
-                    <li><a href="3d.html">3D</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="../index_RUS.html">Концепт-арт</a></li>
+                    <li><a href="ui_RUS.html">Интерфейсы</a></li>
+                    <li><a href="3d_RUS.html" class="active"><span>3Д</span></a></li>
+                    <li><a href="games_RUS.html">Игры</a></li>
+                    <li><a href="about_RUS.html">О себе</a></li>
                 </ul>
             </div>
         </div>
@@ -417,8 +413,8 @@
 
         <!--Copyright--------------------------------------------------------------------------------------------------->
         <div class="copyright">
-            <p>All rights reserved</p>
-            <p>Copyright © Anastasia Ihnatsenka Shakhova 2024 - 2025</p>
+            <p>Все права защищены</p>
+            <p>Авторское право © Анастасия Игнатенко Шахова 2024 - 2025</p>
         </div>
     </footer>
 

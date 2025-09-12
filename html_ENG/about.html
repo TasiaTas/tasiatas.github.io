@@ -23,10 +23,10 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
 
     <!--FONT LINKS-->
-    <!--Quicksand (base font)-->
+    <!--Manrope-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!--Comfortaa (header font)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,6 +42,7 @@
     <script src="../javascript/rightClickDisabled_imgProtection.js" defer></script>
     <script src="../javascript/hamburger-icon-anim.js" defer></script>
     <script src="../javascript/formsValidation.js" defer></script>
+    <script src="../javascript/languageAccordion.js" defer></script>
 </head>
 
 <!---------------------------------------------------------------------------------------------------------------------->
@@ -133,6 +134,15 @@
         <a href="../index.html">
             <img src="../assets/logo-icon-PLACEHOLDER.jpg" alt="logo" class="logo">
         </a>
+
+        <!--Language change-->
+        <div class="languageChange">
+            <button class="currentLang">ENG</button>
+            <ul class="langMenu">
+                <li><a href="../html_ESP/about_ESP.html">Spanish</a></li>
+                <li><a href="../html_RUS/about_RUS.html">Russian</a></li>
+            </ul>
+        </div>
     </header>
 
     <!------------------------------------------------------------------------------------------------------------------>
@@ -209,7 +219,7 @@
     <!------------------------------------------------------------------------------------------------------------------>
     <!--SEND MESSAGE---------------------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------------------>
-    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" novalidate>
         <div class="row">
             <div id="errorMessage">
                 <img src="../assets/error-exlamation.png">
@@ -243,6 +253,7 @@
                     <p>Required</p>
                 </div>
                 <input type="email" name="email" class="contactInput" id="email" placeholder="">
+                <p id="emailErrorUnique" style=""> Please enter valid email</p>
             </div>
         </div>
         <div class="row">

@@ -15,6 +15,10 @@
 /*MAIN PAGE STRUCTURE*****************************************/
 /*************************************************************/
 html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     background-color: #fffdf7;
     max-width: 100%;
     overflow-x: hidden;
@@ -51,6 +55,84 @@ html, body {
 }
 
 /*************************************************************/
+/*LANGUAGE SELECTOR HEADER************************************/
+/*************************************************************/
+.languageChange{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.currentLang {
+    background: none;
+    border: 1px solid saddlebrown;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Manrope,sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    -webkit-tap-highlight-color: transparent; /*hide blue color tint on mobile*/
+}
+
+.langMenu {
+    display: block;
+    position: absolute;
+    top: 100%; /* directly under button */
+    left: 0;
+    background: #b57e67;
+    width: 100px;
+    height: 80px;
+    border-radius: 5px 0 5px 5px;
+    list-style: none;
+    margin-top: 3px;
+    margin-left: -95px;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 1s;
+}
+
+.langMenu li a {
+    display: block;
+    text-align: center;
+    padding: 11px ;
+    text-decoration: none;
+    font-family: Manrope,sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fffdf7;
+}
+
+.langMenu li a:hover {
+    border-radius: 5px 0 5px 5px;
+    background: #deaf9b;
+    color: black;
+    -webkit-tap-highlight-color: transparent; /*hide blue color tint on mobile*/
+}
+
+body:not(.no-hover) .languageChange:hover .langMenu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.langMenu.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+
+/*IMPORTANT: @media responsiveness of this language selector is in hamburger-icon.css so it follows the same rules*/
+
+/*************************************************************/
 /*NAVBAR******************************************************/
 /*************************************************************/
 .navbar{
@@ -64,8 +146,8 @@ html, body {
     color: black;
     text-decoration: none;
     padding: 14px 14px;
-    font-family: Quicksand, sans-serif;
-    font-weight: bold;
+    font-family: Manrope, sans-serif;
+    font-weight: 600;
     font-size: 1.1em;
 }
 
@@ -97,7 +179,7 @@ html, body {
 
 /*Text style*/
 .category-selection label{
-    font-family: Quicksand, sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 0.9em;
 }
 
@@ -142,7 +224,7 @@ html, body {
     height: 40px;
     background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.0));
     color: #fff;
-    font-family: Quicksand, sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 1.3em;
     opacity: 0;
     transform: translateX(-100%);
@@ -304,6 +386,7 @@ html, body {
     width: 200vw;
     position: relative;
     left: -50vw;
+    margin-top: auto; /*so the footer sticks to the below part of the screen if there is white space*/
 }
 
 .footer-container{
@@ -315,7 +398,7 @@ html, body {
 
 .copyright{
     text-align: right;
-    font-family: Quicksand, sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 0.8em;
     padding-left: 0.5rem;
 }
@@ -348,6 +431,7 @@ html, body {
 /***********************************************************************************************************************/
 /*RESPONSIVENESS (DEVICE SIZE ADJUSTMENT)*********************/
 /*************************************************************/
+/*IMPORTANT: @media responsiveness of the language selector is in hamburger-icon.css so it follows the same rules*/
 
 /*icons in screens between 430 and 990*/
 @media (max-width: 990px) {

@@ -16,7 +16,7 @@
 }
 
 #textArea{
-    font-family: Quicksand, sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 1.15em;
     font-weight: 450;
 }
@@ -56,7 +56,7 @@
 
 #bottomSection li{
     padding-top: 1.3vh;
-    font-family: Quicksand, sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 0.9em;
     font-weight: 400;
     position: relative;
@@ -128,7 +128,7 @@
 }
 
 #contactForm input, #contactForm textarea{
-    font-family:  Quicksand, sans-serif;
+    font-family:  Manrope, sans-serif;
     font-size: 0.8em;
     font-weight: 450;
 }
@@ -232,6 +232,7 @@
     gap: 10px;
     padding-right: 30px;
     padding-left: 30px;
+    max-width: 465px;
 }
 
 #errorMessage h5{
@@ -251,9 +252,18 @@
 #contactForm input::placeholder,
 #contactForm textarea::placeholder{
     color: #d12e2e;
-    font-family: Quicksand, sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 1em;
     font-weight: bold;
+}
+
+/*email error*/
+#emailErrorUnique{
+    display: none;
+    font-size: 0.8em !important;
+    font-weight: bolder !important;
+    color: #d12e2e !important;
+    margin-bottom: -10px
 }
 
 /***********************************************************************************************************************/

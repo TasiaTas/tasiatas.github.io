@@ -71,11 +71,21 @@
     .hamburger-container{
         padding-left: 3rem !important;
     }
+
+    /*language change is in style.css*/
+    .languageChange{
+        padding-right: 2rem;
+    }
 }
 
 /*Phones from 430 and under)*/
 @media (max-width: 430px) {
     .hamburger-container{
         padding-left: 1rem !important;
+    }
+
+    /*language change is in style.css*/
+    .languageChange{
+        padding-right: 1rem;
     }
 }

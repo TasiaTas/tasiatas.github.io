@@ -77,7 +77,7 @@ html, body {
 }
 
 #iconWrapper p {
-    font-family: Quicksand, sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 1em;
     margin: 0;
     margin-bottom: 30px;
@@ -143,7 +143,7 @@ html, body {
 
 .copyright{
     text-align: right;
-    font-family: Quicksand, sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 0.8em;
     padding-left: 0.5rem;
 }
