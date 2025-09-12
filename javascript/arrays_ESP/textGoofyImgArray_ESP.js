@@ -3,65 +3,65 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const firstTextArrayConceptArt = [
     [
-        "Fear not, I shall <span style='font-family: Quicksand, sans-serif; font-weight: bold; font-style: italic'>graciously</span> hold this space for you...",
-        "Just don't make a habit of it.",
+        "No temas, con toda mi <span style='font-family: Quicksand, sans-serif; font-weight: bold; font-style: italic'>gracia</span> guardaré este espacio para ti...",
+        "Solo procura que no se vuelva costumbre.",
     ],
     [
-        "I <span style='font-family: Quicksand, sans-serif; font-weight: bold; font-style: italic'>do</span> extend my condolences for your boredom...",
-        "Now, leave.",
+        "Te ofrezco mis más sinceras condolencias por tu aburrimiento.",
+        "Ahora, vete.",
 
     ],
-    "Shall we take a minute so you can tell me about your unresolved trauma issues?",
+    "¿Nos tomamos un minuto para que me confieses esos traumas que aún no has resuelto?",
     [
-        "Ah, a brave soul testing the waters!",
-        "The reward, alas, is nothing but my disdain.",
+        "¡Ah, un alma valiente probando las aguas!",
+        "La recompensa, vaya, no es más que mi desdén.",
     ],
-    "If you came to tell me about your miseries... kindly take your leave."
+    "Si viniste a contarme tus miserias… amablemente retírate."
 ];
 
 const firstTextArrayDaring = [
-    "I see you <span style='font-family: Quicksand, sans-serif; font-weight: bold'>dared</span>.",
-    "Bravo! We’ve just discovered the cinematic casualty of the hour.",
-    "Ain't you daring...",
-    "Does your life mean <span style='font-family: Quicksand, sans-serif; font-weight: bold; font-style: italic'>nothing</span> to you?!",
-    "Beings of all manners, gather ‘round to witness the pinnacle of stupidity."
+    "Veo que te <span style='font-family: Quicksand, sans-serif; font-weight: bold'>atreviste</span>.",
+    "¡Bravo! Acabamos de descubrir la víctima cinematográfica de la hora.",
+    "Vaya, qué atrevido…",
+    "¿Acaso tu vida no significa <span style='font-family: Quicksand, sans-serif; font-weight: bold; font-style: italic'>nada</span> para ti?!",
+    "Seres de toda índole, ¡reúnanse para presenciar la cúspide de la estupidez!"
 ];
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //RETURN MESSAGE ARRAY (NON CLICKABLE)///////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const returnTextArrayConceptArt = [
-    "Back again?"
+    "¿Otra vez de vuelta?"
 ];
 
 const returnTextArrayDaring = [
-    "You already demonstrated you are daring..."
+    "Ya has demostrado que eres atrevido..."
 ];
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //CLICKABLE MESSAGE ARRAY////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const normalTextArray= [
-    "Whenever you're ready to leave, you may go, my dear.",
-    "I got documents to sign. Go away."
+    "Cuando estés listo para irte, puedes hacerlo, amor.",
+    "Tengo documentos que firmar. Vete."
 ];
 
 const loreTextArray = [
-    "I do hope my dearly departed parents aren’t witnessing this assault.",
-    "You, my dear pest, rival even the most audacious saboteurs of my company's empire."
+    "Espero que mis difuntos padres no estén presenciando este ataque.",
+    "Tú, querida molestia, rivalizas incluso con los saboteadores más audaces del imperio de mi empresa."
 ];
 
 const annoyedTextArray = [
     [//array annoyance level 1
-        "Yes, yes, I see you're still here.",
-        "Hallo."
+        "Sí, sí, veo que aún estás aquí.",
+        "Hola."
     ],
     [//array annoyance level 2
-        "Heavens... your persistence is remarkable, if not entirely vexing.",
-        "Yassss"
+        "Cielos… tu persistencia es notable, si no completamente irritante.",
+        "Siiiii."
     ],
     [//array annoyance level 3
-        "Let me have my tea in peace.",
+        "Déjame tomar mi té en paz.",
         "Bleh"
     ]
 ];
@@ -70,7 +70,7 @@ const annoyedTextArray = [
 //BORED MESSAGE ARRAY////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const boredTextArray = [
-    "Hey! You still there?"
+    "Ey, ¿sigues ahí?"
 ];
 
 //Fine. Click away. I don't even care anymore.

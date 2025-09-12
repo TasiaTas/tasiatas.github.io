@@ -1,48 +1,48 @@
 //array of objects for swapping in Concept Art section
 const artworksConcept =[
     {
-        title: "Hugging tree",
+        title: "Обнимающееся дерево",
         type: "image",
         src: "assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg",
         paragraphs:[
-            "First image description to see if it works.",
+            "Первое описание изображения, чтобы проверить, работает ли оно.",
             "Hello everyone muahahahahahahaha.",
             "aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaa aaaaaa  aaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa"
         ]
     },
     {
-        title: "People in forest",
+        title: "Люди в лесу",
         type: "image",
         src: "assets/imgPlaceholder/kv_environment.webp",
         paragraphs:[
-            "First image description to see if it works.",
+            "Первое описание изображения, чтобы проверить, работает ли оно.",
             "Hello everyone muahahahahahahaha."
         ]
     },
     {
-        title: "Cutting tree",
+        title: "Рубка деревьев",
         type: "image",
         src: "assets/imgPlaceholder/images%20(1).jpeg",
         paragraphs:[
-            "First image description to see if it works.",
+            "Первое описание изображения, чтобы проверить, работает ли оно.",
             "Hello everyone muahahahahahahaha."
         ]
     },
     {
-        title: "Wet forest",
+        title: "Мокрый лес",
         type: "image",
         src: "assets/imgPlaceholder/images.jpeg",
         paragraphs:[
-            "First image description to see if it works.",
+            "Первое описание изображения, чтобы проверить, работает ли оно.",
             "Hello everyone muahahahahahahaha."
         ]
     },
     {
-        title: "Hand holding tree",
+        title: "Рука держит дерево",
         type: "image",
         src: "../assets/imgPlaceholder/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp",
         paragraphs:[
-            "First image description to see if it works.",
+            "Первое описание изображения, чтобы проверить, работает ли оно.",
             "Hello everyone muahahahahahahaha."
         ]
     },

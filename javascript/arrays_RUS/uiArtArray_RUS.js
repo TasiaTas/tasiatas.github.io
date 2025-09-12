@@ -1,39 +1,39 @@
 //array of objects for swapping in UI section
 const artworksUI =[
     {
-        title: "Baby seal",
+        title: "Детеныш тюленя",
         type: "image",
         src: "../assets/imgPlaceholder/SvUZne7ysWkUNQU65UWdcJ.jpg",
         paragraphs:[
-            "First image description to see if it works.",
+            "Первое описание изображения, чтобы проверить, работает ли оно.",
             "Hello everyone muahahahahahahaha.",
             "aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaa aaaaaa  aaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa"
         ]
     },
     {
-        title: "Axolot",
+        title: "Аксолот",
         type: "image",
         src: "../assets/imgPlaceholder/bigstock-193965259.jpg",
         paragraphs:[
-            "First image description to see if it works.",
+            "Первое описание изображения, чтобы проверить, работает ли оно.",
             "Hello everyone muahahahahahahaha."
         ]
     },
     {
-        title: "Beluga whale",
+        title: "Белуха",
         type: "image",
         src: "../assets/imgPlaceholder/images.jpg",
         paragraphs:[
-            "First image description to see if it works.",
+            "Первое описание изображения, чтобы проверить, работает ли оно.",
             "Hello everyone muahahahahahahaha."
         ]
     },
     {
-        title: "Seal",
+        title: "Тюлень",
         type: "image",
         src: "../assets/imgPlaceholder/9j76svsMfJ2SAoj8FsFyuk.jpg",
         paragraphs:[
-            "First image description to see if it works.",
+            "Первое описание изображения, чтобы проверить, работает ли оно.",
             "Hello everyone muahahahahahahaha."
         ]
     },

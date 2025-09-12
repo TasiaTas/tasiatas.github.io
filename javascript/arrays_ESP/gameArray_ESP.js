@@ -1,7 +1,7 @@
 //array of objects for swapping in Game section
 const games =[
     {
-        title: "Hugging tree",
+        title: "Abrazando árbol",
         type: "image",
         src: "../assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg",
         paragraphs:[
@@ -11,7 +11,7 @@ const games =[
         ]
     },
     {
-        title: "People in forest",
+        title: "Gente en el bosque",
         type: "image",
         src: "../assets/imgPlaceholder/kv_environment.webp",
         paragraphs:[
@@ -20,7 +20,7 @@ const games =[
         ]
     },
     {
-        title: "Cutting tree",
+        title: "Cortando árbol",
         type: "image",
         src: "../assets/imgPlaceholder/images%20(1).jpeg",
         paragraphs:[
@@ -29,7 +29,7 @@ const games =[
         ]
     },
     {
-        title: "Wet forest",
+        title: "Selva",
         type: "video",
         src: "https://youtu.be/ds75GTA6XdU",
         paragraphs:[

@@ -1,7 +1,7 @@
 //array of objects for swapping in 3D section
 const artworks3D =[
     {
-        title: "Hugging tree",
+        title: "Abrazando árbol",
         type: "image",
         src: "../assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg",
         paragraphs:[
@@ -11,7 +11,7 @@ const artworks3D =[
         ]
     },
     {
-        title: "People in forest",
+        title: "Gente en el bosque",
         type: "image",
         src: "../assets/imgPlaceholder/kv_environment.webp",
         paragraphs:[
@@ -20,7 +20,7 @@ const artworks3D =[
         ]
     },
     {
-        title: "Cutting tree",
+        title: "Cortando árbol",
         type: "image",
         src: "../assets/imgPlaceholder/images%20(1).jpeg",
         paragraphs:[
@@ -29,7 +29,7 @@ const artworks3D =[
         ]
     },
     {
-        title: "Wet forest",
+        title: "Selva",
         type: "image",
         src: "../assets/imgPlaceholder/images.jpeg",
         paragraphs:[
@@ -38,7 +38,7 @@ const artworks3D =[
         ]
     },
     {
-        title: "Hand holding tree",
+        title: "Sujetando árbol en la mano",
         type: "image",
         src: "../assets/imgPlaceholder/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp",
         paragraphs:[
