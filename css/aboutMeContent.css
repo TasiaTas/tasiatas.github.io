@@ -23,6 +23,7 @@
 
 #imgArea{
     aspect-ratio: 5.5/6;
+    width: 100px;
     overflow: hidden;
     position: relative;
     min-width: 250px;
@@ -31,10 +32,22 @@
 }
 
 #imgArea img{
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: opacity 0.3s ease; /*for animation of img hover in aboutMeImgHover.js*/
+}
+
+#imgTasiaHover{
+    opacity: 1;
+    z-index: 2;
+}
+
+#imgTasiaHover2{
+    opacity: 0;
+    z-index: 1;
 }
 
 #bottomSection{
@@ -52,6 +65,8 @@
     list-style: none;
     padding-left: 1.5em;
     position: relative;
+    min-width: 500px;
+    max-width: 500px;
 }
 
 #bottomSection li{
@@ -310,6 +325,11 @@
     #message{
         width: 385px;
     }
+
+    #bottomSection ul{
+        min-width: 0;
+        max-width: 400px;
+    }
 }
 
 /*responsiveness for the forms*/
@@ -330,6 +350,11 @@
     #message{
         width: 215px;
     }
+    #bottomSection ul{
+        min-width: 0;
+        max-width: 300px;
+    }
+
 }
 
 /*Phones*/
