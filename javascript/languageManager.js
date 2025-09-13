@@ -49,6 +49,13 @@ const translations = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //MAIN///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Load the page with the correct language depending on user preference
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("preferredLang") || "en"; //if non selected, default is english
+    languageSwitch(savedLang);
+})
+
 //Language change according to what was clicked (user choice)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //chose first section language
@@ -132,39 +139,35 @@ function resetAccordionState(){
 
 //function to change the language
 function languageSwitch(chosenLanguage){
-    if(chosenLanguage === "Inglés" || chosenLanguage === "Английский"){
-        //set html lang to en
-        document.documentElement.setAttribute("lang", "en");
-        //change the link to the corresponding thank you page depending on the language if we're in about.html
-        if(htmlFileName === "about"){
-            const form = document.querySelector("form");
-            const redirectInput = form.querySelector("input[name=redirect]");
-            redirectInput.value = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/TasiaTas/tasiatas.github.io/refs/heads/redesign/html_ENG/formSent.html&lang=en" //WHEN YOU CHANGE THE LINKS TO THE CORRECT ONES USE NOT &lang=en BUT ?lang=en
-        }
+    if(chosenLanguage === "en" || chosenLanguage === "Inglés" || chosenLanguage === "Английский"){
+        //other language changers not in correlation to what the user reads
+        otherLanguageChanger("en");
         //go change the stuff to the language
         languageChanger("en");
-    }else if(chosenLanguage === "Spanish" || chosenLanguage === "Испанский"){
-        //set html lang to es
-        document.documentElement.setAttribute("lang", "es");
-        //change the link to the corresponding thank you page depending on the language if we're in about.html
-        if(htmlFileName === "about"){
-            const form = document.querySelector("form");
-            const redirectInput = form.querySelector("input[name=redirect]");
-            redirectInput.value = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/TasiaTas/tasiatas.github.io/refs/heads/redesign/html_ENG/formSent.html&lang=es"
-        }
+    }else if(chosenLanguage === "es" || chosenLanguage === "Spanish" || chosenLanguage === "Испанский"){
+        //other language changers not in correlation to what the user reads
+        otherLanguageChanger("es");
         //go change the stuff to the language
         languageChanger("es");
-    }else if(chosenLanguage === "Russian" || chosenLanguage === "Ruso"){
-        //set html lang to ru
-        document.documentElement.setAttribute("lang", "ru");
-        //change the link to the corresponding thank you page depending on the language if we're in about.html
-        if(htmlFileName === "about"){
-            const form = document.querySelector("form");
-            const redirectInput = form.querySelector("input[name=redirect]");
-            redirectInput.value = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/TasiaTas/tasiatas.github.io/refs/heads/redesign/html_ENG/formSent.html&lang=ru"
-        }
+    }else if(chosenLanguage === "ru" || chosenLanguage === "Russian" || chosenLanguage === "Ruso"){
+        //other language changers not in correlation to what the user reads
+        otherLanguageChanger("ru");
         //go change the stuff to the language
         languageChanger("ru");
+    }
+}
+
+//function to change language stuff that is not in direct correlation to what user reads
+function otherLanguageChanger(lang){
+    //save in local storage user language preference (this is semi-permanent data to remember user's preference)
+    localStorage.setItem("preferredLang", lang);
+    //set html lang to es
+    document.documentElement.setAttribute("lang", lang);
+    //change the link to the corresponding thank you page depending on the language if we're in about.html
+    if(htmlFileName === "about"){
+        const form = document.querySelector("form");
+        const redirectInput = form.querySelector("input[name=redirect]");
+        redirectInput.value = `https://htmlpreview.github.io/?https://raw.githubusercontent.com/TasiaTas/tasiatas.github.io/refs/heads/redesign/html_ENG/formSent.html&lang=${lang}`
     }
 }
 
