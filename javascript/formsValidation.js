@@ -8,7 +8,6 @@ const subjectInput = document.getElementById("subject");
 const messageInput = document.getElementById("message");
 const errorMessage = document.getElementById("errorMessage");
 const emailError = document.getElementById("emailErrorUnique");
-const pageLang = document.documentElement.getAttribute("lang");
 
 //messages language array
 const eng = [
@@ -40,9 +39,9 @@ form.addEventListener("submit", (e) =>{
     if(!nameInput.value || !emailInput.value || !subjectInput.value || !messageInput.value){
         e.preventDefault(); //stop submission
         errorMessage.style.display = "flex";
-        if(pageLang === "en"){
+        if(document.documentElement.lang === "en"){
             languageDisplayMessage(eng);
-        }else if(pageLang === "es"){
+        }else if(document.documentElement.lang === "es"){
             languageDisplayMessage(esp);
         }else{
             languageDisplayMessage(rus);

@@ -1,5 +1,5 @@
 //array of objects for swapping in 3D section
-const artworks3D =[
+const artworks3D_es =[
     {
         title: "Abrazando árbol",
         type: "image",
@@ -51,4 +51,4 @@ const artworks3D =[
 
 //Make this array visible globally by referencing it inside artworksAccess so we can reuse the same js code (modal.js) independent to the html we're at
 window.artworksAccess = window.artworksAccess || {}; //Check if artworksAccess is created to use it and, if not, create it empty
-window.artworksAccess.artworks3D = artworks3D; //subscribe this array to artworksAccess
+window.artworksAccess.artworks3D_es = artworks3D_es; //subscribe this array to artworksAccess

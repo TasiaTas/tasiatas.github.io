@@ -39,22 +39,31 @@
     <link rel="stylesheet" href="css/hamburger-icon.css">
     <link rel="stylesheet" href="css/modal-navbar.css">
 
+    <!--JAVASCRIPT LANGUAGE MANAGEMENT ARRAYS-->
+    <script src="javascript/arrays_ENG/engArrayHTMLInjection.js" defer></script>
+    <script src="javascript/arrays_ESP/espArrayHTMLInjection.js" defer></script>
+    <script src="javascript/arrays_RUS/rusArrayHTMLInjection.js" defer></script>
+    <script src="javascript/arrays_ENG/conceptArtArray.js" defer></script>
+    <script src="javascript/arrays_ESP/conceptArtArray_ESP.js" defer></script>
+    <script src="javascript/arrays_RUS/conceptArtArray_RUS.js" defer></script>
+    <script src="javascript/arrays_ENG/textGoofyImgArray.js" defer></script>
+    <script src="javascript/arrays_ESP/textGoofyImgArray_ESP.js" defer></script>
+    <script src="javascript/arrays_RUS/textGoofyImgArray_RUS.js" defer></script>
+    <script src="javascript/languageManager.js" defer></script>
+
     <!--JAVASCRIPT LINKS-->
     <script src="javascript/rightClickDisabled_imgProtection.js" defer></script>
-    <script src="javascript/arrays_ENG/conceptArtArray.js" defer></script>
     <script src="javascript/art_selector.js" defer></script>
     <script src="javascript/goofyImg_anim_control.js" defer></script>
-    <script src="javascript/arrays_ENG/textGoofyImgArray.js" defer></script>
     <script src="javascript/clickable_textBubbles.js" defer></script>
     <script src="javascript/modal.js" defer></script>
     <script src="javascript/hamburger-icon-anim.js" defer></script>
-    <script src="javascript/languageAccordion.js" defer></script>
 </head>
 
 <!---------------------------------------------------------------------------------------------------------------------->
 <!--BODY---------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------->
-<body>
+<body data-page="index">
     <!------------------------------------------------------------------------------------------------------------------>
     <!--LOGO HEADER----------------------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------------------>
@@ -143,10 +152,10 @@
 
         <!--Language change-->
         <div class="languageChange">
-            <button class="currentLang">ENG</button>
+            <button class="currentLang" data-i18n="currentLang">ENG</button>
             <ul class="langMenu">
-                <li><a href="index_ESP.html">Spanish</a></li>
-                <li><a href="index_RUS.html">Russian</a></li>
+                <li><a id="firstLang" data-i18n="firstLang">Spanish</a></li>
+                <li><a id ="secondLang" data-i18n="secondLang">Russian</a></li>
             </ul>
         </div>
     </header>
@@ -155,11 +164,11 @@
     <!--NAVIGATION------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------------------>
     <nav class="navbar">
-        <a href="index.html" class="active"><span>Concept art</span></a> <!--span to hug just the text, good for control in css-->
-        <a href="html_ENG/ui.html">UI</a>
-        <a href="html_ENG/3d.html">3D</a>
-        <a href="html_ENG/games.html">Games</a>
-        <a href="html_ENG/about.html">About</a>
+        <a href="index.html" class="active" data-i18n="navBar1"><span>Concept art</span></a> <!--span to hug just the text, good for control in css-->
+        <a href="html_ENG/ui.html" data-i18n="navBar2">UI</a>
+        <a href="html_ENG/3d.html" data-i18n="navBar3">3D</a>
+        <a href="html_ENG/games.html" data-i18n="navBar4">Games</a>
+        <a href="html_ENG/about.html" data-i18n="navBar5">About</a>
     </nav>
 
     <!------------------------------------------------------------------------------------------------------------------>
@@ -168,11 +177,11 @@
     <div class="category-selection" data-origin = "conceptArt">
         <div class="category-option">
             <input type="checkbox" id="character" class="filter-checkbox" value="character" checked="checked">
-            <label for="character">Character design</label>
+            <label for="character" data-i18n-dif="category1">Character design</label>
         </div>
         <div class="category-option">
             <input type="checkbox" id="environment" class="filter-checkbox" value="environment" checked="checked">
-            <label for="environment">Environment design</label>
+            <label for="environment" data-i18n-dif="category2">Environment design</label>
         </div>
     </div>
 
@@ -183,23 +192,23 @@
 
         <!--IMAGES-->
         <!--ADD NEW IMAGES AT THE BEGINNING SO THEY ARE FRESH / TO DATE-->
-        <div class="artItem-div" data-note="Proj Name">
+        <div class="artItem-div" data-note="Proj Name" data-i18n-attr="projName5">
             <img src="assets/imgPlaceholder/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp" data-name="artworksConcept" data-category="character" data-index="4">
         </div>
 
-        <div class="artItem-div" data-note="Proj Name">
+        <div class="artItem-div" data-note="Proj Name" data-i18n-attr="projName4">
             <img src="assets/imgPlaceholder/images.jpeg" data-name="artworksConcept" data-category="environment" data-index="3">
         </div>
 
-        <div class="artItem-div" data-note="Proj Name">
+        <div class="artItem-div" data-note="Proj Name" data-i18n-attr="projName3">
             <img src="assets/imgPlaceholder/images%20(1).jpeg" data-name="artworksConcept" data-category="environment" data-index="2">
         </div>
 
-        <div class="artItem-div" data-note="Proj Name">
+        <div class="artItem-div" data-note="Proj Name" data-i18n-attr="projName2">
             <img src="assets/imgPlaceholder/kv_environment.webp" data-name="artworksConcept" data-category="character" data-index="1">
         </div>
 
-        <div class="artItem-div" data-note="Proj Name">
+        <div class="artItem-div" data-note="Proj Name" data-i18n-attr="projName1">
             <img src="assets/imgPlaceholder/premium_photo-1661964435855-829453686582.jpeg" data-name="artworksConcept" data-category="environment" data-index="0">
         </div>
     </div>
@@ -263,11 +272,11 @@
         <div id="navbar-content-wrapper">
             <div id="navbar-content">
                 <ul>
-                    <li><a href="index.html" class="active"><span>Concept art</span></a></li> <!--span to hug just the text, good for control in css-->
-                    <li><a href="html_ENG/ui.html">UI</a></li>
-                    <li><a href="html_ENG/3d.html">3D</a></li>
-                    <li><a href="html_ENG/games.html">Games</a></li>
-                    <li><a href="html_ENG/about.html">About</a></li>
+                    <li><a href="index.html" class="active" data-i18n="navBar1"><span>Concept art</span></a></li> <!--span to hug just the text, good for control in css-->
+                    <li><a href="html_ENG/ui.html" data-i18n="navBar2">UI</a></li>
+                    <li><a href="html_ENG/3d.html" data-i18n="navBar3">3D</a></li>
+                    <li><a href="html_ENG/games.html" data-i18n="navBar4">Games</a></li>
+                    <li><a href="html_ENG/about.html" data-i18n="navBar5">About</a></li>
                 </ul>
             </div>
         </div>
@@ -412,8 +421,8 @@
 
         <!--Copyright--------------------------------------------------------------------------------------------------->
         <div class="copyright">
-            <p>All rights reserved</p>
-            <p>Copyright © Anastasia Ihnatsenka Shakhova 2024 - 2025</p>
+            <p data-i18n="copyRight1">All rights reserved</p>
+            <p data-i18n="copyRight2">Copyright © Anastasia Ihnatsenka Shakhova 2024 - 2025</p>
         </div>
     </footer>
 </body>

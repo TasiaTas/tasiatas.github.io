@@ -28,7 +28,7 @@ let hideBubbleTimeoutID = null;
 let hideSecondaryBubbleTimeoutID = null;
 let waitSecBubbleTimeoutID = null;
 
-//arrays_ENG
+//arrays
 const userOriginArray = [
     "conceptArt",
     "ui",
@@ -36,10 +36,48 @@ const userOriginArray = [
     "games"
 ];
 
-const clickableMessageArrayOfArrays = [
-    normalTextArray,
-    loreTextArray,
-];
+//DICTIONARIES FOR LANGUAGE SWAP ////////////////////////////////////////////////////////////////////////////////////////
+const annoyedTextDictionary = {
+    en: annoyedTextArray_en,
+    es: annoyedTextArray_es,
+    ru: annoyedTextArray_ru
+};
+
+const firstTextDictionary = {
+    en: firstTextArrayConceptArt_en,
+    es: firstTextArrayConceptArt_es,
+    ru: firstTextArrayConceptArt_ru
+};
+
+const firstAnnoyedTextDictionary = {
+    en: firstTextArrayDaring_en,
+    es: firstTextArrayDaring_es,
+    ru: firstTextArrayDaring_ru
+};
+
+const returnTextDictionary = {
+    en: returnTextArrayConceptArt_en,
+    es: returnTextArrayConceptArt_es,
+    ru: returnTextArrayConceptArt_ru
+};
+
+const returnDaringTextDictionary = {
+    en: returnTextArrayDaring_en,
+    es: returnTextArrayDaring_es,
+    ru: returnTextArrayDaring_ru
+};
+
+const boredTextDictionary = {
+  en: boredTextArray_en,
+  es: boredTextArray_es,
+  ru: boredTextArray_ru
+};
+
+const clickableMessageDictionary = {
+    en:[normalTextArray_en, loreTextArray_en],
+    es:[normalTextArray_es, loreTextArray_es],
+    ru:[normalTextArray_ru, loreTextArray_ru]
+};
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //MAIN///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -60,7 +98,7 @@ clickableObj.addEventListener("click", e => {
 
     //first, get the needed message from the corresponding messageArray by checking annoyance levels or normalcy
     if(now >= nextAnnoyedAt) {
-        randomMessage(annoyedTextArray[annoyedLevel]);
+        randomMessage(annoyedTextDictionary[document.documentElement.lang][annoyedLevel]);
 
         //shorten cooldown for next annoyed message
         nextAnnoyedAt = now + annoyedCooldown;
@@ -76,11 +114,6 @@ clickableObj.addEventListener("click", e => {
     }else{
         randomMessage(chooseMessageArray());
     }
-
-    //catch if we're in the first pseudo-click to change that now that we selected the array for the first time
-    /*if(firstAccessKey) {
-        firstAccessKey = false;
-    }*/
 
     //check if we're returning into the goofy section to lock the return flag access
     if(returnAccess){
@@ -152,10 +185,10 @@ function chooseMessageArray(){
         //depending on where the user comes from, the first message belongs to a different array
         if(userOrigin.getAttribute("data-origin") === userOriginArray[0] ||
             userOrigin.getAttribute("data-origin") === userOriginArray[2]){
-            chosenArray = firstTextArrayConceptArt;
+            chosenArray = firstTextDictionary[document.documentElement.lang];
         }else if(userOrigin.getAttribute("data-origin") === userOriginArray[1] ||
             userOrigin.getAttribute("data-origin") === userOriginArray[3]){
-            chosenArray = firstTextArrayDaring;
+            chosenArray = firstAnnoyedTextDictionary[document.documentElement.lang];
         }
         //save data persistence from first visit (character memory)
         localStorage.setItem(firstAccessKey, "true");
@@ -163,13 +196,13 @@ function chooseMessageArray(){
         //depending on where the user comes from, the return message belongs to a different array
         if(userOrigin.getAttribute("data-origin") === userOriginArray[0] ||
             userOrigin.getAttribute("data-origin") === userOriginArray[2]){
-            chosenArray = returnTextArrayConceptArt;
+            chosenArray = returnTextDictionary[document.documentElement.lang];
         }else if(userOrigin.getAttribute("data-origin") === userOriginArray[1] ||
             userOrigin.getAttribute("data-origin") === userOriginArray[3]){
-            chosenArray = returnTextArrayDaring;
+            chosenArray = returnDaringTextDictionary[document.documentElement.lang];
         }
     }else{
-        chosenArray = clickableMessageArrayOfArrays[Math.floor(Math.random() * 2)];
+        chosenArray = clickableMessageDictionary[document.documentElement.lang][Math.floor(Math.random() * 2)];
     }
 
     return chosenArray;
@@ -213,7 +246,7 @@ function idleReset(){
 
     //set new timer for bored message countdown
     idleTimerID = setTimeout(() => {
-        randomMessage(boredTextArray);
+        randomMessage(boredTextDictionary[document.documentElement.lang]);
         flagBoredMessageDisplayedAndClick = true; //to control message bored being displayed well till it disappears
         nextAnnoyedAt = Date.now() + annoyedCooldown; //move the nextAnnoyed message further in time
         annoyedLevel = 0; //reset annoyed level

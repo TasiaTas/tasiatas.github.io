@@ -23,8 +23,8 @@ document.querySelectorAll(".artItem-div img, .artItem-div div").forEach((img) =>
     img.addEventListener("click", () => {
         //get index of image we're at
         artIndex = parseInt(img.dataset.index, 10);
-        //get the array name we're at depending on the html and, thus, the array we have access to
-        const arrayName = img.dataset.name;
+        //get the array name we're at depending on the html and the language we're in
+        const arrayName = img.dataset.name + "_" + document.documentElement.lang;
         arrayRef = window.artworksAccess[arrayName];
 
         //call function to change content and make it visible

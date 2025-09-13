@@ -1,5 +1,5 @@
 //array of objects for swapping in Concept Art section
-const artworksConcept =[
+const artworksConcept_en =[
     {
         title: "Hugging tree",
         type: "image",
@@ -51,4 +51,4 @@ const artworksConcept =[
 
 //Make this array visible globally by referencing it inside artworksAccess so we can reuse the same js code (modal.js) independent to the html we're at
 window.artworksAccess = window.artworksAccess || {}; //Check if artworksAccess is created to use it and, if not, create it empty
-window.artworksAccess.artworksConcept = artworksConcept; //subscribe this array to artworksAccess
+window.artworksAccess.artworksConcept_en = artworksConcept_en; //subscribe this array to artworksAccess

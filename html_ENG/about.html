@@ -38,17 +38,22 @@
     <link rel="stylesheet" href="../css/hamburger-icon.css">
     <link rel="stylesheet" href="../css/modal-navbar.css">
 
+    <!--JAVASCRIPT LANGUAGE MANAGEMENT ARRAYS-->
+    <script src="../javascript/arrays_ENG/engArrayHTMLInjection.js" defer></script>
+    <script src="../javascript/arrays_ESP/espArrayHTMLInjection.js" defer></script>
+    <script src="../javascript/arrays_RUS/rusArrayHTMLInjection.js" defer></script>
+    <script src="../javascript/languageManager.js" defer></script>
+
     <!--JAVASCRIPT LINKS-->
     <script src="../javascript/rightClickDisabled_imgProtection.js" defer></script>
     <script src="../javascript/hamburger-icon-anim.js" defer></script>
     <script src="../javascript/formsValidation.js" defer></script>
-    <script src="../javascript/languageAccordion.js" defer></script>
 </head>
 
 <!---------------------------------------------------------------------------------------------------------------------->
 <!--BODY---------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------->
-<body>
+<body data-page="about">
     <!------------------------------------------------------------------------------------------------------------------>
     <!--LOGO HEADER----------------------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------------------>
@@ -137,10 +142,10 @@
 
         <!--Language change-->
         <div class="languageChange">
-            <button class="currentLang">ENG</button>
+            <button class="currentLang" data-i18n="currentLang">ENG</button>
             <ul class="langMenu">
-                <li><a href="../html_ESP/about_ESP.html">Spanish</a></li>
-                <li><a href="../html_RUS/about_RUS.html">Russian</a></li>
+                <li><a id="firstLang" data-i18n="firstLang">Spanish</a></li>
+                <li><a id ="secondLang" data-i18n="secondLang">Russian</a></li>
             </ul>
         </div>
     </header>
@@ -149,11 +154,11 @@
     <!--NAVIGATION------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------------------>
     <nav class="navbar">
-        <a href="../index.html">Concept art</a>
-        <a href="ui.html">UI</a>
-        <a href="3d.html">3D</a>
-        <a href="games.html">Games</a>
-        <a href="about.html" class="active"><span>About</span></a>
+        <a href="../index.html" data-i18n="navBar1">Concept art</a>
+        <a href="ui.html" data-i18n="navBar2">UI</a>
+        <a href="3d.html" data-i18n="navBar3">3D</a>
+        <a href="games.html" data-i18n="navBar4">Games</a>
+        <a href="about.html" class="active" data-i18n="navBar5"><span>About</span></a>
     </nav>
 
     <!------------------------------------------------------------------------------------------------------------------>
@@ -162,15 +167,15 @@
     <div id="content-aboutMe">
         <div id="topSection">
             <div id="textArea">
-                <p>Hello everyone, this is Tasia's personal section so we get to know each other closely, he he. aaa aaaa aaaaaaaaa aaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaa aaa a a a a aaaaaaaaaaaaa aaaaaa</p>
-                <p>I am a beluga.</p>
+                <p data-i18n-dif="biography">Hello everyone, this is Tasia's personal section so we get to know each other closely, he he. <br>
+                    <span style="display: block; margin-top: 0.5em"> aaa aaaa aaaaaaaaa aaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaa aaa a a a a aaaaaaaaaaaaa aaaaaa</span></p>
             </div>
             <div id="imgArea">
                 <img src="../assets/imgPlaceholder/images.jpg" alt="This is me">
             </div>
         </div>
         <div id="bottomSection">
-            <h5>Knowledge</h5>
+            <h5 data-i18n-dif="knowledge">Knowledge</h5>
             <ul>
                 <li>
                     <div class="circleWrapper">
@@ -178,39 +183,39 @@
                         <div class="innerCircle"></div>
                         <div class="circleLine"></div>
                     </div>
-                    Programming
+                    <span data-i18n-dif="knowledge1">Programming</span>
                 </li>
                 <li>
                     <div class="circleWrapper">
                         <div class="innerCircle"></div>
                         <div class="circleLine"></div>
                     </div>
-                    3D modeling, rigging and animation
+                    <span data-i18n-dif="knowledge2">3D modeling, rigging and animation</span>
                 </li>
                 <li>
                     <div class="circleWrapper">
                         <div class="innerCircle"></div>
                         <div class="circleLine"></div>
                     </div>
-                    Concept art
+                    <span data-i18n-dif="knowledge3">Concept art</span>
                 </li>
                 <li>
                     <div class="circleWrapper">
                         <div class="innerCircle"></div>
                         <div class="circleLine"></div>
                     </div>
-                    2D rigging and animation
+                    <span data-i18n-dif="knowledge4">2D rigging and animation</span>
                 </li>
             </ul>
 
-            <h5>Recognitions</h5>
+            <h5 data-i18n-dif="recognitions">Recognitions</h5>
             <ul>
                 <li>
                     <div class="circleWrapper">
                         <div class="innerCircle"></div>
                         <div class="circleLine"></div>
                     </div>
-                    Well, I got 3rd place and a Special Mention in art with The Inner Doors game
+                    <span data-i18n-dif="recognition1">Well, I got 3rd place and a Special Mention in art with The Inner Doors game</span>
                 </li>
             </ul>
         </div>
@@ -223,24 +228,24 @@
         <div class="row">
             <div id="errorMessage">
                 <img src="../assets/error-exlamation.png">
-                <h5>Form submission failed. Required information missing. Please check below.</h5>
+                <h5 data-i18n-dif="errorMessage">Form submission failed. Required information missing. Please check below.</h5>
             </div>
         </div>
 
         <input type="hidden" name="access_key" value="b595a4f2-008f-4fb4-8a3d-b83f906d006c"> <!--MESSAGE SENDING WITH WEB3FORMS-->
-        <input type="hidden" name="redirect" value="https://htmlpreview.github.io/?https://raw.githubusercontent.com/TasiaTas/tasiatas.github.io/refs/heads/redesign/html_ENG/formSent.html"> <!--CUSTOM REDIRECT FROM WEB3FORM THANK YOU PAGE-->
+        <input type="hidden" name="redirect" value="https://htmlpreview.github.io/?https://raw.githubusercontent.com/TasiaTas/tasiatas.github.io/refs/heads/redesign/html_ENG/formSent.html&lang=en"> <!--CUSTOM REDIRECT FROM WEB3FORM THANK YOU PAGE-->
 
         <div class="row">
             <div class="col">
                 <div class="sameLineTxt">
-                    <label for="name">Name</label>
-                    <p>Required</p>
+                    <label for="name" data-i18n-dif="name">Name</label>
+                    <p data-i18n-dif="required">Required</p>
                 </div>
                 <input type="text" name="name" class="contactInputTopField" id="name" placeholder="">
             </div>
             <div class="col">
                 <div class="sameLineTxt">
-                    <label for="surname">Surname</label>
+                    <label for="surname" data-i18n-dif="surname">Surname</label>
                     <p>&nbsp;</p>
                 </div>
                 <input type="text" name="surname" class="contactInputTopField" id="surname" >
@@ -249,18 +254,18 @@
         <div class="row">
             <div class="col-full">
                 <div class="sameLineTxt">
-                    <label for="email">Email</label>
-                    <p>Required</p>
+                    <label for="email" data-i18n-dif="email">Email</label>
+                    <p data-i18n-dif="required">Required</p>
                 </div>
                 <input type="email" name="email" class="contactInput" id="email" placeholder="">
-                <p id="emailErrorUnique" style=""> Please enter valid email</p>
+                <p id="emailErrorUnique" style="" data-i18n-dif="enterValidEmail"> Please enter valid email</p>
             </div>
         </div>
         <div class="row">
             <div class="col-full">
                 <div class="sameLineTxt">
-                    <label for="subject">Subject</label>
-                    <p>Required</p>
+                    <label for="subject" data-i18n-dif="subject">Subject</label>
+                    <p data-i18n-dif="required">Required</p>
                 </div>
                 <input type="text" name="subject" class="contactInput" id="subject" placeholder="">
             </div>
@@ -268,14 +273,14 @@
         <div class="row">
             <div class="col-full">
                 <div class="sameLineTxt">
-                    <label for="message">Message</label>
-                    <p>Required</p>
+                    <label for="message" data-i18n-dif="message">Message</label>
+                    <p data-i18n-dif="required">Required</p>
                 </div>
                 <textarea name="message" class="contactInput" id="message" placeholder="TASIA REMEMBER TO CHANGE THE REDIRECT HTTP FOR THE THANKS MESSAGE AND INSIDE THE THANKS HTML TOO"></textarea>
             </div>
         </div>
         <div id="buttonContainer">
-            <button type="submit">Submit</button>
+            <button type="submit" data-i18n-dif="submit">Submit</button>
         </div>
     </form>
 
@@ -288,11 +293,11 @@
         <div id="navbar-content-wrapper">
             <div id="navbar-content">
                 <ul>
-                    <li><a href="../index.html">Concept art</a></li>
-                    <li><a href="ui.html" class="active"><span>UI</span></a></li>
-                    <li><a href="3d.html">3D</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="../index.html" data-i18n="navBar1">Concept art</a></li>
+                    <li><a href="ui.html" class="active" data-i18n="navBar2"><span>UI</span></a></li>
+                    <li><a href="3d.html" data-i18n="navBar3">3D</a></li>
+                    <li><a href="games.html" data-i18n="navBar4">Games</a></li>
+                    <li><a href="about.html" data-i18n="navBar5">About</a></li>
                 </ul>
             </div>
         </div>
@@ -437,8 +442,8 @@
 
         <!--Copyright--------------------------------------------------------------------------------------------------->
         <div class="copyright">
-            <p>All rights reserved</p>
-            <p>Copyright © Anastasia Ihnatsenka Shakhova 2024 - 2025</p>
+            <p data-i18n="copyRight1">All rights reserved</p>
+            <p data-i18n="copyRight2">Copyright © Anastasia Ihnatsenka Shakhova 2024 - 2025</p>
         </div>
     </footer>
 

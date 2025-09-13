@@ -1,5 +1,5 @@
 //array of objects for swapping in Game section
-const games =[
+const games_en =[
     {
         title: "Hugging tree",
         type: "image",
@@ -42,4 +42,4 @@ const games =[
 
 //Make this array visible globally by referencing it inside artworksAccess so we can reuse the same js code (modal.js) independent to the html we're at
 window.artworksAccess = window.artworksAccess || {}; //Check if artworksAccess is created to use it and, if not, create it empty
-window.artworksAccess.games = games; //subscribe this array to artworksAccess
+window.artworksAccess.games_en = games_en; //subscribe this array to artworksAccess
