@@ -20,11 +20,25 @@ const engTranslationBase = {
 const engTranslationUpdatableIndexHTML = {
     category1: "Character design",
     category2: "Environment design",
-    projName1: "Proj 1",
-    projName2: "Proj 2",
-    projName3: "Proj 3",
-    projName4: "Proj 4",
-    projName5: "Proj 5"
+    projName1: "Arida Ulmo",
+    projName2: "Arida Ulmo",
+    projName3: "Ava's Adventures",
+    projName4: "Ava's adventures",
+    projName5: "Drigori's Quarere",
+    projName6: "Solum Flos Cibus",
+    projName7: "Mr Erazer's Revenge",
+    projName8: "Mr Erazer's Revenge",
+    projName9: "Mr Erazer's Revenge",
+    projName10: "Mr Erazer's Revenge",
+    projName11: "Mr Erazer's Revenge",
+    projName12: "Mr Erazer's Revenge",
+    projName13: "SCR",
+    projName14: "SCR",
+    projName15: "SCR",
+    projName16: "The Hidden Places",
+    projName17: "The Hidden Places",
+    projName18: "The Hidden Places",
+    projName19: "The Hidden Places",
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

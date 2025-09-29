@@ -20,11 +20,25 @@ const rusTranslationBase = {
 const rusTranslationUpdatableIndexHTML = {
     category1: "Дизайн персонажей",
     category2: "Дизайн среды",
-    projName1: "Проект 1",
-    projName2: "Проект 2",
-    projName3: "Проект 3",
-    projName4: "Проект 4",
-    projName5: "Проект 5"
+    projName1: "Арида Ульмо",
+    projName2: "Арида Ульмо",
+    projName3: "Приключения Авы",
+    projName4: "Приключения Авы",
+    projName5: "Дригори'с Куарере",
+    projName6: "Солум Флос Цибус",
+    projName7: "Месть мистера Эразера",
+    projName8: "Месть мистера Эразера",
+    projName9: "Месть мистера Эразера",
+    projName10: "Месть мистера Эразера",
+    projName11: "Месть мистера Эразера",
+    projName12: "Месть мистера Эразера",
+    projName13: "SCR",
+    projName14: "SCR",
+    projName15: "SCR",
+    projName16: "Скрытые места",
+    projName17: "Скрытые места",
+    projName18: "Скрытые места",
+    projName19: "Скрытые места",
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

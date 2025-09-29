@@ -20,11 +20,25 @@ const espTranslationBase = {
 const espTranslationUpdatableIndexHTML = {
     category1: "Diseño de personajes",
     category2: "Diseño de entornos",
-    projName1: "Proy 1",
-    projName2: "Proy 2",
-    projName3: "Proy 3",
-    projName4: "Proy 4",
-    projName5: "Proy 5"
+    projName1: "Arida Ulmo",
+    projName2: "Arida Ulmo",
+    projName3: "Las aventuras de Ava",
+    projName4: "Las aventuras de Ava",
+    projName5: "Drigori's Quarere",
+    projName6: "Solum Flos Cibus",
+    projName7: "Mr Erazer's Revenge",
+    projName8: "Mr Erazer's Revenge",
+    projName9: "Mr Erazer's Revenge",
+    projName10: "Mr Erazer's Revenge",
+    projName11: "Mr Erazer's Revenge",
+    projName12: "Mr Erazer's Revenge",
+    projName13: "SCR",
+    projName14: "SCR",
+    projName15: "SCR",
+    projName16: "Los Lugares Ocultos",
+    projName17: "Los Lugares Ocultos",
+    projName18: "Los Lugares Ocultos",
+    projName19: "Los Lugares Ocultos",
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

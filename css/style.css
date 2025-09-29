@@ -37,12 +37,14 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 20px;
     user-select: none;
     z-index: 2;
 }
 
 .logo{
-    width: 200px;
+    padding-left: 8px;
+    width: 350px;
     height: auto;
 }
 
@@ -238,7 +240,7 @@ body:not(.no-hover) .languageChange:hover .langMenu{
 
 .gallery .artItem-div:hover::after{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 } /*On mobile this appears always, go down to mobile section to see*/
 
 /*************************************************************/
@@ -495,10 +497,20 @@ body:not(.no-hover) .languageChange:hover .langMenu{
 
 /*Intermediate size*/
 @media (max-width: 490px) {
+    *{
+        /*Bye bye hateful blue click color*/
+        -webkit-tap-highlight-color: transparent;
+    }
+
     .footer-container{
         flex-direction: column;
         justify-content: center;
         gap: 0.5rem;
+    }
+    .logo{
+        width: 300px;
+        /*So the logo image doesnt blur*/
+        transform: none;
     }
 
     .icons{
@@ -511,28 +523,33 @@ body:not(.no-hover) .languageChange:hover .langMenu{
     }
 
     .artItem-div::after{
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+        transition: none !important;
     }
 }
 
 /*Phones*/
 @media (max-width: 430px) {
+    *{
+        /*Bye bye hateful blue click color*/
+        -webkit-tap-highlight-color: transparent;
+    }
 
     body::-webkit-scrollbar {
         display: none;
     }
 
     .logo{
-        width: 80px;
+        width: 250px;
         /*So the logo image doesnt blur*/
-        image-rendering: crisp-edges;
-        transform: translateZ(0);
+        transform: none;
     }
 
     .artItem-div::after{
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+        transition: none !important;
     }
 
 }

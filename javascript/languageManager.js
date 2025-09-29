@@ -180,9 +180,14 @@ function languageChanger(language){
     //change the elements to the corresponding language that are normal texts inside the html
     document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
-        //if what we want to change exists, change it. If not, show error
+        //if what we want to change exists, change it (we also check if there is an active class of the navbar so it includes the <span> for applied style). If not, show error
         if(languageBaseInjectionArray[key]){
-            el.innerHTML = languageBaseInjectionArray[key];
+            if(el.classList.contains("active")){
+                el.innerHTML = `<span>${languageBaseInjectionArray[key]}</span>`;
+            }
+            else {
+                el.innerHTML = languageBaseInjectionArray[key];
+            }
         }else{
             console.log("You messed up between the keys in the html and the translations in the array: <--" + language + " " + htmlFileName + "-->");
         }

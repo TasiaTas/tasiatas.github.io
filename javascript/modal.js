@@ -114,6 +114,32 @@ span.onclick = function () {
     window.scrollTo(0,scrollPos);
 }
 
+//mouse scroll control
+modal.addEventListener("wheel", (e) =>{
+    //find the content to scroll on
+    const content = modal.querySelector(".modal-content");
+
+    //if found, scroll
+    if (content) {
+        e.preventDefault();
+
+        //smoothly scroll animation
+        const scrollAmount = e.deltaY;
+        const start = content.scrollTop;
+        const duration = 200; // in ms
+        let startTime;
+
+        function smoothScroll(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            content.scrollTop = start + (scrollAmount * progress);
+            if (progress < 1) requestAnimationFrame(smoothScroll);
+        }
+
+        requestAnimationFrame(smoothScroll);
+    }
+}, { passive: false });
+
 //function to update modal content
 function changeModalContent(){
 
@@ -128,7 +154,7 @@ function changeModalContent(){
     modalText.innerHTML = "";
     accessedArt.paragraphs.forEach(paragraph => {
         const p = document.createElement("p");
-        p.textContent = paragraph;
+        p.innerHTML = paragraph;
         modalText.appendChild(p);
     })
 
@@ -138,7 +164,7 @@ function changeModalContent(){
         img.id = "modalImg";
         img.src = accessedArt.src;
         img.style.width = "100%";
-        img.style.maxHeight = "90vh";
+        img.style.maxHeight = "75vh";
         img.style.objectFit = "contain";
 
         //replace video with img
@@ -148,11 +174,14 @@ function changeModalContent(){
     }else if(accessedArt.type === 'video'){
         const iframe = document.createElement("iframe");
         iframe.src = accessedArt.src.replace("youtu.be/", "www.youtube.com/embed/") + "?autoplay=1&controls=1&rel=0";
-        iframe.width = "100%";
-        iframe.height = "400"; // adjust as needed
+        iframe.width = "80%";
+        iframe.height = "auto";
+        iframe.style.aspectRatio = "16/9";
         iframe.allow = "autoplay; encrypted-media";
         iframe.allowFullscreen = true;
         iframe.frameBorder = "0";
+        //put it on top of everything so user can control video
+        iframe.style.zIndex = "20";
 
         //replace img with video
         modalImg.replaceWith(iframe);
@@ -163,7 +192,7 @@ function changeModalContent(){
     scrollPos = window.scrollY || document.documentElement.scrollTop || 0;
 
     //make the modal visible and hide the background scroll
-    modal.style.display = "flex";
+    modal.style.display = "block";
     document.body.style.overflow = "hidden";
     document.body.style.position = "fixed";
     document.body.style.top = `-${scrollPos}px`;
