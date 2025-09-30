@@ -193,6 +193,150 @@ const artworksConcept_en =[
             "He ended not only being a class assignment, but a character I fell so much in love with that he became my OC."
         ]
     },
+    {
+        title: "The Way Beyond",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229031/TheWayBeyonEscenarioFinal_gdturg.webp",
+        paragraphs:[
+            "Project created in <span style='font-weight: bold'>2025</span> as my final degree project.",
+            "This project came with the idea to teach aspiring concept artists how their works affects the rest of the video game production pipeline—so they know what to take into account.",
+            "The image above is the book's cover and <span style='font-weight: bold'>it will soon be on sale on Amazon!</span>"
+        ]
+    },
+    {
+        title: "The Way Beyond",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229031/BulldogStudy_sd4vgw.webp",
+        paragraphs:[
+            "Project created in <span style='font-weight: bold'>2025</span> as my final degree project.",
+            "This project came with the idea to teach aspiring concept artists how their works affects the rest of the video game production pipeline—so they know what to take into account.",
+            "The image above is a bulldog study I did to understand the creature I wanted to create.",
+            "<span style='font-weight: bold'>The book will soon be on sale on Amazon!</span>"
+        ]
+    },
+    {
+        title: "The Way Beyond",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229034/MiaWeaponsSheeets_vy3xsr.webp",
+        paragraphs:[
+            "Project created in <span style='font-weight: bold'>2025</span> as my final degree project.",
+            "This project came with the idea to teach aspiring concept artists how their works affects the rest of the video game production pipeline—so they know what to take into account.",
+            "The image above is a study of Mia's weapon—as she will need it in her travels across the post-apocalyptic Europe.",
+            "<span style='font-weight: bold'>The book will soon be on sale on Amazon!</span>"
+        ]
+    },
+    {
+        title: "The Way Beyond",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229035/SaddleSheeets_fqsyey.webp",
+        paragraphs:[
+            "Project created in <span style='font-weight: bold'>2025</span> as my final degree project.",
+            "This project came with the idea to teach aspiring concept artists how their works affects the rest of the video game production pipeline—so they know what to take into account.",
+            "Of course, Mia will need a way to stay held on top of Ruffus and a place where her inventory will be—thus we have the saddle.",
+            "<span style='font-weight: bold'>The book will soon be on sale on Amazon!</span>"
+        ]
+    },
+    {
+        title: "The Way Beyond",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229031/ToconSheeets_pymahf.webp",
+        paragraphs:[
+            "Project created in <span style='font-weight: bold'>2025</span> as my final degree project.",
+            "This project came with the idea to teach aspiring concept artists how their works affects the rest of the video game production pipeline—so they know what to take into account.",
+            "This prop was based on the 3rd game map: the Black Fores in Germany. This, specifically, is how Mia and Ruffus will be able to find the Triberg Witch and get a special item in the game.",
+            "<span style='font-weight: bold'>The book will soon be on sale on Amazon!</span>"
+        ]
+    },
+    {
+        title: "The Way Beyond",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229032/EnvironmentCharacterSheet_ant5rj.webp",
+        paragraphs:[
+            "Project created in <span style='font-weight: bold'>2025</span> as my final degree project.",
+            "This project came with the idea to teach aspiring concept artists how their works affects the rest of the video game production pipeline—so they know what to take into account.",
+            "A simple environment study for the first map based on Spain. It is the place where Mia comes from and where she grew alongside Ruffus.",
+            "<span style='font-weight: bold'>The book will soon be on sale on Amazon!</span>"
+        ]
+    },
+    {
+        title: "The Way Beyond",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229033/MiaCharacterSheet_rwahe4.webp",
+        paragraphs:[
+            "Project created in <span style='font-weight: bold'>2025</span> as my final degree project.",
+            "This project came with the idea to teach aspiring concept artists how their works affects the rest of the video game production pipeline—so they know what to take into account.",
+            "Mia, a girl who lost her mother when her brother was born and his father due to tuberculosis. She will embark in an adventure across Europe when her little brother, Luca, was kidnapped by a mysterious group.",
+            "<span style='font-weight: bold'>The book will soon be on sale on Amazon!</span>"
+        ]
+    },
+    {
+        title: "The Way Beyond",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229215/RuffusCharacterSheet_p6fbwy.webp",
+        paragraphs:[
+            "Project created in <span style='font-weight: bold'>2025</span> as my final degree project.",
+            "This project came with the idea to teach aspiring concept artists how their works affects the rest of the video game production pipeline—so they know what to take into account.",
+            "Ruffus is Mia's companion. He was found and saved from starvation as a pup by Mia's father and grew alongside her—becoming her best friend and protector. He will follow Mia wherever she goes.",
+            "<span style='font-weight: bold'>The book will soon be on sale on Amazon!</span>"
+        ]
+    },
+    {
+        title: "The Way Beyond",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229034/MiaRuffusCombo_acz5rz.webp",
+        paragraphs:[
+            "Project created in <span style='font-weight: bold'>2025</span> as my final degree project.",
+            "This project came with the idea to teach aspiring concept artists how their works affects the rest of the video game production pipeline—so they know what to take into account.",
+            "Mia and Ruffus are almost like brothers, they complement each other to survive in a post-apocalyptic Europe where a mutagenic virus changed each and every creature on a DNA level.",
+            "<span style='font-weight: bold'>The book will soon be on sale on Amazon!</span>"
+        ]
+    },
+    {
+        title: "Seek & Sail",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759240641/MyrlaCharacterSheet_ibqt0x.webp",
+        paragraphs:[
+            "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",
+            "My main job is to develop any and all visual aspects of the game: characters, environments, UI, animation, 3D, etc.",
+            "The image above showcases the development of the main goddess of the game: Myrla. She is a proud smart woman that is not openly narcissistic, but more taunting.",
+            "<span style='font-weight: bold'>The game is already on Steam for wishlist!</span>"
+        ]
+    },
+    {
+        title: "Seek & Sail",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759243013/GameCoverSheet_zgfvkv.webp",
+        paragraphs:[
+            "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",
+            "My main job is to develop any and all visual aspects of the game: characters, environments, UI, animation, 3D, etc.",
+            "Above you can see the designs created for the game cover and the multiple variants used for Steam. It includes the cards design where we tried to make them generic to our game as they are, not, the ones in-game.",
+            "<span style='font-weight: bold'>The game is already on Steam for wishlist!</span>"
+        ]
+    },
+    {
+        title: "Seek & Sail",
+        type: "image",
+        src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759240641/MainMenuSheet_mo1hqb.webp",
+        paragraphs:[
+            "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span>  and with whom I continue to work as of today.",
+            "My main job is to develop any and all visual aspects of the game: characters, environments, UI, animation, 3D, etc.",
+            "The painting above shows the study of the background of the main menu. It was developed to evoke the feelings of a pirate roguelike game that complements well with the golden UI of the game.",
+            "It was created by layers to create a parallax effect inside the game and has also a very light animation on the ship sails that was made on After Effects.",
+            "<span style='font-weight: bold'>The game is already on Steam for wishlist!</span>"
+        ]
+    },
+    {
+        title: "Seek & Sail",
+        type: "video",
+        src: "https://youtu.be/Sp3LxZ931kg",
+        paragraphs:[
+            "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span>  and with whom I continue to work as of today.",
+            "My main job is to develop any and all visual aspects of the game: characters, environments, UI, animation, 3D, etc.",
+            "The video above shows how bored I got one day waiting for a meeting with LamaGlama Games dev team. I drew Myrla as the annoying woman she can get disturbing my peace. Hope you enjoy this little short!",
+            "I created this in Clip Studio Paint and then animated it in After Effects.",
+            "<span style='font-weight: bold'>The game is already on Steam for wishlist!</span>"
+        ]
+    },
     //ADD NEW IMAGES AT THE END
 ];
 
