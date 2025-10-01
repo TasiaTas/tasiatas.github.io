@@ -254,6 +254,11 @@
         background: none;
         border: none;
     }
+    .redirect-btn {
+        padding: 10px 30px;
+        font-family: Comfortaa, sans-serif;
+        font-size: 1em;
+    }
 
     /*let them scroll to see content in modal*/
     .modal-content::-webkit-scrollbar{

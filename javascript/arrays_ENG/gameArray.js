@@ -10,7 +10,7 @@ const games_en =[
         src: "https://youtu.be/j9_UikOEKEk",
         paragraphs:[
             "Welcome everyone to <span style='font-weight: bold'>Mr Erazer's Revenge</span>!",
-            "Developed by team <span style='font-weight: bold'Wild Claw Studio</span>, I worked as the UI and environment artist. This was our first ever game created for the <span style='font-weight: bold'>Game Jam</span> in <span style='font-weight: bold'>Game Gen Virtual Souls</span>. Sadly, we didn't get far with this game but it only fueled us to do more and better.",
+            "Developed by team <span style='font-weight: bold'>Wild Claw Studio</span>, I worked as the UI and environment artist. This was our first ever game created for the <span style='font-weight: bold'>Game Jam</span> in <span style='font-weight: bold'>Game Gen Virtual Souls</span>. Sadly, we didn't get far with this game but it only fueled us to do more and better.",
             "<span style='font-weight: bold'>It is available to play for free on Itch.io!</span>"
         ]
     },
@@ -24,7 +24,7 @@ const games_en =[
         src: "https://youtu.be/NWR9QKpArnE",
         paragraphs:[
             "Welcome everyone to <span style='font-weight: bold'>Space Combat Rush</span>!",
-            "Developed by team <span style='font-weight: bold'Wild Claw Studio</span>, I worked as the UI and environment artist (I also programmed the UI function). This was a class assignment we did to learn how to do online games.",
+            "Developed by team <span style='font-weight: bold'>Wild Claw Studio</span>, I worked as the UI and environment artist (I also programmed the UI function). This was a class assignment we did to learn how to do online games.",
             "<span style='font-weight: bold'>It is available to play for free on Itch.io!</span>"
         ]
     },
@@ -38,7 +38,7 @@ const games_en =[
         src: "https://youtu.be/6Y4vTfMEHeg",
         paragraphs:[
             "Welcome everyone to <span style='font-weight: bold'>SPADE</span>!",
-            "Developed by team <span style='font-weight: bold'Wild Claw Studio</span>, I worked as the character artist (Foggy) and programmed the UI function using behavioural patterns. It was supposed to be a simple class assignment but...we decided to continue developing it! So stay tuned for updated!",
+            "Developed by team <span style='font-weight: bold'>Wild Claw Studio</span>, I worked as the character artist (Foggy) and programmed the UI function using behavioural patterns. It was supposed to be a simple class assignment but...we decided to continue developing it! So stay tuned for updated!",
             "<span style='font-weight: bold'>Small demo is available for free on Itch.io!</span>"
         ]
     },
@@ -52,7 +52,7 @@ const games_en =[
         src: "https://youtu.be/ds75GTA6XdU",
         paragraphs:[
             "Welcome everyone to <span style='font-weight: bold'>The Inner Doors</span>!",
-            "Developed by team <span style='font-weight: bold'Wild Claw Studio</span>, I worked as the game artist and media content creator. We did so well that we got <span style='font-weight: bold'>3rd place</span>, a <span style='font-weight: bold'>Honorable Mention in arts</span> and went to <span style='font-weight: bold'>Guerrilla Event</span> with it!",
+            "Developed by team <span style='font-weight: bold'>Wild Claw Studio</span>, I worked as the game artist and media content creator. We did so well that we got <span style='font-weight: bold'>3rd place</span> in the game jam <span style='font-weight: bold'>Game Scholar 2023</span>, a <span style='font-weight: bold'>Honorable Mention in arts</span> and went to <span style='font-weight: bold'>Guerrilla Event</span> with it!",
             "<span style='font-weight: bold'>It is available to play for free on Itch.io!</span>"
         ]
     },
@@ -66,7 +66,7 @@ const games_en =[
         src: "https://youtu.be/dESIXAj6zrM",
         paragraphs:[
             "Welcome everyone to <span style='font-weight: bold'>SCR3D</span>!",
-            "Developed by team <span style='font-weight: bold'Wild Claw Studio</span>, I worked as the UI artist, one of the 3D artists and media content creator. This game originates in <span style='font-weight: bold'>SCR</span> which we chose to redesign for a multiplayer game assignment and class competition in which we came in <span style='font-weight: bold'>2nd place!</span>.",
+            "Developed by team <span style='font-weight: bold'>Wild Claw Studio</span>, I worked as the UI artist, one of the 3D artists and media content creator. This game originates in <span style='font-weight: bold'>SCR</span> which we chose to redesign for a multiplayer game assignment and class competition in which we came in <span style='font-weight: bold'>2nd place!</span>.",
             "We came to love it so much that we want to redesign it again and make it an official game! So stay tuned for updates!",
             "<span style='font-weight: bold'>It is available to play for free on Itch.io!</span>"
         ]
