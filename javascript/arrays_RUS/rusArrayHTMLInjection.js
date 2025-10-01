@@ -71,15 +71,21 @@ const rusTranslationUpdatableGamesHTML = {
 //ABOUT.HTML ARRAY TRANSLATION///////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const rusTranslationUpdatableAboutHTML = {
-    biography: "Всем привет, это личный раздел Тасий, чтобы мы могли познакомиться поближе, he he. <br>" +
-        "<span style=\"display: block; margin-top: 0.5em\"> aaa aaaa aaaaaaaaa aaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaa aaa a a a a aaaaaaaaaaaaa aaaaaa</span>",
-    knowledge: "Знание",
-    knowledge1: "Программирование",
-    knowledge2: "3D-моделирование, риггинг и анимация",
-    knowledge3: "Концепт-арт",
-    knowledge4: "2D-риггинг и анимация",
+    biography: "Анастасия (более известная как Тасия или Тас) — художник по видеоиграм, которая изначально мечтала стать военным нейрохирургом, но в последний момент изменила направление и поступила на Дизайн и Разработку Видеоигр — выбор, который запустил её творческую карьеру. <br><br>" +
+        "<span style=\"display: block; margin-top: 0.5em\"> Её жизнь была полна приключений и испытаний: от выживания после частичной потери памяти после падения с лошади до недельного пребывания в одиночку в лесах России в 12 лет. Не волнуйтесь, она всё ещё жива... как-то.</span><br>"+
+        "<span style=\"display: block; margin-top: 0.5em\"> Она немного трудоголик, но всё же находит время для чтения, изучения новых языков (сейчас знает 5!) и просмотра мультфильмов.</span><br>"+
+        "<span style=\"display: block; margin-top: 0.5em\"> Электронная почта: <a href='mailto:tasiatasart@gmail.com' style=\"color: #d66a42;\">tasiatasart@gmail.com</a> или отправьте мне сообщение ниже!</span>",
+    knowledge: "Навыки",
+    knowledge1: "<span style='font-weight: bold'>Программирование</span> [HTML, CSS, JavaScript, Python & Unity (c#)]",
+    knowledge2: "<span style='font-weight: bold'>3D моделирование, риггинг и анимация</span>  [Blender & 3ds Max]",
+    knowledge3: "<span style='font-weight: bold'>Концепт-арт и иллюстрация</span>  [Clip Studio Paint & Photoshop]",
+    knowledge4: "<span style='font-weight: bold'>2D риггинг и анимация</span>  [Clip Studio Paint & After Effects]",
+    knowledge5: "<span style='font-weight: bold'>Видеомонтаж</span>  [After Effects & Blender]",
     recognitions: "Признания",
-    recognition1: "Ну, я заняла третье место и получила особое упоминание в номинации «Искусство» за игру The Inner Doors.",
+    recognition1: "2-е место – Классное соревнование по многопользовательским играм (SCR3D, 2024)",
+    recognition2: "3-е место и Почётная грамота за искусство – Game Scholars (The Inner Doors, 2023)",
+    recognition3: "Показано на Guerrilla Event (The Inner Doors, 2023)",
+    recognition4: "Получила стипендию за выдающиеся академические достижения 2023–24",
     errorMessage: "Не удалось отправить форму. Отсутствует необходимая информация. Пожалуйста, проверьте данные ниже.",
     name: "Имя",
     surname: "Фамилия",

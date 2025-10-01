@@ -71,15 +71,21 @@ const espTranslationUpdatableGamesHTML = {
 //ABOUT.HTML ARRAY TRANSLATION///////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const espTranslationUpdatableAboutHTML = {
-    biography: "Hola a todos, esta es el area personal de Tasia para que nos conozcamos mejor, je je. <br>" +
-        "<span style=\"display: block; margin-top: 0.5em\"> aaa aaaa aaaaaaaaa aaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaa aaa a a a a aaaaaaaaaaaaa aaaaaa</span>",
-    knowledge: "Conocimeinto",
-    knowledge1: "Programación",
-    knowledge2: "Modelado 3D, rigging y animación",
-    knowledge3: "Arte conceptual",
-    knowledge4: "Rigging 2D y animación",
+    biography: "Anastasia (mejor conocida como Tasia o Tas) es una artista de videojuegos que originalmente soñaba con convertirse en neurocirujana militar, pero cambió de rumbo a última hora para estudiar Diseño y Desarrollo de Videojuegos—una decisión que impulsó su carrera creativa. <br><br>" +
+        "<span style=\"display: block; margin-top: 0.5em\"> Su vida ha estado llena de aventuras y desafíos, desde sobrevivir a una pérdida parcial de memoria tras un accidente a un caballo hasta pasar una semana entera sola en los bosques de Rusia a los 12 años. No te preocupes, sigue viva... mágicamente.</span><br>"+
+        "<span style=\"display: block; margin-top: 0.5em\"> Es un poco adicta al trabajo, pero aún así se toma tiempo para disfrutar de la lectura, aprender nuevos idiomas (¡habla 5 a día de hoy!) y ver dibujos animados.</span><br>"+
+        "<span style=\"display: block; margin-top: 0.5em\"> Correo: <a href='mailto:tasiatasart@gmail.com' style=\"color: #d66a42;\">tasiatasart@gmail.com</a> o envíame un mensaje más abajo!</span>",
+    knowledge: "Conocimientos",
+    knowledge1: "<span style='font-weight: bold'>Programación</span> [HTML, CSS, JavaScript, Python & Unity (c#)]",
+    knowledge2: "<span style='font-weight: bold'>Modelado 3D, rigging y animación</span>  [Blender & 3ds Max]",
+    knowledge3: "<span style='font-weight: bold'>Arte conceptual e ilustración</span>  [Clip Studio Paint & Photoshop]",
+    knowledge4: "<span style='font-weight: bold'>Rigging y animación 2D</span>  [Clip Studio Paint & After Effects]",
+    knowledge5: "<span style='font-weight: bold'>Edición de video</span>  [After Effects & Blender]",
     recognitions: "Reconocimientos",
-    recognition1: "Obtuve 3er puesto y mención de honor en The Inner Doors",
+    recognition1: "2º puesto – Competición de juegos multijugador de clase (SCR3D, 2024)",
+    recognition2: "3º puesto y Mención Honorífica en Artes – Game Scholars (The Inner Doors, 2023)",
+    recognition3: "Presentado en Guerrilla Event (The Inner Doors, 2023)",
+    recognition4: "Becada con la Beca por Aprovechamiento Académico Excelente 2023–24",
     errorMessage: "El envío del formulario ha fallado. Faltan datos obligatorios. Por favor, revise la información.",
     name: "Nombre",
     surname: "Apellidos",

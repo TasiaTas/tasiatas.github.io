@@ -71,15 +71,21 @@ const engTranslationUpdatableGamesHTML = {
 //ABOUT.HTML ARRAY TRANSLATION///////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const engTranslationUpdatableAboutHTML = {
-    biography: "Hello everyone, this is Tasia's personal section so we get to know each other closely, he he. <br>" +
-        "<span style=\"display: block; margin-top: 0.5em\"> aaa aaaa aaaaaaaaa aaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaa aaa a a a a aaaaaaaaaaaaa aaaaaa</span>",
+    biography: "Anastasia (better known as Tasia or Tas) is a game artist who originally dreamed of becoming a military neurosurgeon but changed paths last minute to study Design and Videogame Development—a choice that sparked her creative career. <br><br>" +
+        "<span style=\"display: block; margin-top: 0.5em\"> Her life has been full of adventures and challenges, from surviving partial memory loss after a horse accident to spending a whole week alone in the forests of Russia at the age of 12. Don't worry, she's still alive... somehow.</span><br>"+
+        "<span style=\"display: block; margin-top: 0.5em\"> She's a bit of a workaholic, but still makes time to enjoy reading, learning new languages (she speaks 5 so far!) and watching cartoons.</span><br>"+
+        "<span style=\"display: block; margin-top: 0.5em\"> Email: <a href='mailto:tasiatasart@gmail.com' style=\"color: #d66a42;\">tasiatasart@gmail.com</a> or send me a message down below!</span>",
     knowledge: "Knowledge",
-    knowledge1: "Programming",
-    knowledge2: "3D modeling, rigging and animation",
-    knowledge3: "Concept art",
-    knowledge4: "2D rigging and animation",
+    knowledge1: "<span style='font-weight: bold'>Programming</span> [HTML, CSS, JavaScript, Python & Unity (c#)]",
+    knowledge2: "<span style='font-weight: bold'>3D modeling, rigging and animation</span>  [Blender & 3ds Max]",
+    knowledge3: "<span style='font-weight: bold'>Concept art and illustration</span>  [Clip Studio Paint & Photoshop]",
+    knowledge4: "<span style='font-weight: bold'>2D rigging and animation</span>  [Clip Studio Paint & After Effects]",
+    knowledge5: "<span style='font-weight: bold'>Video editing</span>  [After Effects & Blender]",
     recognitions: "Recognitions",
-    recognition1: "Well, I got 3rd place and a Special Mention in art with The Inner Doors game",
+    recognition1: "2nd Place – Class Multiplayer Game Competition (SCR3D, 2024)",
+    recognition2: "3rd Place & Honorable Mention in Arts – Game Scholars (The Inner Doors, 2023)",
+    recognition3: "Showcased at Guerrilla Event (The Inner Doors, 2023)",
+    recognition4: "Awarded the 2023–24 Merit-Based Scholarship for Academic Excellence",
     errorMessage: "Form submission failed. Required information missing. Please check below.",
     name: "Name",
     surname: "Surname",
