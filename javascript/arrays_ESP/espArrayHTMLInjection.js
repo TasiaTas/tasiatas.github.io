@@ -36,10 +36,9 @@ const espTranslationUpdatableIndexHTML = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const espTranslationUpdatableUiHTML = {
     category1: "<span style='font-family: Quicksand, sans-serif; font-weight: bold'>Osas </span>deseleccionar?",
-    projName1: "Proy 1",
-    projName2: "Proy 2",
-    projName3: "Proy 3",
-    projName4: "Proy 4"
+    projName1: "Space Combat Rush 3D",
+    projName2: "The Way Beyond",
+    projName3: "Seek & Sail",
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

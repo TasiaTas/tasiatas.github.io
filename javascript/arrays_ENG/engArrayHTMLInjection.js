@@ -36,10 +36,9 @@ const engTranslationUpdatableIndexHTML = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const engTranslationUpdatableUiHTML = {
     category1: "Do you <span style='font-family: Quicksand, sans-serif; font-weight: bold'>dare</span>?",
-    projName1: "Proj 1",
-    projName2: "Proj 2",
-    projName3: "Proj 3",
-    projName4: "Proj 4"
+    projName1: "Space Combat Rush 3D",
+    projName2: "The Way Beyond",
+    projName3: "Seek & Sail",
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

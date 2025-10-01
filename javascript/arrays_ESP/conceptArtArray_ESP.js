@@ -328,13 +328,13 @@ const artworksConcept_es =[
     {
         title: "Seek & Sail",
         type: "video",
-        src: "https://youtu.be/qXG27AuJ2zo",
+        src: "https://youtu.be/864KFZ5SBwI",
         paragraphs:[
             "Proyecto al que me uní a inicios de <span style='font-weight: bold'>2025</span> durante mis prácticas en <span style='font-weight: bold'>LamaGlama Games</span> y con quienes continúo trabajando hasta el día de hoy.",
             "Mi trabajo principal es desarrollar todos los aspectos visuales del juego: personajes, entornos, interfaz, animación, 3D, etc.",
             "El video de arriba muestra lo aburrida que estaba un día esperando una reunión con el equipo de desarrollo de LamaGlama Games. Dibujé a Myrla como la mujer molesta que puede llegar a ser, interrumpiendo mi paz. ¡Espero que disfrutes este pequeño corto!",
             "Creé esto en Clip Studio Paint y luego lo animé en After Effects.",
-            "<span style='font-weight: bold'>¡El juego ya está en Steam para añadir a tu lista de deseados!</span>"
+            "<span style='font-weight: bold'>¡El juego ya está en Steam para añadir a tu lista de deseos!</span>"
         ]
     },
     //ADD NEW IMAGES AT THE END

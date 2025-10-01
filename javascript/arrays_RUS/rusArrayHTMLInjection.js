@@ -36,10 +36,9 @@ const rusTranslationUpdatableIndexHTML = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const rusTranslationUpdatableUiHTML = {
     category1: "Ты <span style='font-family: Quicksand, sans-serif; font-weight: bold'>осмелишься</span>?",
-    projName1: "Проект 1",
-    projName2: "Проект 2",
-    projName3: "Проект 3",
-    projName4: "Проект 4"
+    projName1: "Space Combat Rush 3D",
+    projName2: "Путь за пределы",
+    projName3: "Seek & Sail",
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
