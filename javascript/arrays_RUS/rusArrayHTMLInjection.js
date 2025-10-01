@@ -59,10 +59,12 @@ const rusTranslationUpdatable3dHTML = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const rusTranslationUpdatableGamesHTML = {
     category1: "<span style='font-family: Quicksand, sans-serif; font-weight: bold'>Осмелитесь</span> сыграть?",
-    projName1: "Проект 1",
-    projName2: "Проект 2",
-    projName3: "Проект 3",
-    projName4: "Проект 4"
+    projName1: "Mr Erazer's Revenge (кликай!)",
+    projName2: "SCR (кликай!)",
+    projName3: "SPADE (кликай!)",
+    projName4: "The Inner Doors (кликай!)",
+    projName5: "SCR3D (кликай!)",
+    projName6: "Seek & Sail (кликай!)",
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

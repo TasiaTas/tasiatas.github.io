@@ -143,6 +143,43 @@
     text-align: left;
 }
 
+/*************************************************************/
+/*REDIRECT BUTTON*********************************************/
+/*************************************************************/
+.redirect-btn {
+    z-index: 90;
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 50px;
+    font-family: Comfortaa, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid black;
+    color: black;
+    border-radius: 10px;
+
+    background: linear-gradient(270deg, blanchedalmond, coral);
+
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease;
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.redirect-btn:hover {
+    background-position: 100% 50%;
+}
+
+.redirect-btn:focus{
+    transform: scale(0.9);
+}
+
+.redirect-btn:focus:not(:active) {
+    transform: scale(1);
+}
+
 /***********************************************************************************************************************/
 /*RESPONSIVENESS (DEVICE SIZE ADJUSTMENT)*********************/
 /*************************************************************/

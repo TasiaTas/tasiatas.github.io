@@ -59,10 +59,12 @@ const espTranslationUpdatable3dHTML = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const espTranslationUpdatableGamesHTML = {
     category1: "Te <span style='font-family: Quicksand, sans-serif; font-weight: bold'>atreves</span> a jugar?",
-    projName1: "Proy 1",
-    projName2: "Proy 2",
-    projName3: "Proy 3",
-    projName4: "Proy 4"
+    projName1: "Mr Erazer's Revenge (clica!)",
+    projName2: "SCR (clica!)",
+    projName3: "SPADE (clica!)",
+    projName4: "The Inner Doors (clica!)",
+    projName5: "SCR3D (clica!)",
+    projName6: "Seek & Sail (clica!)",
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

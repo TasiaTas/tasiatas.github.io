@@ -5,6 +5,7 @@
 const modal = document.getElementById("artModal");
 let modalImg = document.getElementById("modalImg");
 const modalTitle = document.getElementById("modalTitle");
+const modalButton = document.getElementById("modalButton");
 const modalText = document.getElementById("modalText");
 var span = document.getElementsByClassName("close-button")[0];
 const desktopQuery = window.matchMedia("(min-width: 431px)");
@@ -56,9 +57,9 @@ function handleSwipe(){
     //left side click (top of the screen has none to be able to close the damn modal)
     if(clickY <= screenHeight/4){
         return;
-    }else if(clickX <= screenWidth/2){
+    }else if(clickX <= screenWidth/4){
         leftSwipe();
-    }else{
+    }else if(clickX >= screenWidth/4){
         rightSwipe();
     }
 }
@@ -186,6 +187,15 @@ function changeModalContent(){
         //replace img with video
         modalImg.replaceWith(iframe);
         modalImg = iframe;
+    }
+
+    //set the button. If it exists in the array position we set it, if not we hide it
+    if(accessedArt.btn){
+        modalButton.textContent = accessedArt.btn.label;
+        modalButton.onclick = () => window.open(accessedArt.btn.url, "_blank");
+        modalButton.style.display = "block";
+    }else{
+        modalButton.style.display = "none";
     }
 
     //save pos scrolling
