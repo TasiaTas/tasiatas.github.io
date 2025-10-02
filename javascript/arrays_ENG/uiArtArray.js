@@ -3,6 +3,10 @@ const artworksUI_en =[
     {
         title: "SCR3D",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://wild-claw-studio.itch.io/space-combat-rush-3d"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759247714/UI_SpriteSheet_poujxk.webp",
         paragraphs:[
             "Designed for the game <span style='font-weight: bold'>Space Combat Rush 3D</span> in <span style='font-weight: bold'>2024</span> for a class competition with my team <span style='font-weight: bold'>Wild Claw Studio</span> where we got <span style='font-weight: bold'>2nd place</span>",
@@ -25,6 +29,10 @@ const artworksUI_en =[
     {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759315497/GenericUISheet1_rflnrf.webp",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",
@@ -36,6 +44,10 @@ const artworksUI_en =[
     {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759315497/GenericUISheet2_etti9z.webp",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",
@@ -47,6 +59,10 @@ const artworksUI_en =[
     {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759315498/GenericUISheet3_cqyhmd.webp",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",
@@ -57,7 +73,11 @@ const artworksUI_en =[
     },
     {
         title: "Seek & Sail",
-        type: "image",
+        type: "image",btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
+
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759316011/IconographySheet_yyif0t.webp",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",
@@ -69,6 +89,10 @@ const artworksUI_en =[
     {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759315500/Shipyard_TavernUISheet_kspuw3.webp",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",
@@ -80,6 +104,10 @@ const artworksUI_en =[
     {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759316011/MainMenu_TitleUISheet_p3zndv.webp",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",
@@ -91,6 +119,10 @@ const artworksUI_en =[
     {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759240642/InGameMapSheet_joassw.webp",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",

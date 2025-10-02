@@ -62,6 +62,10 @@ const artworksConcept_ru =[
     {
         title: "Месть мистера Эразера",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169954/MrErazer6_zaiynj.webp",
         paragraphs:[
             "Последнее окружение, созданное для игры <span style='font-weight: bold'>Месть мистера Эразера</span> — создано в <span style='font-weight: bold'>2022</span> для моего первого <span style='font-weight: bold'>Game Jam</span> в <span style='font-weight: bold'>Game Gen Virtual Souls</span> вместе с моей командой <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -72,6 +76,10 @@ const artworksConcept_ru =[
     {
         title: "Месть мистера Эразера",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169953/MrErazer5_baf2zl.webp",
         paragraphs:[
             "Первое окружение в центре Земли, созданное для игры <span style='font-weight: bold'>Месть мистера Эразера</span> — создано в <span style='font-weight: bold'>2022</span> для моего первого <span style='font-weight: bold'>Game Jam</span> в <span style='font-weight: bold'>Game Gen Virtual Souls</span> вместе с моей командой <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -82,6 +90,10 @@ const artworksConcept_ru =[
     {
         title: "Месть мистера Эразера",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169950/MrErazer4_tnitrw.webp",
         paragraphs:[
             "Магическое окружение, созданное для игры <span style='font-weight: bold'>Месть мистера Эразера</span> — создано в <span style='font-weight: bold'>2022</span> для моего первого <span style='font-weight: bold'>Game Jam</span> в <span style='font-weight: bold'>Game Gen Virtual Souls</span> вместе с моей командой <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -92,6 +104,10 @@ const artworksConcept_ru =[
     {
         title: "Месть мистера Эразера",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169948/MrErazer3_kel2vb.webp",
         paragraphs:[
             "Пещерное окружение, созданное для игры <span style='font-weight: bold'>Месть мистера Эразера</span> — создано в <span style='font-weight: bold'>2022</span> для моего первого <span style='font-weight: bold'>Game Jam</span> в <span style='font-weight: bold'>Game Gen Virtual Souls</span> вместе с моей командой <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -102,6 +118,10 @@ const artworksConcept_ru =[
     {
         title: "Месть мистера Эразера",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169947/MrErazer2_p3awfm.webp",
         paragraphs:[
             "Горное окружение на закате, созданное для игры <span style='font-weight: bold'>Месть мистера Эразера</span> — создано в <span style='font-weight: bold'>2022</span> для моего первого <span style='font-weight: bold'>Game Jam</span> в <span style='font-weight: bold'>Game Gen Virtual Souls</span> вместе с моей командой <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -112,6 +132,10 @@ const artworksConcept_ru =[
     {
         title: "Месть мистера Эразера",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169945/MrErazer1_dnvljf.webp",
         paragraphs:[
             "Весёлое горное окружение, созданное для игры <span style='font-weight: bold'>Месть мистера Эразера</span> — создано в <span style='font-weight: bold'>2022</span> для моего первого <span style='font-weight: bold'>Game Jam</span> в <span style='font-weight: bold'>Game Gen Virtual Souls</span> вместе с моей командой <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -122,6 +146,10 @@ const artworksConcept_ru =[
     {
         title: "Space Combat Rush (SCR)",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://tasiatas.itch.io/space-combat-rush"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759176856/SCRBackground1_vqings.webp",
         paragraphs:[
             "Голубоватый пиксель арт-окружение, созданное для игры <span style='font-weight: bold'>Space Combat Rush</span> в <span style='font-weight: bold'>2023</span> как учебное задание вместе с моей командой <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -133,6 +161,10 @@ const artworksConcept_ru =[
     {
         title: "Space Combat Rush (SCR)",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://tasiatas.itch.io/space-combat-rush"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759176858/SCRBackground2_mxz9sv.webp",
         paragraphs:[
             "Красноватый пиксельный арт-окружение, созданное для игры <span style='font-weight: bold'>Space Combat Rush</span> в <span style='font-weight: bold'>2023</span> как учебное задание вместе с моей командой <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -144,6 +176,10 @@ const artworksConcept_ru =[
     {
         title: "Space Combat Rush (SCR)",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://tasiatas.itch.io/space-combat-rush"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759176861/SCRBackground3_fb1dpg.webp",
         paragraphs:[
             "Зеленоватый пиксельный арт-окружение, созданное для игры <span style='font-weight: bold'>Space Combat Rush</span> в <span style='font-weight: bold'>2023</span> как учебное задание вместе с моей командой <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -193,7 +229,7 @@ const artworksConcept_ru =[
         ]
     },
     {
-        title: "Путь за пределы",
+        title: "The Way Beyond",
         type: "image",
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229031/TheWayBeyonEscenarioFinal_gdturg.webp",
         paragraphs:[
@@ -203,7 +239,7 @@ const artworksConcept_ru =[
         ]
     },
     {
-        title: "Путь за пределы",
+        title: "The Way Beyond",
         type: "image",
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229031/BulldogStudy_sd4vgw.webp",
         paragraphs:[
@@ -214,7 +250,7 @@ const artworksConcept_ru =[
         ]
     },
     {
-        title: "Путь за пределы",
+        title: "The Way Beyond",
         type: "image",
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229034/MiaWeaponsSheeets_vy3xsr.webp",
         paragraphs:[
@@ -225,7 +261,7 @@ const artworksConcept_ru =[
         ]
     },
     {
-        title: "Путь за пределы",
+        title: "The Way Beyond",
         type: "image",
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229035/SaddleSheeets_fqsyey.webp",
         paragraphs:[
@@ -236,7 +272,7 @@ const artworksConcept_ru =[
         ]
     },
     {
-        title: "Путь за пределы",
+        title: "The Way Beyond",
         type: "image",
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229031/ToconSheeets_pymahf.webp",
         paragraphs:[
@@ -247,7 +283,7 @@ const artworksConcept_ru =[
         ]
     },
     {
-        title: "Путь за пределы",
+        title: "The Way Beyond",
         type: "image",
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229032/EnvironmentCharacterSheet_ant5rj.webp",
         paragraphs:[
@@ -258,7 +294,7 @@ const artworksConcept_ru =[
         ]
     },
     {
-        title: "Путь за пределы",
+        title: "The Way Beyond",
         type: "image",
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229033/MiaCharacterSheet_rwahe4.webp",
         paragraphs:[
@@ -269,7 +305,7 @@ const artworksConcept_ru =[
         ]
     },
     {
-        title: "Путь за пределы",
+        title: "The Way Beyond",
         type: "image",
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229215/RuffusCharacterSheet_p6fbwy.webp",
         paragraphs:[
@@ -280,7 +316,7 @@ const artworksConcept_ru =[
         ]
     },
     {
-        title: "Путь за пределы",
+        title: "The Way Beyond",
         type: "image",
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759229034/MiaRuffusCombo_acz5rz.webp",
         paragraphs:[
@@ -291,8 +327,23 @@ const artworksConcept_ru =[
         ]
     },
     {
+        title: "The Way Beyond",
+        type: "video",
+        src: "https://youtu.be/kvx2mg_hDCc",
+        paragraphs:[
+            "Проект создан в <span style='font-weight: bold'>2025</span> году как моя выпускная работа.",
+            "Этот проект возник с идеей научить начинающих концепт-художников тому, как их работа влияет на остальные этапы производственного процесса видеоигры — чтобы они знали, что нужно учитывать.",
+            "Этот трейлер демонстрирует концепцию продукта, который я задумала. Я всё ещё хочу внести изменения и переснять трейлер, но он уже в процессе для всех, кто заинтересован!",
+            "<span style='font-weight: bold'>Книга скоро будет доступна на Amazon!</span>"
+        ]
+    },
+    {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759240641/MyrlaCharacterSheet_ibqt0x.webp",
         paragraphs:[
             "Проект к которому я присоединился в начале <span style='font-weight: bold'>2025</span> года во время моей стажировки в <span style='font-weight: bold'>LamaGlama Games</span>, и с которыми я продолжаю работать по сей день.",
@@ -304,6 +355,10 @@ const artworksConcept_ru =[
     {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759243013/GameCoverSheet_zgfvkv.webp",
         paragraphs:[
             "Проект, к которому я присоединился в начале <span style='font-weight: bold'>2025</span> года во время моей стажировки в <span style='font-weight: bold'>LamaGlama Games</span>, и с которыми я продолжаю работать по сей день.",
@@ -315,6 +370,10 @@ const artworksConcept_ru =[
     {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Играть!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759240641/MainMenuSheet_mo1hqb.webp",
         paragraphs:[
             "Проект, к которому я присоединился в начале <span style='font-weight: bold'>2025</span> года во время моей стажировки в <span style='font-weight: bold'>LamaGlama Games</span>, и с которыми я продолжаю работать по сей день.",
@@ -327,6 +386,10 @@ const artworksConcept_ru =[
     {
         title: "Seek & Sail",
         type: "video",
+        btn:{
+            label: "Играть!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://youtu.be/Sp3LxZ931kg",
         paragraphs:[
             "Проект, к которому я присоединился в начале <span style='font-weight: bold'>2025</span> года во время моей стажировки в <span style='font-weight: bold'>LamaGlama Games</span>, и с которыми я продолжаю работать по сей день.",

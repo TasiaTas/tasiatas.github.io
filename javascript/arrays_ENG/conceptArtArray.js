@@ -63,6 +63,10 @@ const artworksConcept_en =[
     {
         title: "Mr Erazer's Revenge",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169954/MrErazer6_zaiynj.webp",
         paragraphs:[
             "Last environment designed for <span style='font-weight: bold'>Mr Erazer's Revenge</span> game—created in <span style='font-weight: bold'>2022</span> for my first <span style='font-weight: bold'>Game Jam</span> in the <span style='font-weight: bold'>Game Gen Virtual Souls</span> with my team <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -73,6 +77,10 @@ const artworksConcept_en =[
     {
         title: "Mr Erazer's Revenge",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169953/MrErazer5_baf2zl.webp",
         paragraphs:[
             "First environment in the middle of Earth designed for <span style='font-weight: bold'>Mr Erazer's Revenge</span> game—created in <span style='font-weight: bold'>2022</span> for my first <span style='font-weight: bold'>Game Jam</span> in the <span style='font-weight: bold'>Game Gen Virtual Souls</span> with my team <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -83,6 +91,10 @@ const artworksConcept_en =[
     {
         title: "Mr Erazer's Revenge",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169950/MrErazer4_tnitrw.webp",
         paragraphs:[
             "A magical environment designed for <span style='font-weight: bold'>Mr Erazer's Revenge</span> game—created in <span style='font-weight: bold'>2022</span> for my first <span style='font-weight: bold'>Game Jam</span> in the <span style='font-weight: bold'>Game Gen Virtual Souls</span> with my team <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -93,6 +105,10 @@ const artworksConcept_en =[
     {
         title: "Mr Erazer's Revenge",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169948/MrErazer3_kel2vb.webp",
         paragraphs:[
             "A cavern-like environment designed for <span style='font-weight: bold'>Mr Erazer's Revenge</span> game—created in <span style='font-weight: bold'>2022</span> for my first <span style='font-weight: bold'>Game Jam</span> in the <span style='font-weight: bold'>Game Gen Virtual Souls</span> with my team <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -103,6 +119,10 @@ const artworksConcept_en =[
     {
         title: "Mr Erazer's Revenge",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169947/MrErazer2_p3awfm.webp",
         paragraphs:[
             "A evening mountainous environment designed for <span style='font-weight: bold'>Mr Erazer's Revenge</span> game—created in <span style='font-weight: bold'>2022</span> for my first <span style='font-weight: bold'>Game Jam</span> in the <span style='font-weight: bold'>Game Gen Virtual Souls</span> with my team <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -113,6 +133,10 @@ const artworksConcept_en =[
     {
         title: "Mr Erazer's Revenge",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://wild-claw-studio.itch.io/mr-erazers-revenge"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759169945/MrErazer1_dnvljf.webp",
         paragraphs:[
             "A beautiful mountain environment designed for <span style='font-weight: bold'>Mr Erazer's Revenge</span> game—created in <span style='font-weight: bold'>2022</span> for my first <span style='font-weight: bold'>Game Jam</span> in the <span style='font-weight: bold'>Game Gen Virtual Souls</span> with my team <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -123,6 +147,10 @@ const artworksConcept_en =[
     {
         title: "Space Combat Rush (SCR)",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://tasiatas.itch.io/space-combat-rush"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759176856/SCRBackground1_vqings.webp",
         paragraphs:[
             "Blue-ish pixel art environment created for the game <span style='font-weight: bold'>Space Combat Rush</span> in <span style='font-weight: bold'>2023</span> as an assignment with my team <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -134,6 +162,10 @@ const artworksConcept_en =[
     {
         title: "Space Combat Rush (SCR)",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://tasiatas.itch.io/space-combat-rush"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759176858/SCRBackground2_mxz9sv.webp",
         paragraphs:[
             "Red-ish pixel art environment created for the game <span style='font-weight: bold'>Space Combat Rush</span> in <span style='font-weight: bold'>2023</span> as an assignment with my team <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -145,6 +177,10 @@ const artworksConcept_en =[
     {
         title: "Space Combat Rush (SCR)",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://tasiatas.itch.io/space-combat-rush"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759176861/SCRBackground3_fb1dpg.webp",
         paragraphs:[
             "Green-ish pixel art environment created for the game <span style='font-weight: bold'>Space Combat Rush</span> in <span style='font-weight: bold'>2023</span> as an assignment with my team <span style='font-weight: bold'>Wild Claw Studio</span>.",
@@ -292,8 +328,23 @@ const artworksConcept_en =[
         ]
     },
     {
+        title: "The Way Beyond",
+        type: "video",
+        src: "https://youtu.be/kvx2mg_hDCc",
+        paragraphs:[
+            "Project created in <span style='font-weight: bold'>2025</span> as my final degree project.",
+            "This project came with the idea to teach aspiring concept artists how their works affects the rest of the video game production pipeline—so they know what to take into account.",
+            "This trailer showcases the idea of the product I have in mind. I still want to add changes and redo the trailer, but it's on the way for those who're interested!",
+            "<span style='font-weight: bold'>The book will soon be on sale on Amazon!</span>"
+        ]
+    },
+    {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759240641/MyrlaCharacterSheet_ibqt0x.webp",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",
@@ -305,6 +356,10 @@ const artworksConcept_en =[
     {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759243013/GameCoverSheet_zgfvkv.webp",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span> and with whom I continue to work as of today.",
@@ -316,6 +371,10 @@ const artworksConcept_en =[
     {
         title: "Seek & Sail",
         type: "image",
+        btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://res.cloudinary.com/dxzxf0rwv/image/upload/v1759240641/MainMenuSheet_mo1hqb.webp",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span>  and with whom I continue to work as of today.",
@@ -328,6 +387,10 @@ const artworksConcept_en =[
     {
         title: "Seek & Sail",
         type: "video",
+        btn:{
+            label: "Play!",
+            url: "https://store.steampowered.com/app/3129080/Seek__Sail/?l=spanish"
+        },
         src: "https://youtu.be/Sp3LxZ931kg",
         paragraphs:[
             "Project I joined at the start of <span style='font-weight: bold'>2025</span> during my internship in <span style='font-weight: bold'>LamaGlama Games</span>  and with whom I continue to work as of today.",

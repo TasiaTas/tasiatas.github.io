@@ -27,7 +27,7 @@ const rusTranslationUpdatableIndexHTML = {
     projName5: "Месть мистера Эразера",
     projName6: "SCR",
     projName7: "Скрытые места",
-    projName8: "Путь за пределы",
+    projName8: "The Way Beyond",
     projName9: "Seek & Sail",
 }
 
@@ -37,7 +37,7 @@ const rusTranslationUpdatableIndexHTML = {
 const rusTranslationUpdatableUiHTML = {
     category1: "Ты <span style='font-family: Quicksand, sans-serif; font-weight: bold'>осмелишься</span>?",
     projName1: "Space Combat Rush 3D",
-    projName2: "Путь за пределы",
+    projName2: "The Way Beyond",
     projName3: "Seek & Sail",
 }
 
