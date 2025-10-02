@@ -48,10 +48,10 @@ const rusTranslationUpdatable3dHTML = {
     category1: "Персонажи",
     category2: "Среда и пропсы",
     category3: "Риг и анимация",
-    projName1: "Проект 1",
-    projName2: "Проект 2",
-    projName3: "Проект 3",
-    projName4: "Проект 4"
+    projName1: "Атака зомби",
+    projName2: "Фогги",
+    projName3: "The Inner Doors",
+    projName4: "The Way Beyond",
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -22,9 +22,21 @@ checkboxes.forEach(checkbox => {
 
         artItems.forEach(artItem => {
             const img = artItem.querySelector('img');
-            const category = img.dataset.category;
+            const categories = (img.dataset.category || '').split(/[, ]+/).map(s => s.trim().toLowerCase()).filter(Boolean); //we can now have multiple categories at once
+            let matches = false;
 
-            if(activeFilters.includes(category)) {
+
+            //check if it matches any of the filters
+            for(let i=0; i < categories.length; i++) {
+                let category = categories[i];
+                if(activeFilters.includes(category)) {
+                    matches = true;
+                    break;
+                }
+            }
+
+            //Then hide only if all ot it's filters are deselected
+            if(matches) {
                 //quick check to not make unnecessary calls
                 if(!deactivatedImgGoofy){
                     displayImageHide();
@@ -42,6 +54,31 @@ checkboxes.forEach(checkbox => {
                     }
                 }
             }
+
+            /* OLD WAY WHEN EVERYONE HAD ONLY ONE CATEGORY, IT WORKS 100%, DON'T ERASE JUST IN CASE
+            const category = img.dataset.category;
+
+            if(activeFilters.includes(category)) {
+                //quick check to not make unnecessary calls
+                if(!deactivatedImgGoofy){
+                    displayImageHide();
+                    deactivatedImgGoofy = true;
+                }
+                artItem.style.display = "inline-block";
+            }else{
+                //only hide if all categories deselected
+                if()
+
+                artItem.style.display = "none";
+
+                //only let 1 goofy image be created when none displayed
+                if(activeFilters.length === 0) {
+                    if(numImgGoofy < 1) {
+                        displayImage();
+                        deactivatedImgGoofy = false;
+                    }
+                }
+            }*/
         })
     })
 })

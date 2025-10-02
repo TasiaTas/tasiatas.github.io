@@ -48,10 +48,10 @@ const engTranslationUpdatable3dHTML = {
     category1: "Characters",
     category2: "Environment & props",
     category3: "Rig & animation",
-    projName1: "Proj 1",
-    projName2: "Proj 2",
-    projName3: "Proj 3",
-    projName4: "Proj 4"
+    projName1: "Zombie Attack",
+    projName2: "Foggy",
+    projName3: "The Inner Doors",
+    projName4: "The Way Beyond"
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

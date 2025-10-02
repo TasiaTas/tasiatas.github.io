@@ -340,6 +340,8 @@ const artworksConcept_en =[
     //ADD NEW IMAGES AT THE END
 ];
 
+//the way beyond trailer: https://youtu.be/kvx2mg_hDCc
+
 //Make this array visible globally by referencing it inside artworksAccess so we can reuse the same js code (modal.js) independent to the html we're at
 window.artworksAccess = window.artworksAccess || {}; //Check if artworksAccess is created to use it and, if not, create it empty
 window.artworksAccess.artworksConcept_en = artworksConcept_en; //subscribe this array to artworksAccess
