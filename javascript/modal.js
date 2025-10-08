@@ -16,24 +16,6 @@ var screenWidth = window.innerWidth;
 var scrollPos = 0;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//MAIN///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//check any image/vid clicked to open modal
-document.querySelectorAll(".artItem-div img, .artItem-div div").forEach((img) => {
-    img.addEventListener("click", () => {
-        //get index of image we're at
-        artIndex = parseInt(img.dataset.index, 10);
-        //get the array name we're at depending on the html and the language we're in
-        const arrayName = img.dataset.name + "_" + document.documentElement.lang;
-        arrayRef = window.artworksAccess[arrayName];
-
-        //call function to change content and make it visible
-        changeModalContent();
-    });
-});
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //FUNCTIONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -215,3 +197,38 @@ updateSwipe(desktopQuery);
 
 //Add listener to check when we change between devices to know if swipe is okay or not
 desktopQuery.addEventListener("change", updateSwipe);
+
+//function to control a pseudo array that contains only the visible content selected by user
+function getVisibleArtworks(arrayName){
+    const allItems = Array.from(document.querySelectorAll(`.artItem-div img[data-name="${arrayName.replace(/_.+$/, '')}"]`)); //clean name so it can coincide with the name inside the html (no language suffix _en, _es, _ru)
+    const visibleItems = allItems.filter(img => img.closest(".artItem-div").style.display !== "none"); //only het the img that are visible right now
+    const fullArray = window.artworksAccess[arrayName]; //get the array with everything to swap in the modal
+
+    //return only artworks of img visible
+    return fullArray.filter((art, i) => {
+        const match = visibleItems.find(v => parseInt(v.dataset.index, 10) === i);
+        return !!match; //for boolean conversion
+    });
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//MAIN///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//check any image/vid clicked to open modal
+document.querySelectorAll(".artItem-div img, .artItem-div div").forEach((img) => {
+    img.addEventListener("click", () => {
+        const arrayName = img.dataset.name + "_" + document.documentElement.lang;
+
+        //create a filtered array that matches the visible items
+        arrayRef = getVisibleArtworks(arrayName);
+
+        //figure out where the clicked artwork is in that filtered list
+        const fullArray = window.artworksAccess[arrayName];
+        const clickedArt = fullArray[parseInt(img.dataset.index, 10)];
+        artIndex = arrayRef.indexOf(clickedArt);
+
+        //show modal
+        changeModalContent();
+    });
+});
