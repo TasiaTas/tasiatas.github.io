@@ -32,9 +32,9 @@
 #navbar-content-wrapper{
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 220px;
     transform: translateY(5%);
     transition: transform 0.5s ease;
 }
@@ -60,7 +60,7 @@
     text-decoration: none;
     font-family: Manrope, sans-serif;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1.3em;
     /*disable the blue ugly highlight color when tapped*/
     -webkit-tap-highlight-color: transparent; /* iOS & Android */
     outline: none;
@@ -68,6 +68,7 @@
 
 /*************************************************************/
 /*SOCIAL MEDIA ICONS******************************************/
+/*************************************************************/
 #navbar-modal-icons a{
     text-decoration: none;
     border: none;
