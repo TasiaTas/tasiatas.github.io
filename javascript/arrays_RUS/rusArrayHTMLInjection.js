@@ -3,8 +3,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const rusTranslationBase = {
     currentLang: "РУС",
-    firstLang: "English",
-    secondLang: "Español",
+    firstLang: "English", //when changing this, go to languageManager.js and change there too
+    secondLang: "Español", //when changing this, go to languageManager.js and change there too
     navBar1: "Концепт-арт",
     navBar2: "Интерфейсы",
     navBar3: "3Д",

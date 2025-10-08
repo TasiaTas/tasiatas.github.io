@@ -3,8 +3,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const espTranslationBase = {
     currentLang: "ESP",
-    firstLang: "English",
-    secondLang: "Русский",
+    firstLang: "English", //when changing this, go to languageManager.js and change there too
+    secondLang: "Русский", //when changing this, go to languageManager.js and change there too
     navBar1: "Arte conceptual",
     navBar2: "IU",
     navBar3: "3D",

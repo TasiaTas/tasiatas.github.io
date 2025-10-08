@@ -3,8 +3,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const engTranslationBase = {
     currentLang: "ENG",
-    firstLang: "Español",
-    secondLang: "Русский",
+    firstLang: "Español", //when changing this, go to languageManager.js and change there too
+    secondLang: "Русский", //when changing this, go to languageManager.js and change there too
     navBar1: "Concept art",
     navBar2: "UI",
     navBar3: "3D",
