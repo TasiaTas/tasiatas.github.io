@@ -86,6 +86,8 @@ const rusTranslationUpdatableAboutHTML = {
     recognition2: "3-е место и Почётная грамота за искусство – Game Scholars (The Inner Doors, 2023)",
     recognition3: "Показано на Guerrilla Event (The Inner Doors, 2023)",
     recognition4: "Получила стипендию за выдающиеся академические достижения 2023–24",
+    experience: "Опыт работы",
+    experience1: "Главная художница в <a href='https://lamaglamagames.com/' target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #d66a42;\">LamaGlama Games</a> с февраля 2025",
     errorMessage: "Не удалось отправить форму. Отсутствует необходимая информация. Пожалуйста, проверьте данные ниже.",
     name: "Имя",
     surname: "Фамилия",

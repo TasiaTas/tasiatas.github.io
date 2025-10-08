@@ -94,6 +94,7 @@ function displayImage(){
     imgContainer.style.display = "flex";
     numImgGoofy++;
 
+    /*
     //call to the function to set in motion the animations in script goofyImg_anim_control.js
     randomLegActivation(true);
 
@@ -104,6 +105,8 @@ function displayImage(){
         isBusyFlag = false;
         clickableObj.click();
     },500);
+
+     */
 }
 
 //function to hide the displayed image when user chooses art again
@@ -113,6 +116,7 @@ function displayImageHide(){
     imgContainer.style.display = "none";
     numImgGoofy = 0;
 
+    /*
     //deactivate this page timer so it can be set again if returned to the goofy section
     if(timerId){
         clearTimeout(timerId);
@@ -125,4 +129,5 @@ function displayImageHide(){
 
     //clean the annoyance system
     nextAnnoyedAt = 0;
+     */
 }

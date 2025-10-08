@@ -17,22 +17,22 @@ let spriteLegArray=[
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //VARIABLES//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/*LEG*/
+/*
+//LEG
 const legImgSwap = document.getElementById("leg").querySelector("img");
 let legFrameIndex = 0;
 let legAnimInterval = null;
 let continueLegAnim = true;
 
-/*EYES*/
+//EYES
 
-/*STEAM*/
+//STEAM
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //FUNCTIONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/*LEG ANIM CONTROLS*****************************************************************************************************/
+//LEG ANIM CONTROLS*****************************************************************************************************
 function playLegAnimation(){
     //wait for loop to finish playing
     if(legAnimInterval) return;
@@ -65,7 +65,59 @@ function randomLegActivation(activate){
 }
 
 
-/*RANDOM TIME FUNCTION**************************************************************************************************/
+//RANDOM TIME FUNCTION**************************************************************************************************
 function randomIntFromInterval(min, max){ //min and max included
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
+ */
+
+/*ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+const noticeBoard = document.getElementById("noticeBoard");
+let angle = 0;
+let velocity = 0;
+let amplitude = 15;   // initial swing degrees
+let damping = 0.98;   // how fast it slows down
+let swinging = false;
+
+function startSwing() {
+
+    // reset everything
+    swinging = true;
+    amplitude = 15;
+    angle = 0;
+    startTime = null;
+
+    // reset transform instantly to prevent visible jump
+    noticeBoard.style.transform = "rotate(0deg)";
+
+    // start again
+    swingFrame = requestAnimationFrame(animateSwing);
+}
+
+let startTime = null;
+function animateSwing(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+
+    angle = amplitude * Math.sin(elapsed / 200);
+    amplitude *= damping;
+
+    noticeBoard.style.transform = `rotate(${angle}deg)`;
+
+    if (Math.abs(amplitude) > 0.1) {
+        requestAnimationFrame(animateSwing);
+    } else {
+        noticeBoard.style.transform = "rotate(0deg)";
+        swinging = false;
+        startTime = null;
+    }
+}
+
+// Trigger when entering viewport
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) startSwing();
+    });
+}, { threshold: 0.5 });
+
+observer.observe(noticeBoard);

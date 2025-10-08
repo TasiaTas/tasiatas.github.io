@@ -86,6 +86,8 @@ const espTranslationUpdatableAboutHTML = {
     recognition2: "3º puesto y Mención Honorífica en Artes – Game Scholars (The Inner Doors, 2023)",
     recognition3: "Presentado en Guerrilla Event (The Inner Doors, 2023)",
     recognition4: "Becada con la Beca por Aprovechamiento Académico Excelente 2023–24",
+    experience: "Experiencia",
+    experience1: "Artista principal en <a href='https://lamaglamagames.com/' target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #d66a42;\">LamaGlama Games</a> desde February 2025",
     errorMessage: "El envío del formulario ha fallado. Faltan datos obligatorios. Por favor, revise la información.",
     name: "Nombre",
     surname: "Apellidos",

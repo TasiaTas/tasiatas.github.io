@@ -333,6 +333,7 @@ body:not(.no-hover) .languageChange:hover .langMenu{
     width: 300px;
     height: 500px;
     pointer-events: auto;
+    position: relative; /*PLEASE ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
 }
 
 /*SPEECH BUBBLES*/
@@ -406,6 +407,31 @@ body:not(.no-hover) .languageChange:hover .langMenu{
      cursor: pointer;
  }
 
+/***********************************************************************************************************************/
+/*NOTICE BOARD PLACEHOLDER, ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*******************************************************/
+/***********************************************************************************************************************/
+#noticeBoard {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50px;
+    left: -150px;
+    right: 0;
+    margin: 0 auto;
+    transform-origin: top center; /* pivot point like a hanging board */
+    will-change: transform;
+    transform: rotate(0deg);
+    backface-visibility: hidden;
+}
+
+#noticeBoard img {
+    width: 100%;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+    image-rendering: pixelated;
+}
+
 /*************************************************************/
 /*FOOTER******************************************************/
 /*************************************************************/
@@ -476,6 +502,13 @@ body:not(.no-hover) .languageChange:hover .langMenu{
         display: none;
         pointer-events: none;
         visibility: hidden;
+    }
+
+    /*ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+    #noticeBoard {
+        width: 400px;
+        height: 300px;
+        left: -50PX;
     }
 }
 
@@ -551,6 +584,13 @@ body:not(.no-hover) .languageChange:hover .langMenu{
         transform: translateX(0) !important;
         transition: none !important;
     }
+
+    /*ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+    #noticeBoard {
+        width: 300px;
+        height: 200px;
+        left: 0;
+    }
 }
 
 /*Phones*/
@@ -574,6 +614,13 @@ body:not(.no-hover) .languageChange:hover .langMenu{
         opacity: 1 !important;
         transform: translateX(0) !important;
         transition: none !important;
+    }
+
+    /*ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+    #noticeBoard {
+        width: 300px;
+        height: 200px;
+        left: 0;
     }
 
 }

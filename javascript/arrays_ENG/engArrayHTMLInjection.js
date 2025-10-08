@@ -71,7 +71,7 @@ const engTranslationUpdatableGamesHTML = {
 //ABOUT.HTML ARRAY TRANSLATION///////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const engTranslationUpdatableAboutHTML = {
-    biography: "Anastasia (better known as Tasia or Tas) is a game artist who originally dreamed of becoming a military neurosurgeon but changed paths last minute to study Design and Videogame Development—a choice that sparked her creative career. <br><br>" +
+    biography: "Anastasia (better known as Tasia or Tas) is a game artist who originally dreamed of becoming a military neurosurgeon but changed paths last minute to study Design and Videogame Development in uni—a choice that sparked her creative career. <br><br>" +
         "<span style=\"display: block; margin-top: 0.5em\"> Her life has been full of adventures and challenges, from surviving partial memory loss after a horse accident to spending a whole week alone in the forests of Russia at the age of 12. Don't worry, she's still alive... somehow.</span><br>"+
         "<span style=\"display: block; margin-top: 0.5em\"> She's a bit of a workaholic, but still makes time to enjoy reading, learning new languages (she speaks 5 so far!) and watching cartoons.</span><br>"+
         "<span style=\"display: block; margin-top: 0.5em\"> Email: <a href='mailto:tasiatasart@gmail.com' style=\"color: #d66a42;\">tasiatasart@gmail.com</a> or send me a message down below!</span>",
@@ -86,6 +86,8 @@ const engTranslationUpdatableAboutHTML = {
     recognition2: "3rd Place & Honorable Mention in Arts – Game Scholars (The Inner Doors, 2023)",
     recognition3: "Showcased at Guerrilla Event (The Inner Doors, 2023)",
     recognition4: "Awarded the 2023–24 Merit-Based Scholarship for Academic Excellence",
+    experience: "Experience",
+    experience1: "Main artist in <a href='https://lamaglamagames.com/' target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #d66a42;\">LamaGlama Games</a> since February 2025",
     errorMessage: "Form submission failed. Required information missing. Please check below.",
     name: "Name",
     surname: "Surname",
