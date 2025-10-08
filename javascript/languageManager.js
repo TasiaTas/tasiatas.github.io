@@ -139,17 +139,17 @@ function resetAccordionState(){
 
 //function to change the language
 function languageSwitch(chosenLanguage){
-    if(chosenLanguage === "en" || chosenLanguage === "Inglés" || chosenLanguage === "Английский"){
+    if(chosenLanguage === "en" || chosenLanguage === "English"){
         //other language changers not in correlation to what the user reads
         otherLanguageChanger("en");
         //go change the stuff to the language
         languageChanger("en");
-    }else if(chosenLanguage === "es" || chosenLanguage === "Spanish" || chosenLanguage === "Испанский"){
+    }else if(chosenLanguage === "es" || chosenLanguage === "Español"){
         //other language changers not in correlation to what the user reads
         otherLanguageChanger("es");
         //go change the stuff to the language
         languageChanger("es");
-    }else if(chosenLanguage === "ru" || chosenLanguage === "Russian" || chosenLanguage === "Ruso"){
+    }else if(chosenLanguage === "ru" || chosenLanguage === "Русский"){
         //other language changers not in correlation to what the user reads
         otherLanguageChanger("ru");
         //go change the stuff to the language
