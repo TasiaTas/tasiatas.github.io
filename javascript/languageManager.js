@@ -167,7 +167,7 @@ function otherLanguageChanger(lang){
     if(htmlFileName === "about"){
         const form = document.querySelector("form");
         const redirectInput = form.querySelector("input[name=redirect]");
-        redirectInput.value = `https://htmlpreview.github.io/?https://raw.githubusercontent.com/TasiaTas/tasiatas.github.io/refs/heads/redesign/html_ENG/formSent.html&lang=${lang}`
+        redirectInput.value = `https://tasiatas.github.io/html_ENG/formSent.html&lang=${lang}`
     }
 }
 
