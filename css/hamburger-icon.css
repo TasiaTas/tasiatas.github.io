@@ -1,0 +1,91 @@
+/*************************************************************/
+/* PURE CSS HAMBURGER NAVBAR ICON*****************************/
+/*************************************************************/
+.hamburger-container{
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.hamburger-icon{
+    left:10px;
+    width: 40px;
+    height: 30px;
+    stroke-width: 1px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+    z-index: 2;
+    /*tell browser it will change with translate so it can optimize and the blurriness disappears*/
+    will-change: transform;
+}
+
+.hamburger-icon span {
+    display: block;
+    height: 2px;
+    background: black;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+/*************************************************************/
+/*TOGGLED STATE ANIMATION*************************************/
+/*************************************************************/
+/*For activation functionality, go to hamburger-icon-anim.js*/
+
+.hamburger-icon.active span:nth-child(1) {
+    transform: rotate(-315deg) translate(6px, 6px);
+}
+
+.hamburger-icon.active span:nth-child(2) {
+    transform-origin: center center;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.hamburger-icon.active span:nth-child(3) {
+    transform: rotate(315deg) translate(6px, -6px);
+}
+
+/***********************************************************************************************************************/
+/*RESPONSIVENESS (DEVICE SIZE ADJUSTMENT)*********************/
+/*************************************************************/
+/*From 990 until 630*/
+@media (max-width: 990px) {
+    .hamburger-icon{
+        display: flex;
+        -webkit-tap-highlight-color: transparent; /*Remove iOS & Android blue flash of content*/
+        outline: none; /*Remove keyboard/mouse blue flash of content*/
+    }
+}
+
+/*From 630 until 430*/
+@media (max-width: 630px) {
+    .hamburger-container{
+        padding-left: 3rem !important;
+    }
+
+    /*language change is in style.css*/
+    .languageChange{
+        padding-right: 2rem;
+    }
+}
+
+/*Phones from 430 and under)*/
+@media (max-width: 430px) {
+    .hamburger-container{
+        padding-left: 1rem !important;
+    }
+
+    /*language change is in style.css*/
+    .languageChange{
+        padding-right: 1rem;
+    }
+}

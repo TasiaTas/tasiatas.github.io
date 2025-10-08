@@ -1,0 +1,626 @@
+/*************************************************************/
+/*IMPORTANT DATA ON LEVELS Z-POSITION*************************/
+/*************************************************************/
+/*z-index in page: 0*/
+
+/*z-index in modal-art: 3*/
+/*z-index of X for closing modal-art: 5*/
+/*z-index of arrows to swipe left/right in modal: 4*/
+
+/*z-index in NAVBAR-modal: 1*/
+/*z-index of hamburger mobile: 2*/
+/*z-index for logo image on mobile for NAVBAR-modal: 2*/
+
+/*************************************************************/
+/*MAIN PAGE STRUCTURE*****************************************/
+/*************************************************************/
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffdf7;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/*************************************************************/
+/*LOGO HEADER STUFF*******************************************/
+/*************************************************************/
+.logo-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    user-select: none;
+    z-index: 2;
+}
+
+.logo{
+    padding-left: 8px;
+    width: 350px;
+    height: auto;
+}
+
+/*************************************************************/
+/*SOCIAL MEDIA ICONS HEADER+++********************************/
+/*************************************************************/
+.icons-header{
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+/*************************************************************/
+/*LANGUAGE SELECTOR HEADER************************************/
+/*************************************************************/
+.languageChange{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.currentLang {
+    background: none;
+    border: 1px solid saddlebrown;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Manrope,sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    -webkit-tap-highlight-color: transparent; /*hide blue color tint on mobile*/
+}
+
+.langMenu {
+    display: block;
+    position: absolute;
+    top: 100%; /* directly under button */
+    left: 0;
+    background: #b57e67;
+    width: 100px;
+    height: 80px;
+    border-radius: 5px 0 5px 5px;
+    list-style: none;
+    margin-top: 3px;
+    margin-left: -95px;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 1s;
+}
+
+.langMenu li a {
+    display: block;
+    text-align: center;
+    padding: 11px ;
+    text-decoration: none;
+    font-family: Manrope,sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fffdf7;
+}
+
+.langMenu li a:hover {
+    border-radius: 5px 0 5px 5px;
+    background: #deaf9b;
+    color: black;
+    -webkit-tap-highlight-color: transparent; /*hide blue color tint on mobile*/
+}
+
+body:not(.no-hover) .languageChange:hover .langMenu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.langMenu.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+
+/*IMPORTANT: @media responsiveness of this language selector is in hamburger-icon.css so it follows the same rules*/
+
+/*************************************************************/
+/*NAVBAR******************************************************/
+/*************************************************************/
+.navbar{
+    display: block;
+    text-align: center;
+    user-select: none;
+}
+
+.navbar a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 14px 14px;
+    font-family: Manrope, sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.navbar a:hover{
+    opacity: 0.7;
+}
+
+.navbar a.active span{
+    border-bottom: black solid 1px;
+    padding-bottom: 4px; /*space between words and line*/
+}
+
+/*************************************************************/
+/*CATEGORY SELECTION******************************************/
+/*************************************************************/
+/*For checkbox controls, go to checkbox.css*/
+
+/*Container controls*/
+.category-selection{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    user-select: none;
+}
+
+.category-option{
+    display: inline-block;
+}
+
+/*Text style*/
+.category-selection label{
+    font-family: Manrope, sans-serif;
+    font-size: 0.9em;
+}
+
+/*************************************************************/
+/*ART GALLERY*************************************************/
+/*************************************************************/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 4vw;
+    box-sizing: border-box;
+    justify-content: center;
+    user-select: none;
+}
+
+.artItem-div {
+    aspect-ratio: 5.5 / 8;
+    overflow: hidden;
+    position: relative;
+}
+
+.artItem-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.artItem-div img:hover {
+    cursor: zoom-in;
+}
+
+/*Sticky note to indicate project it belongs to*/
+.gallery .artItem-div::after{
+    content: attr(data-note);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 6px 10px;
+    height: 40px;
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.0));
+    color: #fff;
+    font-family: Manrope, sans-serif;
+    font-size: 1.3em;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform .25s ease, opacity .25s ease;
+    pointer-events: none;
+}
+
+.gallery .artItem-div:hover::after{
+    opacity: 1;
+    transform: translateX(0);
+} /*On mobile this appears always, go down to mobile section to see*/
+
+/*************************************************************/
+/*GAME GALLERY*************************************************/
+/*************************************************************/
+.galleryGames {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 4vw;
+    box-sizing: border-box;
+    justify-content: center;
+    user-select: none;
+}
+
+.galleryGames .artItem-div{
+    aspect-ratio: 7.5 / 5.5;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background: black;
+    cursor: pointer;
+}
+
+.galleryGames .artItem-div .vidContainer{
+    display: none;
+}
+
+.galleryGames .artItem-div .vidContainer,
+.galleryGames .artItem-div .vidContainer .cld-video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*hide all video controls (Cloudinary player UI) */
+.cld-video .vjs-control-bar,
+.cld-video .vjs-big-play-button,
+.cld-video .vjs-loading-spinner {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.galleryGames .artItem-div .vidContainer video {
+    width: 100% !important;  /*freaking override Cloudinary inline styles */
+    height: 100% !important; /*freaking override Cloudinary inline styles */
+    object-fit: cover;
+}
+
+/*Sticky note to indicate project it belongs to*/
+.galleryGames .artItem-div::after{
+    content: attr(data-note);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 6px 10px;
+    height: 40px;
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.0));
+    color: #fff;
+    font-family: Manrope, sans-serif;
+    font-size: 1.3em;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform .25s ease, opacity .25s ease;
+    pointer-events: none;
+}
+
+.galleryGames .artItem-div:hover::after{
+    opacity: 1;
+    transform: translateX(0);
+} /*On mobile this appears always, go down to mobile section to see*/
+
+/*************************************************************/
+/*GOOFY IMAGE*************************************************/
+/*************************************************************/
+#goofyWrapper{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/*Image space control*/
+#okayDontChoose{
+    display: block;
+    width: 300px;
+    height: 500px;
+    pointer-events: auto;
+    position: relative; /*PLEASE ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+}
+
+/*SPEECH BUBBLES*/
+.speech{
+    visibility: hidden;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    cursor: pointer;
+}
+
+.speechBub{
+    position: absolute;
+    max-width: 200px;
+    padding: 10px;
+    background: #fff;
+    border: 2px solid black;
+    font-family: Comfortaa, sans-serif;
+    font-size: 0.9em;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    /*For transition effect controlled in clickable_textBubbles*/
+    opacity: 0;
+    transition: opacity .15s ease;
+}
+
+.speechBub.show{ /*For transition effect controlled in clickable_textBubbles*/
+    opacity: 1;
+    visibility: visible;
+}
+
+.speechBub.hide{ /*For transition effect controlled in clickable_textBubbles*/
+    opacity: 0;
+    visibility: visible;
+}
+
+#leftBub {
+    border-radius: 10px 10px 0 10px;
+    top: 13%;
+    left: -110px;
+}
+
+#rightBub {
+    border-radius: 10px 10px 10px 0;
+    top: 5%;
+    right: -60px;
+}
+
+/*LEG*/
+#leg{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+}
+
+#leg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+/*STATIC BODY*/
+ #staticBody img{
+     width: 300px;
+     height: 500px;
+     cursor: pointer;
+ }
+
+/***********************************************************************************************************************/
+/*NOTICE BOARD PLACEHOLDER, ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*******************************************************/
+/***********************************************************************************************************************/
+#noticeBoard {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50px;
+    left: -150px;
+    right: 0;
+    margin: 0 auto;
+    transform-origin: top center; /* pivot point like a hanging board */
+    will-change: transform;
+    transform: rotate(0deg);
+    backface-visibility: hidden;
+}
+
+#noticeBoard img {
+    width: 100%;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+    image-rendering: pixelated;
+}
+
+/*************************************************************/
+/*FOOTER******************************************************/
+/*************************************************************/
+.line{
+    border-bottom: 2px solid saddlebrown;
+    display: block;
+    padding-top: 50px;
+    width: 200vw;
+    position: relative;
+    left: -50vw;
+    margin-top: auto; /*so the footer sticks to the below part of the screen if there is white space*/
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between; /*pushes one div to flex-start and the other to flex-end*/
+    align-items: center;
+    padding: 5rem;
+}
+
+.copyright{
+    text-align: right;
+    font-family: Manrope, sans-serif;
+    font-size: 0.8em;
+    padding-left: 0.5rem;
+}
+
+/*************************************************************/
+/*SOCIAL MEDIA ICONS REUSABLE*********************************/
+/*************************************************************/
+.icons a{
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.icons a svg{
+    padding-inline: 10px;
+    padding-top: 10px;
+    width: 27px;
+    height: 27px;
+}
+
+.icons a svg:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.icons a:nth-child(3) svg{
+    transform: scale(130%);
+}
+
+/***********************************************************************************************************************/
+/*RESPONSIVENESS (DEVICE SIZE ADJUSTMENT)*********************/
+/*************************************************************/
+/*IMPORTANT: @media responsiveness of the language selector is in hamburger-icon.css so it follows the same rules*/
+
+/*icons in screens between 430 and 990*/
+@media (max-width: 990px) {
+    .navbar{
+        display: none;
+        pointer-events: none;
+        visibility: hidden;
+
+    }
+
+    .icons-header{
+        display: none;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    /*ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+    #noticeBoard {
+        width: 400px;
+        height: 300px;
+        left: -50PX;
+    }
+}
+
+/*Text bubbles in screens less than 570px*/
+@media (max-width: 570px) {
+    .speechBub{
+        max-width: 150px;
+    }
+
+    #rightBub {
+        border-radius: 10px 10px 10px 0;
+        top: -3%;
+        right: -20px;
+    }
+
+    #leftBub{
+        border-radius: 10px 0 10px 10px;
+        top: 20%;
+        left: -40px;
+    }
+
+    /*Take away the hateful blue color from clicking the image on mobile*/
+    .speech{
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+    }
+    #leg{
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+    }
+    #staticBody img{
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+    }
+}
+
+/*category selection control responsiveness*/
+@media (max-width: 520px) {
+    .category-option{
+        margin: 10px 0; /*adds visual spacing between them*/
+    }
+}
+
+/*Intermediate size*/
+@media (max-width: 490px) {
+    *{
+        /*Bye bye hateful blue click color*/
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .logo{
+        width: 300px;
+        /*So the logo image doesnt blur*/
+        transform: none;
+    }
+
+    .icons{
+        display: flex;
+        align-items: center;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    .artItem-div::after{
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+        transition: none !important;
+    }
+
+    /*ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+    #noticeBoard {
+        width: 300px;
+        height: 200px;
+        left: 0;
+    }
+}
+
+/*Phones*/
+@media (max-width: 430px) {
+    *{
+        /*Bye bye hateful blue click color*/
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .logo{
+        width: 250px;
+        /*So the logo image doesnt blur*/
+        transform: none;
+    }
+
+    .artItem-div::after{
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+        transition: none !important;
+    }
+
+    /*ERASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+    #noticeBoard {
+        width: 300px;
+        height: 200px;
+        left: 0;
+    }
+
+}
