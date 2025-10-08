@@ -3,8 +3,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const espTranslationBase = {
     currentLang: "ESP",
-    firstLang: "Inglés",
-    secondLang: "Ruso",
+    firstLang: "English",
+    secondLang: "Русский",
     navBar1: "Arte conceptual",
     navBar2: "IU",
     navBar3: "3D",

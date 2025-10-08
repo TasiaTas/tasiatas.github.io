@@ -3,8 +3,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const rusTranslationBase = {
     currentLang: "РУС",
-    firstLang: "Английский",
-    secondLang: "Испанский",
+    firstLang: "English",
+    secondLang: "Español",
     navBar1: "Концепт-арт",
     navBar2: "Интерфейсы",
     navBar3: "3Д",

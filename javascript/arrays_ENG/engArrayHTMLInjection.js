@@ -3,8 +3,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const engTranslationBase = {
     currentLang: "ENG",
-    firstLang: "Spanish",
-    secondLang: "Russian",
+    firstLang: "Español",
+    secondLang: "Русский",
     navBar1: "Concept art",
     navBar2: "UI",
     navBar3: "3D",
